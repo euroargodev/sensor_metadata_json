@@ -14,7 +14,7 @@ from referencing.jsonschema import DRAFT7
 from referencing import Resource
 
 # Path to schemas on local filesystem
-SCHEMAS = Path("/Users/ericrehm/src/SeaBird/sensor_metadata_json/schemas")
+SCHEMAS = Path("./schemas")
 
 def load_json(file_path):
     return json.loads(file_path.read_text())
