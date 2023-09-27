@@ -9,5 +9,5 @@ Follows Argo float, sensor, paramater, and configuration schemes as well as iden
 | **examples** | Schema-compliant examples for numerous sensors, platforms, and floats|
 | **schema** | JSON schema for sensors, platforms, and floats.  Needed by validating JSON parsers.|
 
-Current effort involves SBS-EREHM (Eric Rehm, Sea-Bird Scientific) and BAK (Brian King, NOC)
+Current effort involves @SBS-EREHM (Eric Rehm, Sea-Bird Scientific) and @BrianKingNOC (Brian King, NOC)
 
