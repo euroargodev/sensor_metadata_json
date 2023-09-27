@@ -14,7 +14,7 @@ from referencing.jsonschema import DRAFT7
 from referencing import Resource
 
 # Path to schemas on local filesystem
-SCHEMAS = Path("/Users/ericrehm/src/SeaBird/json-ArgoMetadata/schema")
+SCHEMAS = Path("/Users/ericrehm/src/SeaBird/sensor_metadata_json/schemas")
 
 def load_json(file_path):
     return json.loads(file_path.read_text())
@@ -197,7 +197,7 @@ def main():
     print(fpath)
 
     # Load root JSON schema that applies to this JSON instance
-    schema_dir = Path.cwd() / Path('schema')
+    schema_dir = Path.cwd() / Path('schemas')
     schema_type = fpath.name.split('-')[0]
     schema_path = schema_dir / Path('argo.'+f'{schema_type}'+'.schema.json')
     try: 
