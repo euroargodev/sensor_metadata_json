@@ -1,0 +1,41 @@
+{
+  "platform_info": {
+    "created_by": "BAK test",
+    "date_creation": "2022-02-23T02:03:01Z",
+    "link" : "./argo.platform.schema.json",
+    "format_version": "0.2.0",
+    "contents": "json file to describe a SOLO_II platform for Argo from float WMOIS 5906767", 
+    "platform_described": "platform-SIO_IDG-SOLO_II-4"
+  },
+  "@context": {
+    "SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
+    "SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
+    "SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
+    "SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",
+    "SDN:R22::": "http://vocab.nerc.ac.uk/collection/R22/current/",
+    "SDN:R23::": "http://vocab.nerc.ac.uk/collection/R23/current/",
+    "SDN:R24::": "http://vocab.nerc.ac.uk/collection/R24/current/",
+    "SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
+  },
+  "PLATFORM": {
+    "DATA_TYPE": "SDN:R01::META",
+    "POSITIONING_SYSTEM": ["SDN:R09::GPS"],
+    "TRANS_SYSTEM": ["SDN:R10::IRIDIUM"],
+    "PLATFORM_FAMILY": "SDN:R22::FLOAT",
+    "PLATFORM_TYPE": "SDN:R23::SOLO_II",
+    "PLATFORM_MAKER": "SDN:R24::SIO_IDG",
+    "WMO_INST_TYPE": "SDN:R08::853",
+    "FIRMWARE_VERSION": "V10.1.2.4; SBE602 03Mar22",
+    "MANUAL_VERSION": "V10.1.2.4",
+    "FLOAT_SERIAL_NO": "4",
+    "BATTERY_TYPE": "TADIRAN Lithium  15 V",
+    "BATTERY_PACKS": "4D Li",
+    "CONTROLLER_BOARD_TYPE_PRIMARY": "SDN:R28::GG32 [Revision:6.3]",
+    "CONTROLLER_BOARD_SERIAL_NO_PRIMARY": "GGM4",
+    "CONTROLLER_BOARD_TYPE_SECONDARY": "SDN:R28::3004",
+    "CONTROLLER_BOARD_SERIAL_NO_SECONDARY": " ",
+    "platform_vendorinfo": {
+      "vendor_schema": "None"
+    }
+  }
+}

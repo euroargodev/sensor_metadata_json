@@ -1,0 +1,143 @@
+{
+    "sensor_info": {
+        "created_by": "SBE SBE-pHcalToJSON.py",
+        "date_creation": "2023-04-10T07:38:07-07:00",
+        "link": "./argo.sensor.schema.json",
+        "format_version": "0.2.0",
+        "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+        "sensor_described": "SBS-SEAFET-17683"
+    },
+    "@context": {
+        "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+        "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+        "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+        "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+    },
+    "SENSORS": [
+        {
+            "SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "SENSOR_MAKER": "SDN:R26::SBE",
+            "SENSOR_MODEL": "SDN:R27::SEAFET",
+            "SENSOR_SERIAL_NO": "17683",
+            "SENSOR_FIRMWARE_VERSION": " ",
+            "sensor_vendorinfo": {
+                "vendor_schema": "SBE",
+                "version": "0.1",
+                "SBE_manufacturing_date": "2023-09-26",
+                "SBE_pHType": "LOV",
+                "SBE_ISFET_SERIAL_NO": "11764",
+                "SBE_REFERENCE_SERIAL_NO": "11773"
+            }
+        }
+    ],
+    "PARAMETERS": [
+        {
+            "PARAMETER": "SDN:R03::VRS_PH",
+            "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "PARAMETER_UNITS": "volt",
+            "PARAMETER_ACCURACY": " ",
+            "PARAMETER_RESOLUTION": " ",
+            "PREDEPLOYMENT_CALIB_EQUATION": " ",
+            "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+            "PREDEPLOYMENT_CALIB_COMMENT": "Voltage difference between reference and source from pH sensor (in volt",
+            "PREDEPLOYMENT_CALIB_DATE": " "
+        },
+        {
+            "PARAMETER": "SDN:R03::VK_PH",
+            "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "PARAMETER_UNITS": "volt",
+            "PARAMETER_ACCURACY": " ",
+            "PARAMETER_RESOLUTION": " ",
+            "PREDEPLOYMENT_CALIB_EQUATION": " ",
+            "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+            "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode voltage of pH sensor (in volt)",
+            "PREDEPLOYMENT_CALIB_DATE": " "
+        },
+        {
+            "PARAMETER": "SDN:R03::IK_PH",
+            "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "PARAMETER_UNITS": "nanoampere",
+            "PARAMETER_ACCURACY": " ",
+            "PARAMETER_RESOLUTION": " ",
+            "PREDEPLOYMENT_CALIB_EQUATION": " ",
+            "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+            "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode current of pH sensor (in nanoampere) ",
+            "PREDEPLOYMENT_CALIB_DATE": " "
+        },
+        {
+            "PARAMETER": "SDN:R03::IB_PH",
+            "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "PARAMETER_UNITS": "nanoampere",
+            "PARAMETER_ACCURACY": " ",
+            "PARAMETER_RESOLUTION": " ",
+            "PREDEPLOYMENT_CALIB_EQUATION": " ",
+            "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+            "PREDEPLOYMENT_CALIB_COMMENT": "Base current of pH sensor (in nanoampere)",
+            "PREDEPLOYMENT_CALIB_DATE": " "
+        },
+        {
+            "PARAMETER": "SDN:R03::PH_IN_SITU_FREE",
+            "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "PARAMETER_UNITS": "dimensionless",
+            "PARAMETER_ACCURACY": "0.005",
+            "PARAMETER_RESOLUTION": "0.0004",
+            "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+            "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+                "fP_poly_order": "6",
+                "f0": "-1.3189",
+                "f1": "-8.453e-06",
+                "f2": "6.5885e-08",
+                "f3": "-1.1179e-10",
+                "f4": "8.713e-14",
+                "f5": "-3.2423e-17",
+                "f6": "4.6608e-21",
+                "K0": "-1.3219590000228736",
+                "K2_poly_order": "3",
+                "K2f0": "-0.00086825",
+                "K2f1": "1.6881e-08",
+                "K2f2": "-2.9158e-11",
+                "K2f3": "8.6709e-15"
+            },
+            "PREDEPLOYMENT_CALIB_COMMENT": "",
+            "PREDEPLOYMENT_CALIB_DATE": "2023-09-26",
+            "predeployment_vendorinfo": {
+                "vendor_schema": "SBE",
+                "version": "0.1",
+                "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14",
+                "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15"
+            }
+        },
+        {
+            "PARAMETER": "SDN:R03::PH_IN_SITU_TOTAL",
+            "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+            "PARAMETER_UNITS": "dimensionless",
+            "PARAMETER_ACCURACY": "0.005",
+            "PARAMETER_RESOLUTION": "0.0004",
+            "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+            "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+                "fP_poly_order": "6",
+                "f0": "-1.3189",
+                "f1": "-8.453e-06",
+                "f2": "6.5885e-08",
+                "f3": "-1.1179e-10",
+                "f4": "8.713e-14",
+                "f5": "-3.2423e-17",
+                "f6": "4.6608e-21",
+                "K0": "-1.3219590000228736",
+                "K2_poly_order": "3",
+                "K2f0": "-0.00086825",
+                "K2f1": "1.6881e-08",
+                "K2f2": "-2.9158e-11",
+                "K2f3": "8.6709e-15"
+            },
+            "PREDEPLOYMENT_CALIB_COMMENT": "",
+            "PREDEPLOYMENT_CALIB_DATE": "2023-09-26",
+            "predeployment_vendorinfo": {
+                "vendor_schema": "SBE",
+                "version": "0.1",
+                "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14",
+                "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15"
+            }
+        }
+    ]
+}

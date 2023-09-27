@@ -1,0 +1,179 @@
+{
+  "sensor_info": {
+    "created_by": "BAK test",
+    "date_creation": "2023-02-03T07:38:07Z",
+    "link" : "./argo.sensor.schema.json",
+    "format_version": "0.2.0",
+    "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
+    "sensor_described": "RBR-RBR_ARGO3-205908"
+  },
+  "@context": {
+    "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+    "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+    "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+    "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+  },
+  "SENSORS": [
+    {
+      "SENSOR": "SDN:R25::CTD_PRES",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "RBR",
+        "version": "1.0",
+        "RBR_foo1" : 1,
+        "RBR_foo2" : "twotwo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_TEMP",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_CNDC",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_TEMP_CNDC",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
+      }
+    }
+  ],
+  "PARAMETERS": [
+    {
+      "PARAMETER": "SDN:R03::PRES",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_PRES",
+      "PARAMETER_UNITS": "dbar",
+      "PARAMETER_ACCURACY": "1",
+      "PARAMETER_RESOLUTION": "0.02",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Pcorr = X0+(Pmeas-X0-X1*(Tpres-X5)-X2*(Tpres-X5)^2-X3*(Tpres-X5)^3)/(1+X4*(Tpres-X5)); Pmeas = C0+C1*VR+C2*VR^2+C3*VR^3;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "-55.76767",
+        "C1": "4.0054912E3",
+        "C2": "-66.53745",
+        "C3": "6.39357",
+        "X0": "10.0361",
+        "X1": "184.89905E-3",
+        "X2": "330.90703E-6",
+        "X3": "-999.3263E-9",
+        "X4": "-86.53429E-6",
+        "X5": "21.942171"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2020-12-03",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema" : "RBR",
+        "version" : "0.1",
+        "certificate" : "https://oem-lookup.rbr-global.com/api/v1/instruments/205908/channels/8/certificate"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_TEMP",
+      "PARAMETER_UNITS": "degC (ITS-90)",
+      "PARAMETER_ACCURACY": "0.002",
+      "PARAMETER_RESOLUTION": "0.00005",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Temperature = 1/(C0+C1*ln(1/VR-1)+C2*ln(1/VR-1)^2+C3*ln(1/VR-1)^3)-273.15;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "3.4669158E-3",
+        "C1": "-249.6654E-6",
+        "C2": "2.4878973E-6",
+        "C3": "-60.271525E-9"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date           2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PSAL",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_CNDC",
+      "PARAMETER_UNITS": "psu",
+      "PARAMETER_ACCURACY": "0.003",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Salinity = PSS-78 (Temperature, Ccorr, Hydrostatic Pressure); Ccorr = (Cmeas-X0*(Tcond-X5))/(1+ X1*(Tcond-X5)+X2*(Pcorr-X6)+X3*(Pcorr-X6)^2+X4*(Pcorr-X6)^3); Cmeas = C0+C1*C2*VR;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "46.48405E-3",
+        "C1": "152.28053",
+        "C2": "1.0",
+        "X0": "1.1667822E-3",
+        "X1": "70.142356E-9",
+        "X2": "1.8732E-6",
+        "X3": "-776.89E-12",
+        "X4": "148.9E-15",
+        "X5": "15.001777",
+        "X6": "10"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date          2020-12-09",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_CNDC",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_TEMP_CNDC",
+      "PARAMETER_UNITS": "degC (ITS-90)",
+      "PARAMETER_ACCURACY": "0.1",
+      "PARAMETER_RESOLUTION": "0.06",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Temperature = 1/(C0+C1*ln(1/VR-1)+C2*ln(1/VR-1)^2+C3*ln(1/VR-1)^3)-273.15;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "3.1201642E-3",
+        "C1": "-285.56594E-6",
+        "C2": "316.32993E-9",
+        "C3": "-1.0767272E-6"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature_Conductivity Calibration Date          2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema" : "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    }
+  ],
+  "instrument_vendorinfo": {
+    "vendor_schema" : "None",
+    "example": "Vendors can add something about the whole instrument here; they can add field they like as a fieldname below instrument_vendorinfo"
+  }
+}

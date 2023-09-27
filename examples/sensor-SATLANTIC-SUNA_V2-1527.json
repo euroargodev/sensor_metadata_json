@@ -1,0 +1,126 @@
+{
+    "sensor_info": {
+      "created_by": "ECR test",
+      "date_creation": "2023-08-31T07:38:07-07:00",
+      "link" : "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "sensor_described": "SATLANTIC-SUNA_V2-1527 found on float WMOID 5906509"
+    },
+    "@context": {
+      "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+      "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+      "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+      "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+    },
+    "SENSORS": [
+      {
+        "SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+        "SENSOR_MODEL": "SDN:R27::SUNA_V2",
+        "SENSOR_SERIAL_NO": "1527",
+        "SENSOR_FIRMWARE_VERSION": " ",
+        "sensor_vendorinfo": {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "SBE_manufacturing_date": "2021-01-08",
+          "CONFIG_SunaApfFrameOutputPixelBegin_NUMBER": 34,
+          "CONFIG_SunaApfFrameOutputPixelEnd_NUMBER": 74
+        }
+      }
+    ],
+    "PARAMETERS": [
+      {
+        "PARAMETER": "SDN:R03::TEMP_NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "degC",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": "",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Internal temperature of the SUNA sensor",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      },
+      {
+        "PARAMETER": "SDN:R03::TEMP_SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "degC",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": "",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Temperature of the spectrometer ",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      },
+      {
+        "PARAMETER": "SDN:R03::HUMIDITY_NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "percent",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": "",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      },
+      {
+        "PARAMETER": "SDN:R03::UV_INTENSITY_DARK_NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "count",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": "",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      },
+      {
+        "PARAMETER": "SDN:R03::FIT_ERROR_NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "dimensionless",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": "",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Nitrate fit error (dimensionless)",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      },
+      {
+        "PARAMETER": "SDN:R03::UV_INTENSITY_NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "count",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": "",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Intensity of ultra violet flux from nitrate sensor   ",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      },
+      {
+        "PARAMETER": "SDN:R03::NITRATE",
+        "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+        "PARAMETER_UNITS": "umol/kg",
+        "PARAMETER_ACCURACY": "2 umol/kg",
+        "PARAMETER_RESOLUTION": "0.01 umol/kg",
+        "PREDEPLOYMENT_CALIB_EQUATION": "The sensor returns UV_INTENSITY_DARK_NITRATE and UV_INTENSITY_NITRATE(Ntrans), a subset of continuous pixels of UV_INTENSITY_NITRATE(N), N = 1 to 256. The Ntrans indices span the interval [PIXEL_START, PIXEL_END] subset of the original array (1 to 256). Thus Ntrans(i) refers to pixel N = (PIXEL_START+i-1). PIXEL_START and PIXEL_END are defined from calibration data so that the [PIXEL_START, PIXEL_END] interval is the smallest interval of pixels that correspond to the [217 nm, 250 nm] interval of wavelengths. Only a subset of the [PIXEL_START, PIXEL_END] interval is processed to compute nitrate concentration. This subset is defined as the [PIXEL_FIT_START, PIXEL_FIT_END] interval which is the smallest interval of pixels that correspond to the [217 nm, 240 nm] interval of wavelengths (thus PIXEL_FIT_START = PIXEL_START). In the following equations the data are computed for each pixel R = PIXEL_FIT_START to PIXEL_FIT_END; ABSORBANCE_SW(R) = -log10[(UV_INTENSITY_NITRATE(R)-UV_INTENSITY_DARK_NITRATE)/UV_INTENSITY_REF_NITRATE(R)]; F(R,T) = (A+B*T)*exp[(C+D*T)*(OPTICAL_WAVELENGTH_UV(R)-OPTICAL_WAVELENGTH_OFFSET)]; E_SWA_INSITU(R) = E_SWA_NITRATE(R)*F(R,TEMP)/F(R,TEMP_CAL_NITRATE); ABSORBANCE_COR_NITRATE(R) = ABSORBANCE_SW(R)-(E_SWA_INSITU(R)*PSAL)*[1-(0.026*PRES/1000)]; Perform a multilinear regression to get MOLAR_NITRATE with estimated ABSORBANCE_COR_NITRATE(R) with ABSORBANCE_COR_NITRATE(R) = BASELINE_INTERCEPT+BASELINE_SLOPE*OPTICAL_WAVELENGTH_UV(R)+MOLAR_NITRATE*E_NITRATE(R); NITRATE = MOLAR_NITRATE/rho, where rho is the potential density [kg/L] calculated from CTD data",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+            "PIXEL_START": 34, 
+            "PIXEL_END": 74, 
+            "PIXEL_FIT_START": 34,
+            "PIXEL_FIT_END": 62,
+            "UV_INTENSITY_REF_NITRATE(Ntrans)": [33443.000,35638.000,37612.000,39116.000,40055.000,40340.000,39948.000,38961.000,37551.000,35952.000,34300.000,32792.000,31441.000,30378.000,29616.000,29112.000,28934.000,29040.000,29381.000,29973.000,30795.000,31830.000,33085.000,34491.000,36071.000,37745.000,39531.000,41303.000,43044.000,44620.000,45916.000,46888.000,47375.000,47324.000,46807.000,45746.000,44268.000,42495.000,40544.000,38490.000,36511.000],
+            "A": 1.15, 
+            "B": 0.0284, 
+            "C": -0.31013,
+            "D": 0.001222,
+            "OPTICAL_WAVELENGTH_OFFSET": 210,
+            "OPTICAL_WAVELENGTH_UV(Ntrans)": [217.460,218.260,219.060,219.860,220.660,221.460,222.260,223.060,223.860,224.660,225.470,226.270,227.070,227.870,228.670,229.480,230.280,231.080,231.880,232.690,233.490,234.300,235.100,235.900,236.710,237.510,238.320,239.120,239.930,240.730,241.540,242.350,243.150,243.960,244.770,245.570,246.380,247.190,247.990,248.800,249.610],
+            "TEMP_CAL_NITRATE": 20,
+            "E_SWA_NITRATE(Ntrans)": [0.0061508,0.0048354,0.0038029,0.0029792,0.0023265,0.0018203,0.0014364,0.0011208,0.0008725,0.0006935,0.0005536,0.0004442,0.0003467,0.0002936,0.0002417,0.0001930,0.0001744,0.0001496,0.0001362,0.0001163,0.0000939,0.0000876,0.0000854,0.0000685,0.0000640,0.0000535,0.0000414,0.0000361,0.0000288,0.0000260,0.0000118,0.0000078,0.0000085,0.0000042,-0.0000003,-0.0000057,-0.0000073,-0.0000110,-0.0000163,-0.0000178,-0.0000110],
+            "E_NITRATE(Ntrans)": [0.0043254,0.0040187,0.0037025,0.0033940,0.0030915,0.0028036,0.0025263,0.0022759,0.0020306,0.0018010,0.0015831,0.0013894,0.0012097,0.0010431,0.0008911,0.0007652,0.0006427,0.0005411,0.0004422,0.0003717,0.0003056,0.0002390,0.0001966,0.0001553,0.0001237,0.0000903,0.0000737,0.0000499,0.0000393,0.0000208,0.0000179,0.0000066,-0.0000042,-0.0000037,-0.0000063,-0.0000052,-0.0000105,-0.0000052,-0.0000041,-0.0000069,-0.0000065]
+            },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+      }  
+    ]
+}

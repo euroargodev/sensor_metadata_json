@@ -1,0 +1,154 @@
+{
+  "sensor_info": {
+    "created_by": "BAK test",
+    "date_creation": "2023-02-03T07:38:07Z",
+    "link" : "./argo.sensor.schema.json",
+    "format_version": "0.2.0",
+    "contents": "json file to describe a sensor for Argo. v0.1 draft",
+    "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
+  },
+  "@context": {
+    "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+    "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+    "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+    "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+  },
+"SENSORS": [
+    {
+      "SENSOR": "SDN:R25::OPTODE_DOXY",
+      "SENSOR_MAKER": "SDN:R26::AANDERAA",
+      "SENSOR_MODEL": "SDN:R27::AANDERAA_OPTODE_4330",
+      "SENSOR_SERIAL_NO": "3901",
+      "SENSOR_FIRMWARE_VERSION": " "
+    }
+  ],
+  "PARAMETERS": [
+    {
+      "PARAMETER": "SDN:R03::C1PHASE_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "degree",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {  },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Phase measurement with blue excitation light; see TD269 Operating manual oxygen optode 4330, 4835, 483",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::C2PHASE_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "degree",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Phase measurement with red excitation light; see TD269 Operating manual oxygen optode 4330, 4835, 4831",
+      "PREDEPLOYMENT_CALIB_DATE": " "    
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "degC",
+      "PARAMETER_ACCURACY": "0.03",
+      "PARAMETER_RESOLUTION": "0.01",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TEMP_DOXY=T0+T1*TEMP_VOLTAGE_DOXY+T2*TEMP_VOLTAGE_DOXY^2+T3*TEMP_VOLTAGE_DOXY^3+T4*TEMP_VOLTAGE_DOXY^4+T5*TEMP_VOLTAGE_DOXY^5; with TEMP_VOLTAGE_DOXY=voltage from thermistor bridge (mV)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "T0": "not available",
+        "T1": "not available",
+        "T2": "not available",
+        "T3": "not available",
+        "T4": "not available",
+        "T5": "not available"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "optode temperature, see TD269 Operating manual oxygen optode 4330, 4835, 4831",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "umol/kg",
+      "PARAMETER_ACCURACY": "8 umol/kg or 10%",
+      "PARAMETER_RESOLUTION": "1 umol/kg",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TPHASE_DOXY=C1PHASE_DOXY-C2PHASE_DOXY; Phase_Pcorr=TPHASE_DOXY+Pcoef1*PRES/1000; CalPhase=PhaseCoef0+PhaseCoef1*Phase_Pcorr+PhaseCoef2*Phase_Pcorr^2+PhaseCoef3*Phase_Pcorr^3; MOLAR_DOXY=[((c3+c4*TEMP_DOXY)/(c5+c6*CalPhase))-1]/Ksv; Ksv=c0+c1*TEMP_DOXY+c2*TEMP_DOXY^2; O2=MOLAR_DOXY*Scorr*Pcorr; Scorr=A*exp[PSAL*(B0+B1*Ts+B2*Ts^2+B3*Ts^3)+C0*PSAL^2]; A=[(1013.25-pH2O(TEMP,Spreset))/(1013.25-pH2O(TEMP,PSAL))]; pH2O(TEMP,S)=1013.25*exp[D0+D1*(100/(TEMP+273.15))+D2*ln((TEMP+273.15)/100)+D3*S]; Pcorr=1+((Pcoef2*TEMP+Pcoef3)*PRES)/1000; Ts=ln[(298.15-TEMP)/(273.15+TEMP)]; DOXY=O2/rho, where rho is the potential density [kg/L] calculated from CTD data",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "Spreset": "0",
+        "Pcoef1": "0.1",
+        "Pcoef2": "0.00022",
+        "Pcoef3": "0.0419",
+        "B0": "0.00624523",
+        "B1": "-0.00737614",
+        "B2": "-0.010341",
+        "B3": "-0.00817083",
+        "C0": "3.1201642E-3",
+        "PhaseCoef0": "-1.652",
+        "PhaseCoef1": "1",
+        "PhaseCoef2": "0",
+        "PhaseCoef3": "0",
+        "c0": "0.00261275",
+        "c1": "0.00011268",
+        "c2": "2.2309e-06",
+        "c3": "200.183",
+        "c4": "-0.223497",
+        "c5": "-43.6776",
+        "c6": "4.10578",
+        "D0": "24.4543",
+        "D1": "-67.4509",
+        "D2": "-4.8489",
+        "D3": "-0.000544",
+        "C1": "-285.56594E-6",
+        "C2": "316.32993E-9",
+        "C3": "-1.0767272E-6"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "parameter_vendorinfo": {
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PPOX_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "mbar",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TPHASE_DOXY=C1PHASE_DOXY-C2PHASE_DOXY; Phase_Pcorr=TPHASE_DOXY+Pcoef1*PRES/1000; CalPhase=PhaseCoef0+PhaseCoef1*Phase_Pcorr+PhaseCoef2*Phase_Pcorr^2+PhaseCoef3*Phase_Pcorr^3; Ksv=c0+c1*TEMP_DOXY+c2*TEMP_DOXY^2; MOLAR_DOXY=[((c3+c4*TEMP_DOXY)/(c5+c6*CalPhase))-1]/Ksv; Pcorr=1+((Pcoef2*TEMP+Pcoef3)*PRES)/1000; MOLAR_DOXY=MOLAR_DOXY*Pcorr; pH2Osat=1013.25*exp[D0+D1*(100/(TEMP+273.15))+D2*ln((TEMP+273.15)/100)]; Tcorr=44.6596*exp[2.00907+3.22014*Ts+4.05010*Ts^2+4.94457*Ts^3-2.56847e-1*Ts^4+3.88767*Ts^5]; Ts=ln[(298.15-TEMP)/(273.15+TEMP)]; PPOX_DOXY=MOLAR_DOXY*(0.20946*(1013.25-pH2Osat))/Tcorr*exp[0.317*PRES/(8.314*(TEMP+273.15))]",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "Pcoef1": "0.1",
+        "Pcoef2": "0.00022",
+        "Pcoef3": "0.0419",
+        "PhaseCoef0": "-1.652",
+        "PhaseCoef1": "1",
+        "PhaseCoef2": "0",
+        "PhaseCoef3": "0",
+        "c0": "0.00261275",
+        "c1": "0.00011268",
+        "c2": "2.2309e-06",
+        "c3": "200.183",
+        "c4": "-0.223497",
+        "c5": "-43.6776",
+        "c6": "4.10578",
+        "D0": "24.4543",
+        "D1": "-67.4509",
+        "D2": "-4.8489",
+        "C0": "3.1201642E-3",
+        "C1": "-285.56594E-6",
+        "C2": "316.32993E-9",
+        "C3": "-1.0767272E-6"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "parameter_vendorinfo": {
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    }
+  ],
+  "instrument_vendorinfo": {
+    "example": "Vendors can add something about the whole instrument here; they can add field they like as a fieldname below instrument_vendorinfo"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "sensor_info": {
+    "created_by": "BAK test",
+    "date_creation": "2023-02-03T07:38:07Z",
+    "link" : "./argo.sensor.schema.json",
+    "format_version": "0.2.0",
+    "contents": "json file to describe a sensor for Argo. v0.2 draft",
+    "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
+  },
+  "@context": {
+    "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+    "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+    "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+    "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+  },
+  "SENSORS": [
+    {
+      "SENSOR": "SDN:R25::CTD_PRES",
+      "SENSOR_MAKER": "SDN:R26::DRUCK",
+      "SENSOR_MODEL": "SDN:R27::DRUCK_2900PSIA",
+      "SENSOR_SERIAL_NO": "11076214",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2022-01-01"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_TEMP",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SBE41CP",
+      "SENSOR_SERIAL_NO": "11643",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2022-01-01"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_CNDC",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SBE41CP",
+      "SENSOR_SERIAL_NO": "11643",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema" : "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2022-01-01"
+      }
+    }
+  ],
+  "PARAMETERS": [
+    {
+      "PARAMETER": "SDN:R03::PRES",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_PRES",
+      "PARAMETER_UNITS": "decibar",
+      "PARAMETER_ACCURACY": "2.4",
+      "PARAMETER_RESOLUTION": "0.1",
+      "PREDEPLOYMENT_CALIB_EQUATION": "y = thermistor_output; t = PTHA0 + PTHA1 * y + PTHA2 * y^2; x = pressure_output - PTCA0 - PTCA1 * t - PTCA2 * t^2; n = x * PTCB0 / (PTCB0 + PTCB1 * t + PTCB2 * t^2); pressure = PA0 + PA1 * n + PA2 * n^2;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "PA0": " -1.860485e-001",
+        "PA1": " 3.913091e-004",
+        "PA2": "-2.833018e-013",
+        "PTCA0": "6.794577e+003",
+        "PTCA1": "-9.846636e+000",
+        "PTCA2": "-6.839699e-001",
+        "PTCB0": "3.203647e+005",
+        "PTCB1": "2.935842e+001",
+        "PTCB2": "-5.287902e-001",
+        "PTHA0": "-8.015838e+001",
+        "PTHA1": "4.998022e-002",
+        "PTHA2": "-4.733751e-007"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "parameter_vendorinfo": {
+        "vendor_schema" : "SBE",
+        "version": "0.1"
+      },
+      "predeployment_vendorinfo": {
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_TEMP",
+      "PARAMETER_UNITS": "degree_Celsius",
+      "PARAMETER_ACCURACY": "0.002",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Temperature ITS-90 = 1/{a0 + a1[ln(n)] + a2[ln(n)^2] + a3[ln(n)^2]} - 273.15; n = instrument output;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "a0": "-8.716632e-004",
+        "a1": " 2.937892e-004",
+        "a2": "-3.758125e-006",
+        "a3": " 1.520066e-007"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date 2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "parameter_vendorinfo": {
+        "vendor_schema": "None",
+        "anyproperty_works_here" : "any content is valide if vendor_schema is None; if vendor_schema is specfied, content will be validated agains this subschemea",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below  parameter t_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PSAL",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_CNDC",
+      "PARAMETER_UNITS": "psu",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "f=INST_FREQ*sqrt(1.0+wBOTC*t)/1000.0;Conductivity=(g+h*f^2+i*f^3+j*f^4)/(1+delta*t+epsilon*p) Siemens/meter;t=temperature[degC];p=pressure[dbar];delta=CTcor;epsilon=CPcor;         ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "g": "-1.023943e+000",
+        "h": " 1.465505e-001",
+        "i": "-2.806563e-004",
+        "j": " 4.044779e-005",
+        "CPcor": "-9.5700e-008",
+        "CTcor": "3.2500e-006",
+        "WBOTC": " 3.1475e-008"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date 2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version" : "0.1"
+      }
+    }
+  ],
+  "instrument_vendorinfo": {
+    "vendor_schema" : "SBE",
+    "version" : "0.1"
+  }
+}
