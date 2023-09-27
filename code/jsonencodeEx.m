@@ -4,7 +4,7 @@
 %   encodes MATLAB data TYPE as a JSON data type
 %
 %   Extra functionality  converts "x_context" to "@context" after JSON encoding.
-%   See also jsonencode
+%   See also jsondecode
 
 
 function json = jsonencodeEx(type, options)
