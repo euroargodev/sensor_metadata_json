@@ -1,0 +1,14 @@
+% example of a platform definition that contains a platform file and 2 sensor files.
+% here is a second comment line starting with a % 
+% if you want to force a particular suffix in the case of multiple sensors/parameters, then
+% add a "suffix=N" string after the json file name
+% eg
+% sensor-RBR-RBR_ARGO3-205908.json suffix=2
+%
+% if a suffix is not defined, then if repeat sensors/parameters are discovered, the suffix will 
+% be added automatically
+% sensor-SBE-SBE41CP-11643.json
+platform-SBE-NAVIS_EBR-1101.json
+sensor-RBR-RBR_ARGO3-205908.json 
+sensor-SBE-SBE41CP-11643.json suffix=2 
+sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json
