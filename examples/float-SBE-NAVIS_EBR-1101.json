@@ -1,7 +1,7 @@
 {
   "float_info": {
     "created_by": "BAK test",
-    "date_creation": "2023-09-27T06:23:12Z",
+    "date_creation": "2023-10-03T08:50:05Z",
     "format_version": "0.2.0",
     "link": "./argo.float.schema.json",
     "contents": "json file to describe a platform with sensors for Argo",
@@ -13,20 +13,20 @@
     "sensor-SBE-SBE41CP-11643.json",
     "sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json"
   ],
-	"@context": {
-		"SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
-		"SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
-		"SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
-		"SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
-		"SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",
-		"SDN:R22::": "http://vocab.nerc.ac.uk/collection/R22/current/",
-		"SDN:R23::": "http://vocab.nerc.ac.uk/collection/R23/current/",
-		"SDN:R24::": "http://vocab.nerc.ac.uk/collection/R24/current/",
-		"SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
-		"SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
-		"SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/",
-		"SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
-	},
+  "@context": {
+    "SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
+    "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+    "SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
+    "SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
+    "SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",
+    "SDN:R22::": "http://vocab.nerc.ac.uk/collection/R22/current/",
+    "SDN:R23::": "http://vocab.nerc.ac.uk/collection/R23/current/",
+    "SDN:R24::": "http://vocab.nerc.ac.uk/collection/R24/current/",
+    "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+    "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+    "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/",
+    "SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
+  },
   "platform_info": {
     "created_by": "ECR",
     "date_creation": "2023-02-03T07:41:54-07:00",

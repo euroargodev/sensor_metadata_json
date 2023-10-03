@@ -21,7 +21,7 @@ created_by = 'BAK test';
 % sensor-SBE-SBE41CP-11643.json
 % sensor-RBR-RBR_ARGO3-205908.json suffix=2
 %
-% The definition file cna optionally request a suffix where it is known
+% The definition file can optionally request a suffix where it is known
 % there are repeats of sensor or parameter names
 
 fn_platform = {};
@@ -54,6 +54,8 @@ fclose(fid);
 
 str = char(raw(:)');
 jsplat = jsondecodeEx(str);
+context_plat = jsplat.x_context;
+
 float_described = jsplat.platform_info.platform_described; % the present logic is that the 'platform' is the hull, and the 'float' is the platform+sensors
 
 
@@ -97,7 +99,14 @@ for kl = 1:num_sensorfiles
     % sensor_vendorinfo)
 
     str = char(raw(:)');
-    js = jsondecodeEx(str);  
+    js = jsondecodeEx(str);
+
+    % Grab the context from first sensor file -  @context in all sensor
+    % files is the same.  (Note that MATLAB's jsondecode has munged 
+    % @context --> x_context)
+    if kl == 1
+        context_sensor = js.x_context;
+    end
 
     % keep a note of the length of the sensor and parameter names as read
     % in, to use when looking for multiple sensors
@@ -289,8 +298,6 @@ for kl = 1:num_sensorfiles
         fprintf(1,'%s %40s %s %s\n','adding file',fn_sensors{kl},'with suffix',sufstrot{kl})
     end
 
-
-
     for ks = 1:numnew_s
         S{ks}.SENSOR = [S{ks}.SENSOR sufstrot{kl}];
     end
@@ -325,9 +332,31 @@ for kl = 1:num_sensorfiles
     files_merged = [files_merged ; fn_sensors{kl}];
 end
 
+% Now combine the contexts from platform and one sensor, and sort them for
+% neatness
+fnames1 = fieldnames(context_plat);
+fnames2 = fieldnames(context_sensor);
+% make name-value pairs
+cpairsall = {};
+for kn = 1:length(fnames1)
+    cpair = {fnames1{kn} context_plat.(fnames1{kn})};
+    cpairsall = [cpairsall; cpair];
+end
+for kn = 1:length(fnames2)
+    cpair = {fnames2{kn} context_sensor.(fnames2{kn})};
+    cpairsall = [cpairsall; cpair];
+end
+
+cpairsall = sortrows(cpairsall,1);
+
+for kn = 1:size(cpairsall,1)
+    context_all.(cpairsall{kn,1}) = cpairsall{kn,2};
+end
+
 % Meta metadata
 allout.float_info = info;
 allout.files_merged = files_merged;
+allout.x_context = context_all;
 allout.platform_info = jsplat.platform_info;
 allout.sensor_info_list = sensor_info_list;
 
@@ -340,28 +369,9 @@ allout.PARAMETERS = PARAMETERS;
 jsp = jsonencodeEx(allout,'PrettyPrint',true);
 jsp_struct = jsondecodeEx(jsp);
 jsp2 = jsonencodeEx(jsp_struct,'PrettyPrint',true);
-jsp3 = insert_context(jsp2);
 
 % Write out float JSON metadata file
 fid = fopen(def_file_ot,'w');
-fprintf(fid,'%s\n',jsp3);
+fprintf(fid,'%s\n',jsp2);
 fclose(fid);
 
-
-
-function jsp_with_context = insert_context(jsp)
-
-% Gross Hack to insert @context element.
-% Better would have been to dynamically merge the @context array items from 
-% the platform JSON instance and any one sensor JSON instance
-% But MATLAB cannot jsondecode / jsonencode JSON properties that begin with an 
-% "@" symbol (trying to follow jsonld here)
-
-context = [char(9) '"@context": {' char(10) char(9) char(9) '"SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",' char(10) char(9) char(9) '"SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",' char(10) char(9) char(9) '"SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",' char(10) char(9) char(9) '"SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",' char(10) char(9) char(9) '"SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",' char(10) char(9) char(9) '"SDN:R22::": "http://vocab.nerc.ac.uk/collection/R22/current/",' char(10) char(9) char(9) '"SDN:R23::": "http://vocab.nerc.ac.uk/collection/R23/current/",' char(10) char(9) char(9) '"SDN:R24::": "http://vocab.nerc.ac.uk/collection/R24/current/",' char(10) char(9) char(9) '"SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",' char(10) char(9) char(9) '"SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",' char(10) char(9) char(9) '"SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/",' char(10) char(9) char(9) '"SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"' char(10) char(9) '},' char(10)];
-key = '  "platform_info"';
-
-iplat = findstr(jsp, key);
-jsp_with_context = [jsp(1:iplat-1) context jsp(iplat:end)];
-
-return
-end
