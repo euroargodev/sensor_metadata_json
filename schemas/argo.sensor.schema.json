@@ -85,7 +85,7 @@
                         "description": "Serial number of the sensor"
                     },
                     "SENSOR_FIRMWARE_VERSION": {
-                        "type": "string"
+                        "type": "string",
                         "description": "Firmware version of the sensor, defined by the sensor_maker"
                     },
                     "sensor_vendorinfo": {
