@@ -122,9 +122,9 @@
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE380=0.01*A1_380*(RAW_DOWNWELLING_IRRADIANCE380-A0_380)*lm_380",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-          "A0_380": 2.14887e+09,
-          "A1_380": 1.65351e-07,
-          "lm_380": 1.161
+          "A0_380": "2.14887e+09",
+          "A1_380": "1.65351e-07",
+          "lm_380": "1.161"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
         "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
@@ -137,9 +137,9 @@
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE412=0.01*A1_412*(RAW_DOWNWELLING_IRRADIANCE412-A0_412)*lm_412",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-          "A0_412": 2.14786e+09, 
-          "A1_412": 2.07212e-07,
-          "lm_412": 1.368
+          "A0_412": "2.14786e+09", 
+          "A1_412": "2.07212e-07",
+          "lm_412": "1.368"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
         "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
@@ -152,9 +152,9 @@
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE490=0.01*A1_490*(RAW_DOWNWELLING_IRRADIANCE490-A0_490)*lm_490",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-          "A0_490": 2.14789e+09, 
-          "A1_490": 2.0797e-07, 
-          "lm_490": 1.365
+          "A0_490": "2.14789e+09", 
+          "A1_490": "2.0797e-07", 
+          "lm_490": "1.365"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
         "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
@@ -167,9 +167,9 @@
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": "DOWNWELLING_PAR=0.01*A1_PAR*(RAW_DOWNWELLING_PAR-A0_PAR)*lm_PAR",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-          "A0_PAR": 2.14806e+09, 
-          "A1_PAR": 3.68763e-06,
-          "lm_PAR": 1.359
+          "A0_PAR": "2.14806e+09", 
+          "A1_PAR": "3.68763e-06",
+          "lm_PAR": "1.359"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
         "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"

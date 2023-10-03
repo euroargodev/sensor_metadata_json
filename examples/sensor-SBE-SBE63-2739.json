@@ -58,10 +58,10 @@
         "PARAMETER_RESOLUTION": "0.001",
         "PREDEPLOYMENT_CALIB_EQUATION": "TEMP_DOXY=1/(TA0+TA1*L+TA2*L^2+TA3*L^3)-273.15; L=ln(100000*TEMP_VOLTAGE_DOXY/(3.3-TEMP_VOLTAGE_DOXY);",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-          "TA0": 0.00068631, 
-          "TA1": 0.00025624, 
-          "TA2": 1.9108e-07, 
-          "TA3": 1.1514e-07
+          "TA0": "0.00068631", 
+          "TA1": "0.00025624", 
+          "TA2": "1.9108e-07", 
+          "TA3": "1.1514e-07"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
         "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
@@ -74,22 +74,22 @@
         "PARAMETER_RESOLUTION": "0.001",
         "PREDEPLOYMENT_CALIB_EQUATION": "V=(PHASE_DELAY_DOXY+Pcoef1*PRES/1000)/39.457071; Ksv=C0+C1*TEMP_DOXY+C2*TEMP_DOXY^2; MLPL_DOXY=[(A0+A1*TEMP_DOXY+A2*V^2)/(B0+B1*V)-1]/Ksv; O2=MLPL_DOXY*Scorr*Pcorr; Scorr=exp[PSAL*(SolB0+SolB1*TS+SolB2*TS^2+SolB3*TS^3)+SolC0*PSAL^2]; Pcorr=1+((Pcoef2*TEMP+Pcoef3 )*PRES)/1000; TS=ln[(298.15-TEMP)/(273.15+TEMP)]; DOXY[umol/kg]=44.6596*O2/rho, where rho is the potential density [kg/L] calculated from CTD data; o2=[{(RefPhase/LumPhase)-1}/Ksv]*[Scorr]*[Pcorr]",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-          "Pcoef1": 0.115, 
-          "Pcoef2": 0.00022, 
-          "Pcoef3": 0.0419,
-          "A0": 1.05130000, 
-          "A1": -0.00150000, 
-          "A2": 0.43141800,
-          "B0": -0.24787100, 
-          "B1": 1.66296000,
-          "C0": 0.10095800, 
-          "C1": 0.00432328, 
-          "C2": 0.00005829,
-          "SolB0": -0.00624523, 
-          "SolB1": -0.00737614, 
-          "SolB2": -0.010341, 
-          "SolB3": -0.00817083,
-          "SolC0": -4.88682e-07
+          "Pcoef1": "0.115", 
+          "Pcoef2": "0.00022", 
+          "Pcoef3": "0.0419",
+          "A0": "1.05130000", 
+          "A1": "-0.00150000", 
+          "A2": "0.43141800",
+          "B0": "-0.24787100", 
+          "B1": "1.66296000",
+          "C0": "0.10095800", 
+          "C1": "0.00432328", 
+          "C2": "0.00005829",
+          "SolB0": "-0.00624523", 
+          "SolB1": "-0.00737614", 
+          "SolB2": "-0.010341", 
+          "SolB3": "-0.00817083",
+          "SolC0": "-4.88682e-07"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
         "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
