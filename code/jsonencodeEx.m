@@ -23,5 +23,8 @@ function json = jsonencodeEx(type, options)
             'ConvertInfAndNaN', options.ConvertInfAndNaN), ...
                 'x_context', '@context');
 
+    % undo jsondecode of "SDN:Rxx::" to "SND_Rxx__"
+    json = regexprep(json, 'SDN_R(\d+)__', 'SDN:R$1::');
+
     return
 end
