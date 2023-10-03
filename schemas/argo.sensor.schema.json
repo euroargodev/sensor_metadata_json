@@ -86,6 +86,7 @@
                     },
                     "SENSOR_FIRMWARE_VERSION": {
                         "type": "string"
+                        "description": "Firmware version of the sensor, defined by the sensor_maker"
                     },
                     "sensor_vendorinfo": {
                         "$ref" : "./argo.vendors.schema.json#/$defs/sensor_vendorinfo"                        
@@ -112,14 +113,14 @@
                         "type" : "string",
                         "format" : "uri",
                         "pattern" : "^SDN:R03::",
-                        "description": "PARAMETER code must be valid in current Argo reference table R03",
+                        "description": "PARAMETER string must be valid in current Argo reference table R03",
                         "validation_uri": "http://vocab.nerc.ac.uk/collection/R03/current/"
                     },
                     "PARAMETER_SENSOR": {
                         "type" : "string",
                         "format" : "uri",
                         "pattern" : "^SDN:R25::",
-                        "description": "PARAMETER code must be valid in current Argo reference table R25 and must be list as a SENSOR in the SENSORS section above",
+                        "description": "PARAMETER_SENSOR string must be valid in current Argo reference table R25 and must be listed as a SENSOR in the SENSORS section above",
                         "validation_uri": "http://vocab.nerc.ac.uk/collection/R25/current/"
                     },
                     "PARAMETER_UNITS": {

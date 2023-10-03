@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "./argo.float.schema.json",
     "title": "JSON Schema for Argo Program float = platform + sensors",
-    "description": "A JSON Schema used to describe an Argo float including its sensors.  See Argo User's Manual. Metada format Version 3.41.1",
+    "description": "A JSON Schema used to describe an Argo float. A float consists of a single platform and any number of sensors.  See Argo User's Manual. Metada format Version 3.41.1",
     "format_version": {
         "const": "0.2.0"
     },

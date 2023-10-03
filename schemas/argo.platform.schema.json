@@ -2,7 +2,7 @@
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "./argo.platform.schema.json",
     "title": "JSON Schema for Argo Program Platforms",
-    "description": "A JSON Schema used to describe an Argo float apart from its sensors.  See Argo User's Manual. Metada format Version 3.41.1",
+    "description": "A JSON Schema used to describe an Argo platform. The platform includes the hull, controller, buoyancy engine, positioning and transmission systems, but not the sensors.  See Argo User's Manual. Metada format Version 3.41.1",
     "format_version": {
         "const": "0.2.0"
     },
@@ -107,21 +107,21 @@
                         "type" :"string",
                         "format": "uri",
                         "pattern": "^SDN:R10::",
-                        "description": "TRANS_SYSTEM List of telecommunication systems. Each entry must be valid in the current reference table R10",
+                        "description": "TRANS_SYSTEM is a list of telecommunication systems. Each entry must be valid in the current reference table R10",
                         "validation-uri": "https://vocab.nerc.ac.uk/collection/R10/current/"
                     }
                 },
                 "FIRMWARE_VERSION": {
                     "type": "string",
-                    "description": "The firmware version. This is specified as per the format on the manufacturer’s manual."
+                    "description": "Firmware version of the platform, defined by the platform_maker. This is specified as per the format on the manufacturer’s manual."
                 },
                 "MANUAL_VERSION": {
                     "type": "string",
-                    "description": "The version date or number for the manual for the float."
+                    "description": "The version date or number for the manual for the platform, defined by the platform_maker."
                 },
                 "FLOAT_SERIAL_NO": {
                     "type": "string",
-                    "description": "This field should contain only the serial number of the float."
+                    "description": "This field should contain only the serial number of the platform, defined by the platform_maker."
                 },
                 "WMO_INST_TYPE": {
                     "type": "string",
