@@ -1,7 +1,7 @@
 {
   "float_info": {
     "created_by": "BAK test",
-    "date_creation": "2023-10-06T10:10:05Z",
+    "date_creation": "2023-10-06T10:26:55Z",
     "format_version": "0.2.0",
     "link": "./argo.float.schema.json",
     "contents": "json file to describe a platform with sensors for Argo",

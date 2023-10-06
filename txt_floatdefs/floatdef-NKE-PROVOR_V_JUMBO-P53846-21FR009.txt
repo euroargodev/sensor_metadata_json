@@ -1,3 +1,5 @@
+% demo file to add a large selection of sensors to a NKE platform
+% these are not the correct sensors for this serial number of float
 platform-NKE-PROVOR_V_JUMBO-P53846-21FR009.json
 sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json
 sensor-RBR-RBR_ARGO3-205908.json
