@@ -9,10 +9,10 @@ Follows Argo float, sensor, paramater, and configuration schemes as well as iden
 | **examples** | Some spare example files, probably redundant|
 | **json_platforms** | Schema-compliant examples for platforms|
 | **json_sensors** | Schema-compliant examples for sensors|
-| **json_floats** | Schema-compliant examples for floats|
+| **json_floats** | Schema-compliant examples for floats, made using make_float_json_from_floatdef.m|
 | **schemas** | JSON Schemas for sensors, platforms, and floats.  Needed by validating JSON parsers.|
 | **txt_floatdefs** | Example text floatdef files that define a float being made up of one platform and multiple sensors|
-| **nc_meta** | Fairly complete Argo meta.nc files made from the json_float files|
+| **nc_meta** | Fairly complete Argo meta.nc files made from the json_float files, made using make_argo_metanc_from_floatdef_json.m|
 
 Current effort involves @SBS-EREHM (Eric Rehm, Sea-Bird Scientific) and @BrianKingNOC (Brian King, NOC)
 
