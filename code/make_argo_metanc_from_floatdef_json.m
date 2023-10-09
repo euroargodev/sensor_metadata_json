@@ -125,7 +125,7 @@ def.sensor_argo_fields = {
     };
 
 def.sensor_nonargo_fields = {
-    'SENSOR_FIRMWARE' % not an argo field
+    'SENSOR_FIRMWARE_VERSION' % not an argo field
     };
 
 def.parameter_argo_fields = {
