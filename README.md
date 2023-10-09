@@ -14,5 +14,5 @@ Follows Argo float, sensor, paramater, and configuration schemes as well as iden
 | **txt_floatdefs** | Example text floatdef files that define a float being made up of one platform and multiple sensors|
 | **nc_meta** | Fairly complete Argo meta.nc files made from the json_float files, made using make_argo_metanc_from_floatdef_json.m|
 
-Current effort involves @SBS-EREHM (Eric Rehm, Sea-Bird Scientific) Jean_Michel Leconte, RBR, and @BrianKingNOC (Brian King, NOC)
+Current effort involves @SBS-EREHM (Eric Rehm, Sea-Bird Scientific) Jean-Michel Leconte, RBR, and @BrianKingNOC (Brian King, NOC)
 
