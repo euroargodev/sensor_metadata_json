@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import jsonschema
@@ -12,6 +13,11 @@ from typing import ClassVar
 from referencing import Registry
 from referencing.jsonschema import DRAFT7
 from referencing import Resource
+from typing import Dict, List
+import requests
+
+# Define NVS host
+VOCAB_HOST = os.environ.get("VOCAB_HOST", "http://vocab.nerc.ac.uk")
 
 # Path to schemas on local filesystem
 SCHEMAS = Path("./schemas")
@@ -98,7 +104,13 @@ class NVS :
                             
 
     def validateTerm(self, termUrn) :
-        '''Method for mapping short-form termUri into termUrl.  Then does HTTP get of termUrl succeed?'''
+        '''Method for mapping short-form termUri into termUrl.  Then does HTTP get of termUrl succeed?
+           Extended with code from Violetta Paba at NERC to also to attempt to validate the term
+           as an altLabel
+           
+           This code does NOT yet handle repeated sensors, TEMP2, PSAL2, etc. 
+           Why?  Because there are some terms that naturally end in numbers, e.g., 
+           '''
 
         # termUrn        "SDN:R25::FLUOROMETER_CHLA"
         #                (Defined here: https://www.seadatanet.org/Standards/Common-Vocabularies)
@@ -122,13 +134,25 @@ class NVS :
         if r.status_code == 200:
             # testing ...
             if r.from_cache:
-                print("(cache)  " + termUrl)
+                print(f'(cache)  {termUrl}')
             else :
-                print("(server) " + termUrl)
+                print(f'(server) {termUrl}')
             return True
         else:
+            # If not found on NVS server (or cache), assume term is actually an altLabel
+            # Query NVS for a list of altLabels for this vocabulary Rxx and check to
+            # see if the altLabel is associated with a termID Url.  If it is, then
+            # this (mis)coding of a termID with an altLabel is OK.  Otherwise, fail.
             print(f'******** {termUrl} not found, HTTP status code {r.status_code}')
-            return False
+            print(f'Search altLabels....')
+            results = get_vocab_data(VOCAB_HOST,parsedUrn[1])
+            termUrls= [result['uri'] for result in results if result['alt_label']==term]
+            if (len(termUrls) == 1) :
+                print(f'(altLabel) {term} found --> {termUrls[0]}')
+                return True
+            else :
+                print(f'******** {termUrl} not found as altLabel either')
+                return False
 
     def validate(self, jpointer, variables) :
         '''Validate terms of Sensors or Parameters variables'''
@@ -168,6 +192,50 @@ class NVS :
         else:
             return False
 
+
+def get_sparql_query(vocab_host: str, vocab_id: str) -> str:
+    """Generates a SPARQL query for retrieving vocab data.
+
+    Args:
+        vocab_host (str): e.g. http://vocab.nerc.ac.uk
+        vocab_id (str): e.g. P01, L22, etc.
+
+    Returns:
+        str: SPARQL query created based on input params.
+    """
+    sparql_query = """
+    PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    SELECT DISTINCT (?c as ?uri) (?pl as ?altLabel)
+    WHERE {{
+        <{0}/collection/{1}/current/> skos:member ?c .
+        ?c skos:altLabel ?pl .
+        ?c owl:deprecated ?isDeprecated .
+        FILTER (?isDeprecated = "false") .
+    }}
+    ORDER BY ?pl
+    """
+    return sparql_query.format(vocab_host, vocab_id)
+
+
+def get_vocab_data(vocab_host: str, vocab_id: str) -> List[Dict]:
+    """Retrieves data for a given vocab.
+
+    Args:
+        vocab_host (str): Where to fetch the data from, e.g. http://vocab.nerc.ac.uk
+        vocab_id (str): Which vocab to fetch, e.g. L22
+
+    Returns:
+        List[Dict]: JSON data containing all terms in the specified vocab.
+    """
+    query_url = f"{vocab_host}/sparql/sparql"
+    query = get_sparql_query(vocab_host, vocab_id)
+
+    resp = requests.post(query_url, data=query, headers={"Content-Type": "application/sparql-query"}, timeout=60)
+    results = [
+        {"uri": x["uri"]["value"], "alt_label": x["altLabel"]["value"]} for x in resp.json()["results"]["bindings"]
+    ]
+    return results
 
 def main():
     '''Validate a Argo JSON instance (SENSOR, PLATFORM, FLOAT) against schema and NVS controlled vocabularies'''
