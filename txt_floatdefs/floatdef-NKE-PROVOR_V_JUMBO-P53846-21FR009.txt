@@ -1,0 +1,15 @@
+% demo file to add a large selection of sensors to a NKE platform
+% these are not the correct sensors for this serial number of float
+platform-NKE-PROVOR_V_JUMBO-P53846-21FR009.json
+sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json
+sensor-RBR-RBR_ARGO3-205908.json
+sensor-SATLANTIC-SATLANTIC_OCR504_ICSW-42139.json
+sensor-SATLANTIC-SUNA_V2-1527.json
+sensor-SBE-SBE41CP-11643.json
+sensor-SBE-SBE63_OPTODE-2739.json
+sensor-SBE-SEAFET-11341.json
+sensor-SBE-SEAFET-17682.json
+sensor-SBE-SEAFET-17683.json
+sensor-SBE-SEAFET-18950.json
+sensor-WETLABS-ECO_FLBBCD-3666.json
+sensor-WETLABS-MCOMS_FLBBCD-0157.json

@@ -1,19 +1,67 @@
-% matlab script to read in the json files for a platform and the attached
-% sensors. A single float json file is output
-
-% The script will manage cases whrere a sensor or parameter are repeated
-% In that case, a suffix will be chosen and added to the sensor and
-% parameter names for that file
-clear;
-
-float_id = 'SBE-NAVIS_EBR-1101'; % root name for a float definition text file and json output file
-def_file_in = ['floatdef-' float_id '.txt']; % this is a plain text list of json file names, which defines the float and its sensors
-def_file_ot = ['float-' float_id '.json']; % The aggregated json is output to this file
-
-created_by = 'BAK test';
-
-
-% example of def_file contents might be
+function jsp2 = make_float_json_from_floatdef(float_id,dirnames)
+%
+%
+% USE:
+%  make_float_json(float_id,[dirnames])
+%
+%
+%
+% This script will combine json files from one platform and multiple
+% sensors to create a json file for the entire float
+%
+% INPUT:
+%  float_id is a string that describes the float
+%  is has three components separated by dashes, made up of components that
+%  uniquley identify the float
+%  platform_maker-platform_type-float_serial_number
+%  eg 'SBE-NAVIS_EBR-1101'
+%  Note that the paltform_maker and platform_type are controlled
+%  vocabularies, and the float_serial_number is assumed to be uniquely
+%  assigned to the platform by the platform_maker
+%  The platform_maker and platform_type should not contain any dash
+%  characters. The float_serial_number is defined by the platform_maker and
+%  is uncontrolled. It might contain dashes which is OK. If it contains
+%  characters that are not allowed in matlab file names, then code might
+%  break.
+%
+%
+% dirnames is a structure that carries the location of directories for input and output files
+%
+% fieldnames in the dirnames structure can be any or all or none of
+% dirnames.json_floats
+% dirnames.json_sensors
+% dirnames.json_platforms
+% dirnames.txt_floatdefs
+%
+% if dirnames.json_floats is not defined, it is assumed to be the current directory
+% if dirnames.json_sensors is not defined, it is assumed to be hthe same as dirnames.floats
+% if dirnames.json_platforms is not defined, it is assumed to be hthe same as dirnames.floats
+% if dirnames.txt_floatdefs is not defined, it is assumed to be hthe same as dirnames.floats
+%
+% if the dirnames argument is omitted altogether, then all input and output files will be assumed to be in the current directory
+%
+%
+%
+%
+%  dirnames.txt_floatdefs is the directory where float definintion txt files
+%  reside.
+%
+%  dirnames.json_sensors
+%  and
+%  dirnames.json_platforms
+%  are the directory where the platform and sensor json files reside
+%
+%  dirnames.json_floats is the directory where the float json file will
+%  be written
+%
+%
+%
+%  The script will look for a plain text file in the floatdef_directory,
+%  with the name
+%  ['floatdef-' float_id '.txt']
+%  That file should contain a list of json file names, one platform folowed
+%  by any number of sensors. It can have comment lines introduced by %
+%  characters, eg
 %
 % % example of a platform definition that contains a platform file and 2 sensor files.
 % % here is a second comment line
@@ -23,9 +71,49 @@ created_by = 'BAK test';
 %
 % The definition file can optionally request a suffix where it is known
 % there are repeats of sensor or parameter names
+%
+% The script will manage cases whrere a sensor or parameter are repeated
+% In that case, a suffix will be chosen and added to the sensor and
+% parameter names for that file
+%
+% OUTPUT:
+%  a new json file is written to a file, with filename
+%  ['float-' float_id '.json']
+%
+%  The output argument is the full new json string
+%
+% Examples
+%
+% js = make_float_json_from_floatdef('SBE-NAVIS_EBR-1101')
+% dirnames.json_floats = '/Users/bak/floats/json_floats'; js = make_float_json_from_floatdef('SBE-NAVIS_EBR-1101',dirnames)
+
+
+if nargin < 2; dirnames.json_floats = '.'; end
+
+if ~isfield(dirnames,'json_floats'); dirnames.json_floats = '.'; end
+if ~isfield(dirnames,'json_sensors'); dirnames.json_sensors = dirnames.json_floats; end
+if ~isfield(dirnames,'json_platforms'); dirnames.json_platforms = dirnames.json_floats; end
+if ~isfield(dirnames,'txt_floatdefs'); dirnames.txt_floatdefs = dirnames.json_floats; end
+
+
+
+
+def_file_in = [dirnames.txt_floatdefs '/floatdef-' float_id '.txt']; % this is a plain text list of json file names, which defines the float and its sensors
+def_file_ot = [dirnames.json_floats '/float-' float_id '.json']; % The aggregated json is output to this file
+
+
+
+
+created_by = 'BAK test'; % presently hardwired
+
+
 
 fn_platform = {};
 fn_sensors = {};
+if exist(def_file_in,'file') ~= 2
+    warning('Floatdef file not found; check directory and filename;');
+    keyboard
+end
 fid = fopen(def_file_in,'r');
 while 1
     tline = fgetl(fid);
@@ -40,6 +128,27 @@ while 1
 end
 fclose(fid);
 
+% The float_id when this script is called, the name of the floatdef file,
+% the name of the platform json file and the contents of the platform json
+% file should all match
+%
+% We already know the float_id matches the name of the floatdef file,
+% otherwise that file will not have been found and read.
+%
+% now check that the filename of the floatdef file matches the filename of the platform
+% json that is requested inside the floatdef file
+%
+% the platform json name should be made up of
+% platform-floatid.json, where floatid is the input argument to this script
+str1 = ['platform-' float_id '.json']; % made from the filename of the floatdef
+str2 = fn_platform{1}; % platform file name read in from the floatdef
+if ~strcmp(str1,str2)
+    warning('json file name inside the floatdef file does not match the name of the floatdef file')
+    fprintf(2,'%s\n%s\n%s\n%s\n','platform json file name should be',str1,'json file listed inside the floatdef is',str2)
+    keyboard
+end
+
+
 
 % read the platform json file
 
@@ -48,7 +157,7 @@ fnin(strfind(fnin,' ')) = []; % remove any spaces in filename
 
 fprintf(1,'%s %s\n','Reading',fnin)
 
-fid = fopen(fnin);
+fid = fopen([dirnames.json_platforms '/' fnin]);
 raw = fread(fid,inf);
 fclose(fid);
 
@@ -57,6 +166,26 @@ jsplat = jsondecodeEx(str);
 context_plat = jsplat.x_context;
 
 float_described = jsplat.platform_info.platform_described; % the present logic is that the 'platform' is the hull, and the 'float' is the platform+sensors
+
+% The float_id when this script is called, the name of the floatdef file,
+% the name of the platform json file and the contents of the platform json
+% file should all match
+%
+% We already know the float_id matches the name of the floatdef file,
+% otherwise that file will not have been found and read.
+%
+% And we already checked that the filename of the floatdef file matches the filename of the platform
+% json that is requested inside the floatdef file
+%
+% now check that the contents of the platform json file that has been requested also match the
+% float_id
+str1 = float_id; % the argument passed in to this script
+str2 = [remove_nvs_tablenum(jsplat.PLATFORM.PLATFORM_MAKER) '-' remove_nvs_tablenum(jsplat.PLATFORM.PLATFORM_TYPE) '-' jsplat.PLATFORM.FLOAT_SERIAL_NO];
+if ~strcmp(str1,str2)
+    warning('float_id called in this script does not match the values saved inside the platform json file')
+    fprintf(2,'%s\n%s\n%s\n%s\n','float_id is',str1,'values inside platform json file correspond to float_id',str2)
+    keyboard
+end
 
 
 % now read the sensor json files
@@ -88,21 +217,44 @@ for kl = 1:num_sensorfiles
 
     fprintf(1,'%s %s\n','Reading',fnin)
 
-    fid = fopen(fnin,'r');
+    fid = fopen([dirnames.json_sensors '/' fnin],'r');
     raw = fread(fid,inf);
     fclose(fid);
-    
+
     % Decode the JSON file into MATLAB structures
     %
-    % jsondecodeEx() forces cell arrays for SENSORS, PARAMETERS so that 
+    % jsondecodeEx() forces cell arrays for SENSORS, PARAMETERS so that
     % each SENSOR or PARAMETER can have varying content (e.g.,
     % sensor_vendorinfo)
 
     str = char(raw(:)');
     js = jsondecodeEx(str);
 
+
+    % Now we have read a sensor json file. Check that the values saved in
+    % the sensor json file match the file name of the json file
+    %
+    % In the case where there are several sensors in one sensor json file,
+    % eg a SBE41 or FLBBCD, then the sensor filename can only be made from
+    % one SENSOR_SERIAL_NO. In the case of a SBE41, the PRES is usually
+    % quoted first, but the SENSOR_SERIAL_NO is usally takemn from the TEMP
+    % or PSAL, quoted after the PRES. So in a first cut of this check, we
+    % look for the SENSOR_SERIAL_NO of the last sensor in the sensor json
+    % file, and comapre that with the sensor serial number used to make the
+    % sensor json filename. This is not guaranteed to work robustly.
+    %
+    str1 = fnin; % the sensor filename
+    str1 = str1(8:end-5); % remove the 'sensor-' and '.json' part of the filename
+    str2 = [remove_nvs_tablenum(js.SENSORS{end}.SENSOR_MAKER) '-' remove_nvs_tablenum(js.SENSORS{end}.SENSOR_MODEL) '-' js.SENSORS{end}.SENSOR_SERIAL_NO];
+    if ~strcmp(str1,str2)
+        warning('sensor_id in sensor json filename does not match the values saved inside the sensor json file')
+        fprintf(2,'%s\n%s\n%s\n%s\n','sensor_id from filename is',str1,'values inside sensor json file correspond to sensor_id',str2)
+        keyboard
+    end
+
+
     % Grab the context from first sensor file -  @context in all sensor
-    % files is the same.  (Note that MATLAB's jsondecode has munged 
+    % files is the same.  (Note that MATLAB's jsondecode has munged
     % @context --> x_context)
     if kl == 1
         context_sensor = js.x_context;
@@ -374,4 +526,3 @@ jsp2 = jsonencodeEx(jsp_struct,'PrettyPrint',true);
 fid = fopen(def_file_ot,'w');
 fprintf(fid,'%s\n',jsp2);
 fclose(fid);
-

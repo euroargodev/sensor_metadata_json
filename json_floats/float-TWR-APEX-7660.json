@@ -1,0 +1,1640 @@
+{
+  "float_info": {
+    "created_by": "BAK test",
+    "date_creation": "2023-10-06T10:26:45Z",
+    "format_version": "0.2.0",
+    "link": "./argo.float.schema.json",
+    "contents": "json file to describe a platform with sensors for Argo",
+    "float_described": "TWR-APEX-7660"
+  },
+  "files_merged": [
+    "platform-TWR-APEX-7660.json",
+    "sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json",
+    "sensor-RBR-RBR_ARGO3-205908.json",
+    "sensor-SATLANTIC-SATLANTIC_OCR504_ICSW-42139.json",
+    "sensor-SATLANTIC-SUNA_V2-1527.json",
+    "sensor-SBE-SBE41CP-11643.json",
+    "sensor-SBE-SBE63_OPTODE-2739.json",
+    "sensor-SBE-SEAFET-11341.json",
+    "sensor-SBE-SEAFET-17682.json",
+    "sensor-SBE-SEAFET-17683.json",
+    "sensor-SBE-SEAFET-18950.json",
+    "sensor-WETLABS-ECO_FLBBCD-3666.json",
+    "sensor-WETLABS-MCOMS_FLBBCD-0157.json"
+  ],
+  "@context": {
+    "SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
+    "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+    "SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
+    "SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
+    "SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",
+    "SDN:R22::": "http://vocab.nerc.ac.uk/collection/R22/current/",
+    "SDN:R23::": "http://vocab.nerc.ac.uk/collection/R23/current/",
+    "SDN:R24::": "http://vocab.nerc.ac.uk/collection/R24/current/",
+    "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+    "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+    "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/",
+    "SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
+  },
+  "platform_info": {
+    "created_by": "ECR",
+    "date_creation": "2023-02-03T07:41:54-07:00",
+    "link": "./argo.platform.schema.json",
+    "format_version": "0.2.0",
+    "contents": "json file to describe an APEX platform for Argo from WMOID 5904779",
+    "platform_described": "TWR-APEX-7660"
+  },
+  "sensor_info_list": [
+    {
+      "created_by": "BAK test",
+      "date_creation": "2023-02-03T07:38:07Z",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe a sensor for Argo. v0.1 draft",
+      "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
+    },
+    {
+      "created_by": "BAK test",
+      "date_creation": "2023-02-03T07:38:07Z",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
+      "sensor_described": "RBR-RBR_ARGO3-205908"
+    },
+    {
+      "created_by": "ECR test",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an OCR-504 sensor for sensor schema v0.2.0 draft",
+      "sensor_described": "SBS-OCR-504-42139"
+    },
+    {
+      "created_by": "ECR test",
+      "date_creation": "2023-08-31T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "sensor_described": "SATLANTIC-SUNA_V2-1527 found on float WMOID 5906509"
+    },
+    {
+      "created_by": "BAK test",
+      "date_creation": "2023-02-03T07:38:07Z",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe a sensor for Argo. v0.2 draft",
+      "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
+    },
+    {
+      "created_by": "ECR test",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.2.0 draft",
+      "sensor_described": "SBE-SBE63_OPTOPDE-2739"
+    },
+    {
+      "created_by": "SBScientific-MetaWidget-V1.0",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an SBS-SEAFET on float 5906970 for sensor schema v0.2.0 draft",
+      "sensor_described": "SBE-SEAFET-11341 on float 5906970"
+    },
+    {
+      "created_by": "SBE ph_calsheet_creator.py",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+      "sensor_described": "SBS-SEAFET-17682"
+    },
+    {
+      "created_by": "SBE SBE-pHcalToJSON.py",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+      "sensor_described": "SBS-SEAFET-17683"
+    },
+    {
+      "created_by": "SBE ph_calsheet_creator.py",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+      "sensor_described": "SBS-SEAFET-18950"
+    },
+    {
+      "created_by": "ECR test",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an ECO sensor FLBBCDREM-3666 for sensor schema v0.2.0 draft",
+      "sensor_described": "WETLABS-ECO_FLBBCD-3666"
+    },
+    {
+      "created_by": "ECR test",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link": "./argo.sensor.schema.json",
+      "format_version": "0.2.0",
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "sensor_described": "WETLABS-MCOMS_FLBBCD-0157"
+    }
+  ],
+  "PLATFORM": {
+    "DATA_TYPE": "SDN:R01::META",
+    "POSITIONING_SYSTEM": [
+      "SDN:R09::GPS"
+    ],
+    "TRANS_SYSTEM": [
+      "SDN:R10::IRIDIUM"
+    ],
+    "PLATFORM_FAMILY": "SDN:R22::FLOAT",
+    "PLATFORM_TYPE": "SDN:R23::APEX",
+    "PLATFORM_MAKER": "SDN:R24::TWR",
+    "WMO_INST_TYPE": "SDN:R08::846",
+    "FIRMWARE_VERSION": "030716",
+    "MANUAL_VERSION": "030716",
+    "FLOAT_SERIAL_NO": "7660",
+    "BATTERY_TYPE": "Lithium 15.1 V",
+    "BATTERY_PACKS": "U",
+    "CONTROLLER_BOARD_TYPE_PRIMARY": "SDN:R28::APF9",
+    "CONTROLLER_BOARD_SERIAL_NO_PRIMARY": "12448",
+    "platform_vendorinfo": {
+      "vendor_schema": "None"
+    }
+  },
+  "SENSORS": [
+    {
+      "SENSOR": "SDN:R25::OPTODE_DOXY",
+      "SENSOR_MAKER": "SDN:R26::AANDERAA",
+      "SENSOR_MODEL": "SDN:R27::AANDERAA_OPTODE_4330",
+      "SENSOR_SERIAL_NO": "3901",
+      "SENSOR_FIRMWARE_VERSION": " "
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_PRES",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "RBR",
+        "version": "1.0",
+        "RBR_foo1": 1,
+        "RBR_foo2": "twotwo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_TEMP",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_CNDC",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_TEMP_CNDC",
+      "SENSOR_MAKER": "SDN:R26::RBR",
+      "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_SERIAL_NO": "205908",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
+      "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+      "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+      "SENSOR_SERIAL_NO": "42139",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-10-20",
+        "CONFIG_OcrDownIrrWavelength1_nm": 380,
+        "CONFIG_OcrDownIrrBandwidth1_nm": 10
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+      "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+      "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+      "SENSOR_SERIAL_NO": "42139",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-10-20",
+        "CONFIG_OcrDownIrrWavelength2_nm": 412,
+        "CONFIG_OcrDownIrrBandwidth2_nm": 10
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
+      "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+      "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+      "SENSOR_SERIAL_NO": "42139",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-10-20",
+        "CONFIG_OcrDownIrrWavelength3_nm": 490,
+        "CONFIG_OcrDownIrrBandwidth3_nm": 10
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::RADIOMETER_PAR",
+      "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+      "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+      "SENSOR_SERIAL_NO": "42139",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-10-20"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+      "SENSOR_MODEL": "SDN:R27::SUNA_V2",
+      "SENSOR_SERIAL_NO": "1527",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2021-01-08",
+        "CONFIG_SunaApfFrameOutputPixelBegin_NUMBER": 34,
+        "CONFIG_SunaApfFrameOutputPixelEnd_NUMBER": 74
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_PRES2",
+      "SENSOR_MAKER": "SDN:R26::DRUCK",
+      "SENSOR_MODEL": "SDN:R27::DRUCK_2900PSIA",
+      "SENSOR_SERIAL_NO": "11076214",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2022-01-01"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_TEMP2",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SBE41CP",
+      "SENSOR_SERIAL_NO": "11643",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2022-01-01"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::CTD_CNDC2",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SBE41CP",
+      "SENSOR_SERIAL_NO": "11643",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2022-01-01"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::OPTODE_DOXY2",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SBE63_OPTODE",
+      "SENSOR_SERIAL_NO": "2739",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-12-17"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SEAFET",
+      "SENSOR_SERIAL_NO": "11341",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-12-17"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SEAFET",
+      "SENSOR_SERIAL_NO": "17682",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2023-09-24",
+        "SBE_pHType": "Float",
+        "SBE_ISFET_SERIAL_NO": "11764",
+        "SBE_REFERENCE_SERIAL_NO": "11773"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SEAFET",
+      "SENSOR_SERIAL_NO": "17683",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2023-09-27",
+        "SBE_pHType": "Float",
+        "SBE_ISFET_SERIAL_NO": "11764",
+        "SBE_REFERENCE_SERIAL_NO": "11773"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "SENSOR_MAKER": "SDN:R26::SBE",
+      "SENSOR_MODEL": "SDN:R27::SEAFET",
+      "SENSOR_SERIAL_NO": "18950",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2023-09-24",
+        "SBE_pHType": "Float",
+        "SBE_ISFET_SERIAL_NO": "10790",
+        "SBE_REFERENCE_SERIAL_NO": "MB025"
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
+      "SENSOR_SERIAL_NO": "3666",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2014-07-17",
+        "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": 470,
+        "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": 23,
+        "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": 695,
+        "CONFIG_EcoChlaFluorescenceEmissionBandwidth_nm": 70
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
+      "SENSOR_SERIAL_NO": "0157",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2014-07-17",
+        "CONFIG_EcoBetaWavelength_nm": 700,
+        "CONFIG_EcoBetaBandwidth_nm": 25,
+        "CONFIG_EcoBetaAngle_angularDeg": 124
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::FLUOROMETER_CDOM",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
+      "SENSOR_SERIAL_NO": "0157",
+      "SENSOR_FIRMWARE_VERSION": " ",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2014-07-17",
+        "CONFIG_EcoCdomFluorescenceExcitationWavelength_nm": 370,
+        "CONFIG_EcoCdomFluorescenceExcitationBandwidth_nm": 15,
+        "CONFIG_EcoCdomFluorescenceEmissionWavelength_nm": 460,
+        "CONFIG_EcoCdomFluorescenceEmissionBandwidth_nm": 120
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::FLUOROMETER_CHLA2",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+      "SENSOR_SERIAL_NO": "0157",
+      "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-01-01",
+        "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": 470,
+        "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": 23,
+        "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": 695,
+        "CONFIG_EcoChlaFluorescenceEmissionBandwidth_nm": 70
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP7002",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+      "SENSOR_SERIAL_NO": "0157",
+      "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-01-01",
+        "CONFIG_EcoBetaWavelength_nm": 700,
+        "CONFIG_EcoBetaBandwidth_nm": 25,
+        "CONFIG_EcoBetaAngle_angularDeg": 150
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::FLUOROMETER_CDOM2",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+      "SENSOR_SERIAL_NO": "0157",
+      "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "SBE_manufacturing_date": "2020-01-01",
+        "CONFIG_EcoCdomFluorescenceExcitationWavelength_nm": 370,
+        "CONFIG_EcoCdomFluorescenceExcitationBandwidth_nm": 15,
+        "CONFIG_EcoCdomFluorescenceEmissionWavelength_nm": 460,
+        "CONFIG_EcoCdomFluorescenceEmissionBandwidth_nm": 120
+      }
+    }
+  ],
+  "PARAMETERS": [
+    {
+      "PARAMETER": "SDN:R03::C1PHASE_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "degree",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Phase measurement with blue excitation light; see TD269 Operating manual oxygen optode 4330, 4835, 483",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::C2PHASE_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "degree",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Phase measurement with red excitation light; see TD269 Operating manual oxygen optode 4330, 4835, 4831",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "degC",
+      "PARAMETER_ACCURACY": "0.03",
+      "PARAMETER_RESOLUTION": "0.01",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TEMP_DOXY=T0+T1*TEMP_VOLTAGE_DOXY+T2*TEMP_VOLTAGE_DOXY^2+T3*TEMP_VOLTAGE_DOXY^3+T4*TEMP_VOLTAGE_DOXY^4+T5*TEMP_VOLTAGE_DOXY^5; with TEMP_VOLTAGE_DOXY=voltage from thermistor bridge (mV)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "T0": "not available",
+        "T1": "not available",
+        "T2": "not available",
+        "T3": "not available",
+        "T4": "not available",
+        "T5": "not available"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "optode temperature, see TD269 Operating manual oxygen optode 4330, 4835, 4831",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "umol/kg",
+      "PARAMETER_ACCURACY": "8 umol/kg or 10%",
+      "PARAMETER_RESOLUTION": "1 umol/kg",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TPHASE_DOXY=C1PHASE_DOXY-C2PHASE_DOXY; Phase_Pcorr=TPHASE_DOXY+Pcoef1*PRES/1000; CalPhase=PhaseCoef0+PhaseCoef1*Phase_Pcorr+PhaseCoef2*Phase_Pcorr^2+PhaseCoef3*Phase_Pcorr^3; MOLAR_DOXY=[((c3+c4*TEMP_DOXY)/(c5+c6*CalPhase))-1]/Ksv; Ksv=c0+c1*TEMP_DOXY+c2*TEMP_DOXY^2; O2=MOLAR_DOXY*Scorr*Pcorr; Scorr=A*exp[PSAL*(B0+B1*Ts+B2*Ts^2+B3*Ts^3)+C0*PSAL^2]; A=[(1013.25-pH2O(TEMP,Spreset))/(1013.25-pH2O(TEMP,PSAL))]; pH2O(TEMP,S)=1013.25*exp[D0+D1*(100/(TEMP+273.15))+D2*ln((TEMP+273.15)/100)+D3*S]; Pcorr=1+((Pcoef2*TEMP+Pcoef3)*PRES)/1000; Ts=ln[(298.15-TEMP)/(273.15+TEMP)]; DOXY=O2/rho, where rho is the potential density [kg/L] calculated from CTD data",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "Spreset": "0",
+        "Pcoef1": "0.1",
+        "Pcoef2": "0.00022",
+        "Pcoef3": "0.0419",
+        "B0": "0.00624523",
+        "B1": "-0.00737614",
+        "B2": "-0.010341",
+        "B3": "-0.00817083",
+        "C0": "3.1201642E-3",
+        "PhaseCoef0": "-1.652",
+        "PhaseCoef1": "1",
+        "PhaseCoef2": "0",
+        "PhaseCoef3": "0",
+        "c0": "0.00261275",
+        "c1": "0.00011268",
+        "c2": "2.2309e-06",
+        "c3": "200.183",
+        "c4": "-0.223497",
+        "c5": "-43.6776",
+        "c6": "4.10578",
+        "D0": "24.4543",
+        "D1": "-67.4509",
+        "D2": "-4.8489",
+        "D3": "-0.000544",
+        "C1": "-285.56594E-6",
+        "C2": "316.32993E-9",
+        "C3": "-1.0767272E-6"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "parameter_vendorinfo": {
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PPOX_DOXY",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY",
+      "PARAMETER_UNITS": "mbar",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TPHASE_DOXY=C1PHASE_DOXY-C2PHASE_DOXY; Phase_Pcorr=TPHASE_DOXY+Pcoef1*PRES/1000; CalPhase=PhaseCoef0+PhaseCoef1*Phase_Pcorr+PhaseCoef2*Phase_Pcorr^2+PhaseCoef3*Phase_Pcorr^3; Ksv=c0+c1*TEMP_DOXY+c2*TEMP_DOXY^2; MOLAR_DOXY=[((c3+c4*TEMP_DOXY)/(c5+c6*CalPhase))-1]/Ksv; Pcorr=1+((Pcoef2*TEMP+Pcoef3)*PRES)/1000; MOLAR_DOXY=MOLAR_DOXY*Pcorr; pH2Osat=1013.25*exp[D0+D1*(100/(TEMP+273.15))+D2*ln((TEMP+273.15)/100)]; Tcorr=44.6596*exp[2.00907+3.22014*Ts+4.05010*Ts^2+4.94457*Ts^3-2.56847e-1*Ts^4+3.88767*Ts^5]; Ts=ln[(298.15-TEMP)/(273.15+TEMP)]; PPOX_DOXY=MOLAR_DOXY*(0.20946*(1013.25-pH2Osat))/Tcorr*exp[0.317*PRES/(8.314*(TEMP+273.15))]",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "Pcoef1": "0.1",
+        "Pcoef2": "0.00022",
+        "Pcoef3": "0.0419",
+        "PhaseCoef0": "-1.652",
+        "PhaseCoef1": "1",
+        "PhaseCoef2": "0",
+        "PhaseCoef3": "0",
+        "c0": "0.00261275",
+        "c1": "0.00011268",
+        "c2": "2.2309e-06",
+        "c3": "200.183",
+        "c4": "-0.223497",
+        "c5": "-43.6776",
+        "c6": "4.10578",
+        "D0": "24.4543",
+        "D1": "-67.4509",
+        "D2": "-4.8489",
+        "C0": "3.1201642E-3",
+        "C1": "-285.56594E-6",
+        "C2": "316.32993E-9",
+        "C3": "-1.0767272E-6"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "parameter_vendorinfo": {
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PRES",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_PRES",
+      "PARAMETER_UNITS": "dbar",
+      "PARAMETER_ACCURACY": "1",
+      "PARAMETER_RESOLUTION": "0.02",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Pcorr = X0+(Pmeas-X0-X1*(Tpres-X5)-X2*(Tpres-X5)^2-X3*(Tpres-X5)^3)/(1+X4*(Tpres-X5)); Pmeas = C0+C1*VR+C2*VR^2+C3*VR^3;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "-55.76767",
+        "C1": "4.0054912E3",
+        "C2": "-66.53745",
+        "C3": "6.39357",
+        "X0": "10.0361",
+        "X1": "184.89905E-3",
+        "X2": "330.90703E-6",
+        "X3": "-999.3263E-9",
+        "X4": "-86.53429E-6",
+        "X5": "21.942171"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2020-12-03",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema": "RBR",
+        "version": "0.1",
+        "certificate": "https://oem-lookup.rbr-global.com/api/v1/instruments/205908/channels/8/certificate"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_TEMP",
+      "PARAMETER_UNITS": "degC (ITS-90)",
+      "PARAMETER_ACCURACY": "0.002",
+      "PARAMETER_RESOLUTION": "0.00005",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Temperature = 1/(C0+C1*ln(1/VR-1)+C2*ln(1/VR-1)^2+C3*ln(1/VR-1)^3)-273.15;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "3.4669158E-3",
+        "C1": "-249.6654E-6",
+        "C2": "2.4878973E-6",
+        "C3": "-60.271525E-9"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date           2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PSAL",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_CNDC",
+      "PARAMETER_UNITS": "psu",
+      "PARAMETER_ACCURACY": "0.003",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Salinity = PSS-78 (Temperature, Ccorr, Hydrostatic Pressure); Ccorr = (Cmeas-X0*(Tcond-X5))/(1+ X1*(Tcond-X5)+X2*(Pcorr-X6)+X3*(Pcorr-X6)^2+X4*(Pcorr-X6)^3); Cmeas = C0+C1*C2*VR;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "46.48405E-3",
+        "C1": "152.28053",
+        "C2": "1.0",
+        "X0": "1.1667822E-3",
+        "X1": "70.142356E-9",
+        "X2": "1.8732E-6",
+        "X3": "-776.89E-12",
+        "X4": "148.9E-15",
+        "X5": "15.001777",
+        "X6": "10"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date          2020-12-09",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_CNDC",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_TEMP_CNDC",
+      "PARAMETER_UNITS": "degC (ITS-90)",
+      "PARAMETER_ACCURACY": "0.1",
+      "PARAMETER_RESOLUTION": "0.06",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Temperature = 1/(C0+C1*ln(1/VR-1)+C2*ln(1/VR-1)^2+C3*ln(1/VR-1)^3)-273.15;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "C0": "3.1201642E-3",
+        "C1": "-285.56594E-6",
+        "C2": "316.32993E-9",
+        "C3": "-1.0767272E-6"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature_Conductivity Calibration Date          2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "parameter_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
+      },
+      "predeployment_vendorinfo": {
+        "vendor_schema": "None",
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE380",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 380 nm",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE412",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 412 nm",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE490",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 490 nm",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::RAW_DOWNWELLING_PAR",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_PAR",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling PAR measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOWN_IRRADIANCE380",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
+      "PARAMETER_UNITS": "W/m^2/nm",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE380=0.01*A1_380*(RAW_DOWNWELLING_IRRADIANCE380-A0_380)*lm_380",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "A0_380": "2.14887e+09",
+        "A1_380": "1.65351e-07",
+        "lm_380": "1.161"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOWN_IRRADIANCE412",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+      "PARAMETER_UNITS": "W/m^2/nm",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE412=0.01*A1_412*(RAW_DOWNWELLING_IRRADIANCE412-A0_412)*lm_412",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "A0_412": "2.14786e+09",
+        "A1_412": "2.07212e-07",
+        "lm_412": "1.368"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOWN_IRRADIANCE490",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
+      "PARAMETER_UNITS": "W/m^2/nm",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE490=0.01*A1_490*(RAW_DOWNWELLING_IRRADIANCE490-A0_490)*lm_490",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "A0_490": "2.14789e+09",
+        "A1_490": "2.0797e-07",
+        "lm_490": "1.365"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOWNWELLING_PAR",
+      "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_PAR",
+      "PARAMETER_UNITS": "microMoleQuanta/m^2/sec",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "DOWNWELLING_PAR=0.01*A1_PAR*(RAW_DOWNWELLING_PAR-A0_PAR)*lm_PAR",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "A0_PAR": "2.14806e+09",
+        "A1_PAR": "3.68763e-06",
+        "lm_PAR": "1.359"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "degC",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Internal temperature of the SUNA sensor",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "degC",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature of the spectrometer ",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::HUMIDITY_NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "percent",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::UV_INTENSITY_DARK_NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::FIT_ERROR_NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Nitrate fit error (dimensionless)",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::UV_INTENSITY_NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "",
+      "PREDEPLOYMENT_CALIB_EQUATION": "none",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Intensity of ultra violet flux from nitrate sensor   ",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::NITRATE",
+      "PARAMETER_SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
+      "PARAMETER_UNITS": "umol/kg",
+      "PARAMETER_ACCURACY": "2 umol/kg",
+      "PARAMETER_RESOLUTION": "0.01 umol/kg",
+      "PREDEPLOYMENT_CALIB_EQUATION": "The sensor returns UV_INTENSITY_DARK_NITRATE and UV_INTENSITY_NITRATE(Ntrans), a subset of continuous pixels of UV_INTENSITY_NITRATE(N), N = 1 to 256. The Ntrans indices span the interval [PIXEL_START, PIXEL_END] subset of the original array (1 to 256). Thus Ntrans(i) refers to pixel N = (PIXEL_START+i-1). PIXEL_START and PIXEL_END are defined from calibration data so that the [PIXEL_START, PIXEL_END] interval is the smallest interval of pixels that correspond to the [217 nm, 250 nm] interval of wavelengths. Only a subset of the [PIXEL_START, PIXEL_END] interval is processed to compute nitrate concentration. This subset is defined as the [PIXEL_FIT_START, PIXEL_FIT_END] interval which is the smallest interval of pixels that correspond to the [217 nm, 240 nm] interval of wavelengths (thus PIXEL_FIT_START = PIXEL_START). In the following equations the data are computed for each pixel R = PIXEL_FIT_START to PIXEL_FIT_END; ABSORBANCE_SW(R) = -log10[(UV_INTENSITY_NITRATE(R)-UV_INTENSITY_DARK_NITRATE)/UV_INTENSITY_REF_NITRATE(R)]; F(R,T) = (A+B*T)*exp[(C+D*T)*(OPTICAL_WAVELENGTH_UV(R)-OPTICAL_WAVELENGTH_OFFSET)]; E_SWA_INSITU(R) = E_SWA_NITRATE(R)*F(R,TEMP)/F(R,TEMP_CAL_NITRATE); ABSORBANCE_COR_NITRATE(R) = ABSORBANCE_SW(R)-(E_SWA_INSITU(R)*PSAL)*[1-(0.026*PRES/1000)]; Perform a multilinear regression to get MOLAR_NITRATE with estimated ABSORBANCE_COR_NITRATE(R) with ABSORBANCE_COR_NITRATE(R) = BASELINE_INTERCEPT+BASELINE_SLOPE*OPTICAL_WAVELENGTH_UV(R)+MOLAR_NITRATE*E_NITRATE(R); NITRATE = MOLAR_NITRATE/rho, where rho is the potential density [kg/L] calculated from CTD data",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "PIXEL_START": "34",
+        "PIXEL_END": "74",
+        "PIXEL_FIT_START": "34",
+        "PIXEL_FIT_END": "62",
+        "UV_INTENSITY_REF_NITRATE_Ntrans_": "[33443.000,35638.000,37612.000,39116.000,40055.000,40340.000,39948.000,38961.000,37551.000,35952.000,34300.000,32792.000,31441.000,30378.000,29616.000,29112.000,28934.000,29040.000,29381.000,29973.000,30795.000,31830.000,33085.000,34491.000,36071.000,37745.000,39531.000,41303.000,43044.000,44620.000,45916.000,46888.000,47375.000,47324.000,46807.000,45746.000,44268.000,42495.000,40544.000,38490.000,36511.000]",
+        "A": "1.15",
+        "B": "0.0284",
+        "C": "-0.31013",
+        "D": "0.001222",
+        "OPTICAL_WAVELENGTH_OFFSET": "210",
+        "OPTICAL_WAVELENGTH_UV_Ntrans_": "[217.460,218.260,219.060,219.860,220.660,221.460,222.260,223.060,223.860,224.660,225.470,226.270,227.070,227.870,228.670,229.480,230.280,231.080,231.880,232.690,233.490,234.300,235.100,235.900,236.710,237.510,238.320,239.120,239.930,240.730,241.540,242.350,243.150,243.960,244.770,245.570,246.380,247.190,247.990,248.800,249.610]",
+        "TEMP_CAL_NITRATE": 20,
+        "E_SWA_NITRATE_Ntrans_": "[0.0061508,0.0048354,0.0038029,0.0029792,0.0023265,0.0018203,0.0014364,0.0011208,0.0008725,0.0006935,0.0005536,0.0004442,0.0003467,0.0002936,0.0002417,0.0001930,0.0001744,0.0001496,0.0001362,0.0001163,0.0000939,0.0000876,0.0000854,0.0000685,0.0000640,0.0000535,0.0000414,0.0000361,0.0000288,0.0000260,0.0000118,0.0000078,0.0000085,0.0000042,-0.0000003,-0.0000057,-0.0000073,-0.0000110,-0.0000163,-0.0000178,-0.0000110]",
+        "E_NITRATE_Ntrans_": "[0.0043254,0.0040187,0.0037025,0.0033940,0.0030915,0.0028036,0.0025263,0.0022759,0.0020306,0.0018010,0.0015831,0.0013894,0.0012097,0.0010431,0.0008911,0.0007652,0.0006427,0.0005411,0.0004422,0.0003717,0.0003056,0.0002390,0.0001966,0.0001553,0.0001237,0.0000903,0.0000737,0.0000499,0.0000393,0.0000208,0.0000179,0.0000066,-0.0000042,-0.0000037,-0.0000063,-0.0000052,-0.0000105,-0.0000052,-0.0000041,-0.0000069,-0.0000065]"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-01-13"
+    },
+    {
+      "PARAMETER": "SDN:R03::PRES2",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_PRES2",
+      "PARAMETER_UNITS": "decibar",
+      "PARAMETER_ACCURACY": "2.4",
+      "PARAMETER_RESOLUTION": "0.1",
+      "PREDEPLOYMENT_CALIB_EQUATION": "y = thermistor_output; t = PTHA0 + PTHA1 * y + PTHA2 * y^2; x = pressure_output - PTCA0 - PTCA1 * t - PTCA2 * t^2; n = x * PTCB0 / (PTCB0 + PTCB1 * t + PTCB2 * t^2); pressure = PA0 + PA1 * n + PA2 * n^2;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "PA0": " -1.860485e-001",
+        "PA1": " 3.913091e-004",
+        "PA2": "-2.833018e-013",
+        "PTCA0": "6.794577e+003",
+        "PTCA1": "-9.846636e+000",
+        "PTCA2": "-6.839699e-001",
+        "PTCB0": "3.203647e+005",
+        "PTCB1": "2.935842e+001",
+        "PTCB2": "-5.287902e-001",
+        "PTHA0": "-8.015838e+001",
+        "PTHA1": "4.998022e-002",
+        "PTHA2": "-4.733751e-007"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "parameter_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1"
+      },
+      "predeployment_vendorinfo": {
+        "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP2",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_TEMP2",
+      "PARAMETER_UNITS": "degree_Celsius",
+      "PARAMETER_ACCURACY": "0.002",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "Temperature ITS-90 = 1/{a0 + a1[ln(n)] + a2[ln(n)^2] + a3[ln(n)^2]} - 273.15; n = instrument output;",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "a0": "-8.716632e-004",
+        "a1": " 2.937892e-004",
+        "a2": "-3.758125e-006",
+        "a3": " 1.520066e-007"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date 2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "parameter_vendorinfo": {
+        "vendor_schema": "None",
+        "anyproperty_works_here": "any content is valide if vendor_schema is None; if vendor_schema is specfied, content will be validated agains this subschemea",
+        "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below  parameter t_vendorinfo"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PSAL2",
+      "PARAMETER_SENSOR": "SDN:R25::CTD_CNDC2",
+      "PARAMETER_UNITS": "psu",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "f=INST_FREQ*sqrt(1.0+wBOTC*t)/1000.0;Conductivity=(g+h*f^2+i*f^3+j*f^4)/(1+delta*t+epsilon*p) Siemens/meter;t=temperature[degC];p=pressure[dbar];delta=CTcor;epsilon=CPcor;         ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "g": "-1.023943e+000",
+        "h": " 1.465505e-001",
+        "i": "-2.806563e-004",
+        "j": " 4.044779e-005",
+        "CPcor": "-9.5700e-008",
+        "CTcor": "3.2500e-006",
+        "WBOTC": " 3.1475e-008"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date 2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PHASE_DELAY_DOXY2",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY2",
+      "PARAMETER_UNITS": "microsecond",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_VOLTAGE_DOXY2",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY2",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "1.0e-6",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+    },
+    {
+      "PARAMETER": "SDN:R03::TEMP_DOXY2",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY2",
+      "PARAMETER_UNITS": "degree_Celsius",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "TEMP_DOXY=1/(TA0+TA1*L+TA2*L^2+TA3*L^3)-273.15; L=ln(100000*TEMP_VOLTAGE_DOXY/(3.3-TEMP_VOLTAGE_DOXY);",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "TA0": "0.00068631",
+        "TA1": "0.00025624",
+        "TA2": "1.9108e-07",
+        "TA3": "1.1514e-07"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+    },
+    {
+      "PARAMETER": "SDN:R03::DOXY2",
+      "PARAMETER_SENSOR": "SDN:R25::OPTODE_DOXY2",
+      "PARAMETER_UNITS": "micromole/kg",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "0.001",
+      "PREDEPLOYMENT_CALIB_EQUATION": "V=(PHASE_DELAY_DOXY+Pcoef1*PRES/1000)/39.457071; Ksv=C0+C1*TEMP_DOXY+C2*TEMP_DOXY^2; MLPL_DOXY=[(A0+A1*TEMP_DOXY+A2*V^2)/(B0+B1*V)-1]/Ksv; O2=MLPL_DOXY*Scorr*Pcorr; Scorr=exp[PSAL*(SolB0+SolB1*TS+SolB2*TS^2+SolB3*TS^3)+SolC0*PSAL^2]; Pcorr=1+((Pcoef2*TEMP+Pcoef3 )*PRES)/1000; TS=ln[(298.15-TEMP)/(273.15+TEMP)]; DOXY[umol/kg]=44.6596*O2/rho, where rho is the potential density [kg/L] calculated from CTD data; o2=[{(RefPhase/LumPhase)-1}/Ksv]*[Scorr]*[Pcorr]",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "Pcoef1": "0.115",
+        "Pcoef2": "0.00022",
+        "Pcoef3": "0.0419",
+        "A0": "1.05130000",
+        "A1": "-0.00150000",
+        "A2": "0.43141800",
+        "B0": "-0.24787100",
+        "B1": "1.66296000",
+        "C0": "0.10095800",
+        "C1": "0.00432328",
+        "C2": "0.00005829",
+        "SolB0": "-0.00624523",
+        "SolB1": "-0.00737614",
+        "SolB2": "-0.010341",
+        "SolB3": "-0.00817083",
+        "SolC0": "-4.88682e-07"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+    },
+    {
+      "PARAMETER": "SDN:R03::VRS_PH",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Voltage difference between reference and source from pH sensor (in volt",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::VK_PH",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode voltage of pH sensor (in volt)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IK_PH",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode current of pH sensor (in nanoampere) ",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IB_PH",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Base current of pH sensor (in nanoampere)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_FREE",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "R": "8.31446",
+        "F": "96485",
+        "k0": "-1.2887",
+        "k2": "-0.00086382",
+        "f1": "5.1387e-06",
+        "f2": "-7.0528e-09",
+        "f3": "5.8452e-12",
+        "f4": "-2.5259e-15",
+        "f5": "5.5432e-19",
+        "f6": "-4.8087e-23"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-17",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2020-12-17",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2020-12-17"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_TOTAL",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "R": "8.31446",
+        "F": "96485",
+        "k0": "-1.2887",
+        "k2": "-0.00086382",
+        "f1": "5.1387e-06",
+        "f2": "-7.0528e-09",
+        "f3": "5.8452e-12",
+        "f4": "-2.5259e-15",
+        "f5": "5.5432e-19",
+        "f6": "-4.8087e-23"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-17",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2020-12-17",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2020-12-17"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::VRS_PH2",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Voltage difference between reference and source from pH sensor (in volt",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::VK_PH2",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode voltage of pH sensor (in volt)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IK_PH2",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode current of pH sensor (in nanoampere) ",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IB_PH2",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Base current of pH sensor (in nanoampere)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_FREE2",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "fP_poly_order": "6",
+        "f0": "-1.3189",
+        "f1": "-8.453e-06",
+        "f2": "6.5885e-08",
+        "f3": "-1.1179e-10",
+        "f4": "8.713e-14",
+        "f5": "-3.2423e-17",
+        "f6": "4.6608e-21",
+        "K0": "-1.3219590000228736",
+        "K2_poly_order": "3",
+        "K2f0": "-0.00086825",
+        "K2f1": "1.6881e-08",
+        "K2f2": "-2.9158e-11",
+        "K2f3": "8.6709e-15"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-02"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_TOTAL2",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH2",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "fP_poly_order": "6",
+        "f0": "-1.3189",
+        "f1": "-8.453e-06",
+        "f2": "6.5885e-08",
+        "f3": "-1.1179e-10",
+        "f4": "8.713e-14",
+        "f5": "-3.2423e-17",
+        "f6": "4.6608e-21",
+        "K0": "-1.3219590000228736",
+        "K2_poly_order": "3",
+        "K2f0": "-0.00086825",
+        "K2f1": "1.6881e-08",
+        "K2f2": "-2.9158e-11",
+        "K2f3": "8.6709e-15"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-02"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::VRS_PH3",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Voltage difference between reference and source from pH sensor (in volt",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::VK_PH3",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode voltage of pH sensor (in volt)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IK_PH3",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode current of pH sensor (in nanoampere) ",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IB_PH3",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Base current of pH sensor (in nanoampere)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_FREE3",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "fP_poly_order": "6",
+        "f0": "-1.3189",
+        "f1": "-8.453e-06",
+        "f2": "6.5885e-08",
+        "f3": "-1.1179e-10",
+        "f4": "8.713e-14",
+        "f5": "-3.2423e-17",
+        "f6": "4.6608e-21",
+        "K0": "-1.3219590000228736",
+        "K2_poly_order": "3",
+        "K2f0": "-0.00086825",
+        "K2f1": "1.6881e-08",
+        "K2f2": "-2.9158e-11",
+        "K2f3": "8.6709e-15"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-27",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_TOTAL3",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH3",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "fP_poly_order": "6",
+        "f0": "-1.3189",
+        "f1": "-8.453e-06",
+        "f2": "6.5885e-08",
+        "f3": "-1.1179e-10",
+        "f4": "8.713e-14",
+        "f5": "-3.2423e-17",
+        "f6": "4.6608e-21",
+        "K0": "-1.3219590000228736",
+        "K2_poly_order": "3",
+        "K2f0": "-0.00086825",
+        "K2f1": "1.6881e-08",
+        "K2f2": "-2.9158e-11",
+        "K2f3": "8.6709e-15"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-27",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::VRS_PH4",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Voltage difference between reference and source from pH sensor (in volt",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::VK_PH4",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "PARAMETER_UNITS": "volt",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode voltage of pH sensor (in volt)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IK_PH4",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Counter electrode current of pH sensor (in nanoampere) ",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::IB_PH4",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "PARAMETER_UNITS": "nanoampere",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Base current of pH sensor (in nanoampere)",
+      "PREDEPLOYMENT_CALIB_DATE": " "
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_FREE4",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "fP_poly_order": "6",
+        "f0": "-1.399395e+00",
+        "f1": "8.623562e-06",
+        "f2": "-9.198874e-10",
+        "f3": "-9.503748e-12",
+        "f4": "1.099103e-14",
+        "f5": "-4.886435e-18",
+        "f6": "7.832943e-22",
+        "K0": "-1.4006230000164022",
+        "K2_poly_order": "3",
+        "K2f0": "-1.051648e-03",
+        "K2f1": "3.227638e-08",
+        "K2f2": "-5.023087e-11",
+        "K2f3": "1.612362e-14"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2023-09-05",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2023-06-30"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::PH_IN_SITU_TOTAL4",
+      "PARAMETER_SENSOR": "SDN:R25::TRANSISTOR_PH4",
+      "PARAMETER_UNITS": "dimensionless",
+      "PARAMETER_ACCURACY": "0.005",
+      "PARAMETER_RESOLUTION": "0.0004",
+      "PREDEPLOYMENT_CALIB_EQUATION": "k0T=k0+k2*TEMP; pcorr=f1*PRES+f2*PRES^2+f3*PRES^3+f4*PRES^4+f5*PRES^5+f6*PRES^6; k0TP=k0T+pcorr; Tk=273.15+TEMP; Cltotal=(0.99889/35.453*PSAL/1.80655)/(1-0.001005*PSAL); ADH=3.4286e-6*TEMP^2+6.7524e-4*TEMP+0.49172143; IonS=19.924*PSAL/(1000-1.005*PSAL); log10gammaHCl=[-ADH*sqrt(IonS)/(1+1.394*sqrt(IonS))]+[(0.08885-0.000111*TEMP)*IonS]; deltaVHCl=17.85+0.1044*TEMP-0.001316*TEMP^2; log10gammaHCLtP=log10gammaHCl+[deltaVHCl*(PRES/10)/(R*Tk*ln(10))/2/10]; PH_IN_SITU_FREE=[(VRS_PH-k0TP)/(R*Tk/F*ln(10))]+[ln(Cltotal)/ln(10)]+2*log10gammaHCLtP-log10(1-0.001005*PSAL)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "fP_poly_order": "6",
+        "f0": "-1.399395e+00",
+        "f1": "8.623562e-06",
+        "f2": "-9.198874e-10",
+        "f3": "-9.503748e-12",
+        "f4": "1.099103e-14",
+        "f5": "-4.886435e-18",
+        "f6": "7.832943e-22",
+        "K0": "-1.4006230000164022",
+        "K2_poly_order": "3",
+        "K2f0": "-1.051648e-03",
+        "K2f1": "3.227638e-08",
+        "K2f2": "-5.023087e-11",
+        "K2f3": "1.612362e-14"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24",
+      "predeployment_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.1",
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2023-09-05",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2023-06-30"
+      }
+    },
+    {
+      "PARAMETER": "SDN:R03::FLUORESCENCE_CHLA",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated chlorophyll-a fluorescence measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-10-06"
+    },
+    {
+      "PARAMETER": "SDN:R03::BETA_BACKSCATTERING700",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-10-06"
+    },
+    {
+      "PARAMETER": "SDN:R03::FLUORESCENCE_CDOM",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CDOM",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated fluorescence from coloured dissolved organic matter sensor",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-10-06"
+    },
+    {
+      "PARAMETER": "SDN:R03::CHLA",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA",
+      "PARAMETER_UNITS": "mg/m3",
+      "PARAMETER_ACCURACY": "0.08 mg/m3",
+      "PARAMETER_RESOLUTION": "0.025 mg/m3",
+      "PREDEPLOYMENT_CALIB_EQUATION": "CHLA = (FLUORESCENCE_CHLA - DARK_CHLA) * SCALE_CHLA",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_CHLA": "0.0066",
+        "DARK_CHLA": "44"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
+      "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+    },
+    {
+      "PARAMETER": "SDN:R03::BBP700",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
+      "PARAMETER_UNITS": "m-1",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "BBP700=2*pi*khi*((BETA_BACKSCATTERING700-DARK_BACKSCATTERING700)*SCALE_BACKSCATTERING700-BETASW700)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "DARK_BACKSCATTERING700": "47",
+        "SCALE_BACKSCATTERING700": "1.799e-06",
+        "khi": "1.076",
+        "BETASW700": "(contribution of pure sea water) is calculated at 124 angularDeg"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Sullivan et al., 2012, Zhang et al., 2009, BETASW700 is the contribution by the pure seawater at 700nm, the calculation can be found at http://doi.org/10.17882/42916. Reprocessed from the file provided by Andrew Bernard (Seabird) following ADMT18. This file is accessible at http://doi.org/10.17882/54520",
+      "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+    },
+    {
+      "PARAMETER": "SDN:R03::CDOM",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CDOM",
+      "PARAMETER_UNITS": "ppb",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "CDOM = (FLUORESCENCE_CDOM - DARK_CDOM) * SCALE_CDOM",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_CDOM": "0.0814",
+        "DARK_CDOM": "42"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
+      "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+    },
+    {
+      "PARAMETER": "SDN:R03::FLUORESCENCE_CHLA2",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA2",
+      "PARAMETER_UNITS": " ",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated chlorophyll-a fluorescence measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
+    },
+    {
+      "PARAMETER": "SDN:R03::BETA_BACKSCATTERING7002",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP7002",
+      "PARAMETER_UNITS": " ",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
+    },
+    {
+      "PARAMETER": "SDN:R03::FLUORESCENCE_CDOM2",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CDOM2",
+      "PARAMETER_UNITS": " ",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
+      "PREDEPLOYMENT_CALIB_COMMENT": "fluorescence from coloured dissolved organic matter",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
+    },
+    {
+      "PARAMETER": "SDN:R03::CHLA2",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA2",
+      "PARAMETER_UNITS": "mg/m3",
+      "PARAMETER_ACCURACY": "0.08 mg/m3",
+      "PARAMETER_RESOLUTION": "0.024 mg/m3",
+      "PREDEPLOYMENT_CALIB_EQUATION": "CHLA = (FLUORESCENCE_CHLA - DARK_CHLA) * SCALE_CHLA",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_CHLA": "1.891E-03",
+        "DARK_CHLA": "51"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
+      "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+    },
+    {
+      "PARAMETER": "SDN:R03::BBP7002",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP7002",
+      "PARAMETER_UNITS": "m-1",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "4.67E-07",
+      "PREDEPLOYMENT_CALIB_EQUATION": "BBP700=2*pi*khi*((BETA_BACKSCATTERING700-DARK_BACKSCATTERING700)*SCALE_BACKSCATTERING700-BETASW700)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "DARK_BACKSCATTERING700": "49",
+        "SCALE_BACKSCATTERING700": "3.350E-07",
+        "khi": "1.142",
+        "BETASW700": "Contribution of pure sea water calculated at 150 angular deg"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
+      "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+    },
+    {
+      "PARAMETER": "SDN:R03::CDOM2",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CDOM2",
+      "PARAMETER_UNITS": "ppb",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": "1.28E-02",
+      "PREDEPLOYMENT_CALIB_EQUATION": "CDOM = (FLUORESCENCE_CDOM - DARK_CDOM) * SCALE_CDOM",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_CDOM": "6.336E-03",
+        "DARK_CDOM": "51"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
+      "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+    }
+  ]
+}
