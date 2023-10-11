@@ -147,6 +147,7 @@
     "POSITIONING_SYSTEM": [
       "SDN:R09::GPS"
     ],
+    "PTT": "n/a",
     "TRANS_SYSTEM": [
       "SDN:R10::IRIDIUM"
     ],

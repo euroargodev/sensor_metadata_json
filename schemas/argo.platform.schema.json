@@ -67,8 +67,11 @@
             "type": "object",
             "properties": {
                 "DATA_TYPE": {
-                    "const" : "SDN:R01::META",
-                    "description": "DATA_TYPE SDN:R01:META is valid in Argo reference table R01"
+                    "type": "string",
+                    "format": "uri",
+                    "pattern": "^SDN:R01::",
+                    "description": "DATA_TYPE SDN:R01:META or Argo meta-data is valid in Argo reference table R01",
+                    "validation-uri": "https://vocab.nerc.ac.uk/collection/R23/current/"
                 },
                 "PLATFORM_FAMILY": {
                     "type": "string",
@@ -101,6 +104,10 @@
                         "validation-uri": "https://vocab.nerc.ac.uk/collection/R09/current/"
                     }
                 },
+                "PTT": {
+                    "type": "string",
+                    "description": "Transmission identifier of the float. Comma separated list for multi-beacon transmission."
+                },
                 "TRANS_SYSTEM": {
                     "type" : "array",
                     "items" : {
@@ -109,6 +116,19 @@
                         "pattern": "^SDN:R10::",
                         "description": "TRANS_SYSTEM is a list of telecommunication systems. Each entry must be valid in the current reference table R10",
                         "validation-uri": "https://vocab.nerc.ac.uk/collection/R10/current/"
+                    }
+                },
+                "TRANS_SYSTEM_ID": {
+                    "type" : "array",
+                    "items" : {
+                        "type" :"string",
+                        "description": "TRANS_SYSTEM_ID is the Program identifier of the telecommunication subscription. DACs can use N/A or alternative of their choice when not applicable"                   }
+                },
+                "TRANS_FREQUENCY": {
+                    "type" : "array",
+                    "items" : {
+                        "type": "string",
+                        "description": "Frequency of transmission from the float (hertz)."
                     }
                 },
                 "FIRMWARE_VERSION": {
@@ -174,6 +194,7 @@
             "required": [
                 "DATA_TYPE",
                 "POSITIONING_SYSTEM",
+                "PTT",
                 "TRANS_SYSTEM",
                 "PLATFORM_FAMILY",
                 "PLATFORM_TYPE",

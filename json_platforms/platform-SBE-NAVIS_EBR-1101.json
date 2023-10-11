@@ -4,7 +4,7 @@
     "date_creation": "2023-02-03T07:41:54-07:00",
     "link" : "./argo.platform.schema.json",
     "format_version": "0.2.0",
-    "contents": "json file to describe a platform for Argo", 
+    "contents": "json file to describe a NAVIS_EBR platform WMOID 6904191 platform for Argo", 
     "platform_described": "SBE-NAVIS_EBR-1101"
   },
   "@context": {
@@ -18,8 +18,9 @@
     "SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
   },
   "PLATFORM": {
-    "DATA_TYPE": "SDN:R01::META",
+    "DATA_TYPE": "SDN:R01::Argo%20meta-data",
     "POSITIONING_SYSTEM": ["SDN:R09::GPS"],
+    "PTT" : "1101i",
     "TRANS_SYSTEM": ["SDN:R10::IRIDIUM"],
     "PLATFORM_FAMILY": "SDN:R22::FLOAT",
     "PLATFORM_TYPE": "SDN:R23::NAVIS_EBR",

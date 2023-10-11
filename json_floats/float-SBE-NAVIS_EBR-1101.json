@@ -62,10 +62,11 @@
     }
   ],
   "PLATFORM": {
-    "DATA_TYPE": "SDN:R01::META",
+    "DATA_TYPE": "SDN:R01::Argo%20meta-data",
     "POSITIONING_SYSTEM": [
       "SDN:R09::GPS"
     ],
+    "PTT" : "n/a",
     "TRANS_SYSTEM": [
       "SDN:R10::IRIDIUM"
     ],

@@ -4,7 +4,7 @@
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
       "format_version": "0.2.0",
-      "contents": "json file to describe an ECO sensor FLBBCDREM-3666 for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an ECO sensor FLBBCDREM-3666 on float WMOID 5906971 for sensor schema v0.2.0 draft",
       "sensor_described": "WETLABS-ECO_FLBBCD-3666"
     },
     "@context": {
@@ -34,7 +34,7 @@
         "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-        "SENSOR_SERIAL_NO": "0157",
+        "SENSOR_SERIAL_NO": "3666",
         "SENSOR_FIRMWARE_VERSION": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
@@ -49,7 +49,7 @@
         "SENSOR": "SDN:R25::FLUOROMETER_CDOM",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-        "SENSOR_SERIAL_NO": "0157",
+        "SENSOR_SERIAL_NO": "3666",
         "SENSOR_FIRMWARE_VERSION": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
