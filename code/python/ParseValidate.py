@@ -244,15 +244,15 @@ def main():
     if (len(sys.argv) == 2):
         fname = sys.argv[1]
     else:
-        # fname = 'examples/sensor-WETLABS-MCOMS_FLBBCD-0157.json'
-        # fname = 'examples/sensor-SATLANTIC-OCR-504-42139.json'
-        # fname = 'examples/sensor-SBE-SBE63-0770.json'
-        # fname = 'examples/sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json'
-        # fname = 'examples/sensor-SATLANTIC-SUNA-1527.json'
-        # fname = 'examples/sensor-WETLABS-ECO_FLBBCD-3666.json'
-        # fname = 'examples/sensor-SBE-SEAFET-11341.json'
-        fname = 'json_platforms/platform-SBE-NAVIS_EBR-1101.json'
-        # fname = 'json_floats/float-SBE-NAVIS_EBR-1101.json'
+        # fname = 'json_sensors/sensor-WETLABS-MCOMS_FLBBCD-0157.json'
+        # fname = 'json_sensors/sensor-SATLANTIC-SATLANTIC_OCR504_ICSW-42139.json'
+        # fname = 'json_sensors/sensor-SBE-SBE63_OPTODE-2739.json'
+        # fname = 'json_sensors/sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json'
+        # fname = 'json_sensors/sensor-SATLANTIC-SUNA_V2-1527.json'
+        # fname = 'json_sensors/sensor-WETLABS-ECO_FLBBCD-3666.json'
+        # fname = 'json_sensors/sensor-SBE-SEAFET-11341.json'
+        # fname = 'json_platforms/platform-SBE-NAVIS_EBR-1101.json'
+        fname = 'json_floats/float-SBE-NAVIS_EBR-1101.json'
         
     # Load JSON sensor instance data 
     data_dir = Path.cwd() 
