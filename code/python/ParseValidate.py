@@ -144,14 +144,14 @@ class NVS :
             # see if the altLabel is associated with a termID Url.  If it is, then
             # this (mis)coding of a termID with an altLabel is OK.  Otherwise, fail.
             print(f'******** {termUrl} not found, HTTP status code {r.status_code}')
-            print(f'Search altLabels....')
+            print(f'Search prefLabels....')
             results = get_vocab_data(VOCAB_HOST,parsedUrn[1])
-            termUrls= [result['uri'] for result in results if result['alt_label']==term]
+            termUrls= [result['uri'] for result in results if result['pref_label']==term]
             if (len(termUrls) == 1) :
-                print(f'(altLabel) {term} found --> {termUrls[0]}')
+                print(f'(prefLabel) {term} found --> {termUrls[0]}')
                 return True
             else :
-                print(f'******** {termUrl} not found as altLabel either')
+                print(f'******** {termUrl} not found as prefLabel either')
                 return False
 
     def validate(self, jpointer, variables) :
@@ -206,10 +206,10 @@ def get_sparql_query(vocab_host: str, vocab_id: str) -> str:
     sparql_query = """
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    SELECT DISTINCT (?c as ?uri) (?pl as ?altLabel)
+    SELECT DISTINCT (?c as ?uri) (?pl as ?prefLabel)
     WHERE {{
         <{0}/collection/{1}/current/> skos:member ?c .
-        ?c skos:altLabel ?pl .
+        ?c skos:prefLabel ?pl .
         ?c owl:deprecated ?isDeprecated .
         FILTER (?isDeprecated = "false") .
     }}
@@ -233,7 +233,7 @@ def get_vocab_data(vocab_host: str, vocab_id: str) -> List[Dict]:
 
     resp = requests.post(query_url, data=query, headers={"Content-Type": "application/sparql-query"}, timeout=60)
     results = [
-        {"uri": x["uri"]["value"], "alt_label": x["altLabel"]["value"]} for x in resp.json()["results"]["bindings"]
+        {"uri": x["uri"]["value"], "pref_label": x["prefLabel"]["value"]} for x in resp.json()["results"]["bindings"]
     ]
     return results
 
@@ -245,14 +245,14 @@ def main():
         fname = sys.argv[1]
     else:
         # fname = 'examples/sensor-WETLABS-MCOMS_FLBBCD-0157.json'
-        # fname = 'examples/examples/sensor-SATLANTIC-OCR-504-42139.json'
+        # fname = 'examples/sensor-SATLANTIC-OCR-504-42139.json'
         # fname = 'examples/sensor-SBE-SBE63-0770.json'
         # fname = 'examples/sensor-AANDERAA-AANDERAA_OPTODE_4330-3901.json'
         # fname = 'examples/sensor-SATLANTIC-SUNA-1527.json'
         # fname = 'examples/sensor-WETLABS-ECO_FLBBCD-3666.json'
         # fname = 'examples/sensor-SBE-SEAFET-11341.json'
-        # fname = 'examples/platform-SBE-NAVIS_EBR-1101.json'
-        fname = 'examples/float-SBE-NAVIS_EBR-1101.json'
+        fname = 'json_platforms/platform-SBE-NAVIS_EBR-1101.json'
+        # fname = 'json_floats/float-SBE-NAVIS_EBR-1101.json'
         
     # Load JSON sensor instance data 
     data_dir = Path.cwd() 
