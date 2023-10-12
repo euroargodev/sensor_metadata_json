@@ -192,7 +192,6 @@
                 }
             },
             "required": [
-                "DATA_TYPE",
                 "POSITIONING_SYSTEM",
                 "PTT",
                 "TRANS_SYSTEM",

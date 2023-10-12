@@ -178,7 +178,9 @@
             "minItems": 1,
             "uniqueItems": true
         },
-        "instrument_vendorinfo": {}
+        "instrument_vendorinfo": {
+            "$ref" : "./argo.vendors.schema.json#/$defs/instrument_vendorinfo"
+        }
     },
     "required": [
         "@context",

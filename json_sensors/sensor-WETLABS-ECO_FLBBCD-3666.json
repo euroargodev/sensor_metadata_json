@@ -13,6 +13,11 @@
       "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
       "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
     },
+    "instrument_vendorinfo" : {
+      "vendor_schema": "SBE",
+      "version": "0.1",
+      "SBE_part_number" : "FAA-538092"
+    },
     "SENSORS": [
       {
         "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
