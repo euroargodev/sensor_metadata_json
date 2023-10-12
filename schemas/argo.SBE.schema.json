@@ -237,9 +237,6 @@
                 "version" : {"$ref": "#/version"},
                 "SBE_part_number": {
                     "type": "string"
-                },
-                "SBE_optional8": {
-                    "type": "string"
                 }
             },
             "required" : ["vendor_schema", "version"],
@@ -255,7 +252,7 @@
                     "type": "string",
                     "format": "date"
                 },
-                "SBE_optional9": {
+                "SBE_part_number": {
                     "type": "string"
                 }
             },
