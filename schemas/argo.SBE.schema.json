@@ -235,10 +235,7 @@
             "properties": {
                 "vendor_schema" : true,
                 "version" : {"$ref": "#/version"},
-                "SBE_optional7": {
-                    "type": "number"
-                },
-                "SBE_optional8": {
+                "SBE_part_number": {
                     "type": "string"
                 }
             },
@@ -255,7 +252,7 @@
                     "type": "string",
                     "format": "date"
                 },
-                "SBE_optional9": {
+                "SBE_part_number": {
                     "type": "string"
                 }
             },
