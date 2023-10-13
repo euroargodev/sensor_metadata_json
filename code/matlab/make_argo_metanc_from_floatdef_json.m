@@ -92,7 +92,7 @@ js = jsondecodeEx(str);
 clear def
 
 def.platform_argo_fields = {
-    16  'DATA_TYPE'
+%     16  'DATA_TYPE' % removed BAK 13 Oct 2023, not set by platform maker
     256 'PTT'
     16  'TRANS_SYSTEM'
     32  'TRANS_SYSTEM_ID'
