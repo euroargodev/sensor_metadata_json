@@ -398,6 +398,10 @@ for kl = 1:numvar
         dimid1 = netcdf.inqDimID(ncid,'N_PARAM');
         required_stringdim = ['STRING' sprintf('%d',varsize(2))];
         dimid2 = netcdf.inqDimID(ncid,required_stringdim);
+    elseif strcmp('PREDEPLOYMENT_CALIB_DATE',varname)
+        dimid1 = netcdf.inqDimID(ncid,'N_PARAM');
+        required_stringdim = 'DATE_TIME';
+        dimid2 = netcdf.inqDimID(ncid,required_stringdim);
     elseif strncmp('PREDEPLOYMENT',varname,13)
         dimid1 = netcdf.inqDimID(ncid,'N_PARAM');
         required_stringdim = ['STRING' sprintf('%d',varsize(2))];

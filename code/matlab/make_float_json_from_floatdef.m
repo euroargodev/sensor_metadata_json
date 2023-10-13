@@ -278,7 +278,7 @@ parameterfields = fieldnames(jsall{1}.PARAMETERS{1});
 % At this point, we expect the following fields to be present
 % platformfields =
 %     {'version'                             }
-%     {'DATA_TYPE'                           }
+%     {'DATA_TYPE'                           }  % BAK 13 Oct 2023 - don't expect to DATA_TYPE from now on
 %     {'POSITIONING_SYSTEM'                  }
 %     {'PLATFORM_FAMILY'                     }
 %     {'PLATFORM_TYPE'                       }
