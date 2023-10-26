@@ -1,7 +1,7 @@
 # sensor_metadata_json
 Tools, schemas and example files for metadata for ocean platforms and sensors
 
-Follows Argo float, sensor, paramater, and configuration schemes as well as identifying [NVS](https://vocab.nerc.ac.uk/) controlled vocabulary terms using their Indentifier URN (e.g., [SDN:R25::FLUOROMETER_CHLA](http://vocab.nerc.ac.uk/collection/R25/current/FLUOROMETER_CHLA/)).
+Follows Argo float, sensor, paramerter, and configuration schemes as well as identifying [NVS](https://vocab.nerc.ac.uk/) controlled vocabulary terms using their Identifier URN (e.g., [SDN:R25::FLUOROMETER_CHLA](http://vocab.nerc.ac.uk/collection/R25/current/FLUOROMETER_CHLA/)).
 
 | Directory | Description|
 | --- | --- |
