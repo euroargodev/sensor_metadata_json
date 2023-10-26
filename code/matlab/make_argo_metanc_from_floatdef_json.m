@@ -92,7 +92,7 @@ js = jsondecodeEx(str);
 clear def
 
 def.platform_argo_fields = {
-    16  'DATA_TYPE'
+%     16  'DATA_TYPE' % removed BAK 13 Oct 2023, not set by platform maker
     256 'PTT'
     16  'TRANS_SYSTEM'
     32  'TRANS_SYSTEM_ID'
@@ -256,7 +256,7 @@ nfield = size(fields,1);
 nparam = length(js.PARAMETERS);
 
 for kpar = 1:nparam
-    list = js.PARAMETERS{kpar}.PREDEPLOYMENT_CALIB_COEFFICIENT_LIST; % this should be a structure whose fildnames are calibration coefficient names and whose values are string representation of the coefficient values
+    list = js.PARAMETERS{kpar}.PREDEPLOYMENT_CALIB_COEFFICIENT_LIST; % this should be a structure whose fieldnames are calibration coefficient names and whose values are string representation of the coefficient values
     cnames = fieldnames(list);
     coefstr = [];
     for kc = 1:length(cnames)
@@ -314,6 +314,29 @@ for kl = 1:nfield
         m.(fieldname)(kp,:) = value;
     end
 end
+
+% now handle PREDEPLOYMENT_CALIB_DATE, convert from ISO to argo date_time
+fieldname = 'PREDEPLOYMENT_CALIB_DATE';
+fieldlen = 14;
+num_p = length(js.PARAMETERS);
+for kp = 1:num_p
+    if ~isfield(js.PARAMETERS{kp},fieldname)
+        fprintf(2,'%s %s %s %3d %s\n','Expected parameter fieldname',fieldname,'not found in parameter',kp,'filling with blanks');
+        value = [];
+    else
+        value = js.PARAMETERS{kp}.(fieldname);
+    end
+    if ~strcmp(value,' ');
+        dnum = datenum(value,'yyyy-mm-dd');
+        value14 = datestr(dnum,'yyyymmddHHMMSS');
+    else
+        value14 = [];
+    end
+    value14 = [value14 repmat(' ',1,fieldlen-length(value14))];
+    m.(fieldname)(kp,:) = value14;
+end
+
+
 
 % The strcuture m is now ready to have its fields written to an Argo NetCDF
 % meta file, using whatever NetCDF toolbox you like
@@ -374,6 +397,10 @@ for kl = 1:numvar
     elseif strncmp('PARAMETER',varname,9)
         dimid1 = netcdf.inqDimID(ncid,'N_PARAM');
         required_stringdim = ['STRING' sprintf('%d',varsize(2))];
+        dimid2 = netcdf.inqDimID(ncid,required_stringdim);
+    elseif strcmp('PREDEPLOYMENT_CALIB_DATE',varname)
+        dimid1 = netcdf.inqDimID(ncid,'N_PARAM');
+        required_stringdim = 'DATE_TIME';
         dimid2 = netcdf.inqDimID(ncid,required_stringdim);
     elseif strncmp('PREDEPLOYMENT',varname,13)
         dimid1 = netcdf.inqDimID(ncid,'N_PARAM');
