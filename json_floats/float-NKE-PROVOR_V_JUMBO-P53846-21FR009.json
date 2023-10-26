@@ -184,7 +184,7 @@
       "SENSOR_FIRMWARE_VERSION": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "RBR",
-        "version": "1.0",
+        "version": "0.1",
         "RBR_foo1": 1,
         "RBR_foo2": "twotwo"
       }
