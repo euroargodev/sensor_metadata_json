@@ -111,7 +111,9 @@
         "PREDEPLOYMENT_CALIB_COMMENT": " ",
         "PREDEPLOYMENT_CALIB_DATE": " ",
         "parameter_vendorinfo": {
-            "calfile" : "SAM_876C_01600040_AllCal.txt"
+            "vendor_schema": "TRIOS",
+            "version": "0.1",
+            "TRIOS_calfile" : " "
           },
         "predeployment_vendorinfo": {
         "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"

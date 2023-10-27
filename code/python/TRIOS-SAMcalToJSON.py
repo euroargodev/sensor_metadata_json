@@ -32,7 +32,7 @@ def write_RAMSES_JSONinstance(data : dict, outfile : Path)  :
 
 
 
-def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_date, dfcal ) :
+def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_date, calfile, dfcal ) :
     """
     Create a machine-readable JSON calibration file.
 
@@ -63,6 +63,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_d
     # Argp SENSORS
     data['SENSORS'][0]["SENSOR_SERIAL_NO"] = instrument_sn
     data['SENSORS'][0]["sensor_vendorinfo"]["TRIOS_RAMSESType"] = instrument_type
+    data['PARAMETERS'][-1]["parameter_vendorinfo"]["TRIOS_calfile"] = calfile
 
     # Calibration Coefficients
     # wavelengths
@@ -115,5 +116,5 @@ if __name__ == '__main__':
     calib_date = datetime.datetime.now().date().isoformat()
 
     # Calib coefficients
-    create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_date, dfcal ) 
+    create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_date, calname.name, dfcal ) 
     exit()

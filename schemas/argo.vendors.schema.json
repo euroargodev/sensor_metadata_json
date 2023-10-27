@@ -72,7 +72,8 @@
                     "enum": [
                         "None",
                         "SBE",
-                        "RBR"
+                        "RBR",
+                        "TRIOS"
                     ],
                     "default": "None"
                 },
@@ -108,6 +109,15 @@
                     },
                     "then": {
                         "$ref": "./argo.RBR.schema.json#/$defs/parameter_vendorinfo"
+                    }
+                },
+                {
+                    "if": {
+                        "properties": { "vendor_schema": { "const": "TRIOS" }},
+                        "required": [ "vendor_schema"]
+                    },
+                    "then": {
+                        "$ref": "./argo.TRIOS.schema.json#/$defs/parameter_vendorinfo"
                     }
                 }
             ]

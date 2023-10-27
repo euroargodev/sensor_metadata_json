@@ -18,7 +18,21 @@
             },
             "required" : ["TRIOS_RAMSESType"],
             "additionalProperties" : false
+        },
+        "parameter_vendorinfo": {
+            "type": "object",
+            "version" : {"$ref": "#/version"},
+            "properties": {
+                "vendor_schema" : true,
+                "version" : {"$ref": "#/version"},
+                "TRIOS_calfile": {
+                    "type": "string"
+                }
+            },
+            "required" : ["TRIOS_calfile"],
+            "additionalProperties" : false
         }
+
 
     }
 }
