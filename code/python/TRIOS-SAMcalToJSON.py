@@ -32,7 +32,7 @@ def write_RAMSES_JSONinstance(data : dict, outfile : Path)  :
 
 
 
-def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_date, calfile, dfcal ) :
+def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_version, calib_date, calfile, dfcal ) :
     """
     Create a machine-readable JSON calibration file.
 
@@ -62,11 +62,13 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_d
 
     # Argp SENSORS
     data['SENSORS'][0]["SENSOR_SERIAL_NO"] = instrument_sn
+    data['SENSORS'][0]["SENSOR_FIRMWARE_VERSION"] = fw_version 
     data['SENSORS'][0]["sensor_vendorinfo"]["TRIOS_RAMSESType"] = instrument_type
-    data['PARAMETERS'][-1]["parameter_vendorinfo"]["TRIOS_calfile"] = calfile
+
 
     # Calibration Coefficients
-    # wavelengths
+    data['PARAMETERS'][-1]["parameter_vendorinfo"]["TRIOS_calfile"] = calfile
+
     key = 'OPTICAL_WAVELENGTH'
     data['PARAMETERS'][-1]["PREDEPLOYMENT_CALIB_COEFFICIENT_LIST"][key] = \
         "[" + dfcal.Wave.str.cat(sep=", ") + "]"
@@ -93,11 +95,18 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_d
 
 if __name__ == '__main__':
 
+    # Sensor data
+    # Instrument type (ACC) and calib date to be retrieved from TRIOS
+    instrument_type = "ACC"
+    fw_version = "1.0.9"
+    calib_date = datetime.datetime.now().date().isoformat()
+
+    # Calibration data
     calname = 'examples/SAM_876C_01600040_AllCal.txt'
 
+    # template config
     config = {"output_dir" : './json_sensors', 
               "template" : "./examples/sensor-TRIOS-RAMSES_ACC-template.json"}
-    
     
     # Get JSON tempate 
     # template = Path('examples/sensor-SBE-SEAFET-template.json')
@@ -111,10 +120,7 @@ if __name__ == '__main__':
     calname = Path(calname)
     dfcal = get_SAMcalfile(calname)
 
-    # Instrument type (ACC) and calib date to be retrieved from TRIOS
-    instrument_type = "ACC"
-    calib_date = datetime.datetime.now().date().isoformat()
-
     # Calib coefficients
-    create_JSON_file(template, dest_dir, instrument_type, instrument_sn, calib_date, calname.name, dfcal ) 
+    create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_version, \
+                     calib_date, calname.name, dfcal ) 
     exit()
