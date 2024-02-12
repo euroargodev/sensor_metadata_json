@@ -6,7 +6,7 @@ Follows Argo float, sensor, paramerter, and configuration schemes as well as ide
 | Directory | Description|
 | --- | --- |
 | **code** | Demonstration Python code to validate and parse JSON metadata instances againt the schema as well as validate controlled vocabulary terms using NVS server REST API.|
-| **examples** | Some spare example files, probably redundant|
+| **examples** | Some spare example files.  Template files supporting machine gen of JSON files.
 | **json_platforms** | Schema-compliant examples for platforms|
 | **json_sensors** | Schema-compliant examples for sensors|
 | **json_floats** | Schema-compliant examples for floats, made using make_float_json_from_floatdef.m|
