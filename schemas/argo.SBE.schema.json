@@ -43,11 +43,11 @@
                 },
                 "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": {
                     "type": "number",
-                    "const": 470
+                    "enum": [435, 470]
                 },
                 "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": {
                     "type": "number",
-                    "const": 23
+                    "enum": [23,24]
                 },
                 "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": {
                     "type": "number",
@@ -95,7 +95,7 @@
                 },
                 "CONFIG_EcoBetaBandwidth_nm": {
                     "type": "number",
-                    "const": 25
+                    "enum": [20, 25]
                 },
                 "CONFIG_EcoBetaAngle_angularDeg": {
                     "type": "number",

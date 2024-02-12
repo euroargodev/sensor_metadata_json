@@ -18,8 +18,8 @@
         "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
         "SENSOR_SERIAL_NO": "0157",
-        "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
@@ -34,8 +34,8 @@
         "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
         "SENSOR_SERIAL_NO": "0157",
-        "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
@@ -49,8 +49,8 @@
         "SENSOR": "SDN:R25::FLUOROMETER_CDOM",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
         "SENSOR_SERIAL_NO": "0157",
-        "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",

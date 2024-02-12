@@ -29,8 +29,7 @@ def write_RAMSES_JSONinstance(data : dict, outfile : Path)  :
         pretty_json_object = json.dumps(data, indent=4)
         f.write(pretty_json_object)
         return
-
-
+    
 
 def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_version, calib_date, calfile, dfcal ) :
     """
@@ -40,33 +39,35 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_vers
 
     """
     #
-    # Update JSON pH template with data from pHcal file
+    # Update JSON TRIOS-RAMSES template with sensor cal file metadata
     #
     # Get JSON template 
     data = get_RAMSES_JSONtemplate(template)
 
-    # HACK! Use calfiledate as manufacturing date
-    # Use calfiledate as PREDEPLOYMENT_CALIB_DATE for PARAMETERS with calibration coefficients
-    data['PARAMETERS'][6]['PREDEPLOYMENT_CALIB_DATE'] = calib_date
-
-    # serial numbers
+    # Map RAMSES Instrument Type to SENSOR_MODEL in NVS
+    TRIOS_model_map = { "ACC_UV"  : "SDN:L22::TOOL0810",
+                        "ACC_VIS" : "SDN:R27::RAMSES_ACC",
+                        "ARC"     : "SDN:L22::TOOL0774"}
+    
+    # Output filename : TRIOS-RAMSES_instrument_type-instrumnet_sn.json
     outputfile =  dest_dir / Path(str(template.name).replace('template', instrument_sn).replace('ACC', instrument_type))
 
     # sensor_info
     data['sensor_info']["created_by"] = os.path.basename(__file__)
-    data['sensor_info']["creation_date"] : datetime.datetime.now().replace(microsecond=0).isoformat()
+    data['sensor_info']["date_creation"] = datetime.datetime.now().replace(microsecond=0).isoformat()
     format_version = data['sensor_info'].get("format_version")
     contents       = data['sensor_info'].get("contents")
     data['sensor_info']["contents"] = contents.replace('xx.xx.xx', format_version)
     data['sensor_info']["sensor_described"] = f"TRIOS-RAMSES_{instrument_type}-{instrument_sn}"
 
     # Argp SENSORS
+    data['SENSORS'][0]["SENSOR_MODEL"] = TRIOS_model_map[instrument_type]
+    data['SENSORS'][0]["SENSOR_MODEL_FIRMWARE"] = fw_version 
     data['SENSORS'][0]["SENSOR_SERIAL_NO"] = instrument_sn
-    data['SENSORS'][0]["SENSOR_FIRMWARE_VERSION"] = fw_version 
     data['SENSORS'][0]["sensor_vendorinfo"]["TRIOS_RAMSESType"] = instrument_type
 
-
-    # Calibration Coefficients
+    # Argo PARAMETERS
+    # Calibration Coefficients are added to last parameter (RAW_DOWNWELLING_IRRADIANCE)
     data['PARAMETERS'][-1]["parameter_vendorinfo"]["TRIOS_calfile"] = calfile
 
     key = 'OPTICAL_WAVELENGTH'
@@ -89,6 +90,9 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_vers
     data['PARAMETERS'][-1]["PREDEPLOYMENT_CALIB_COEFFICIENT_LIST"][key] = \
         "[" + dfcal.Sair.str.cat(sep=", ") + "]"
     
+    #  PREDEPLOYMENT_CALIB_DATE 
+    data['PARAMETERS'][-1]['PREDEPLOYMENT_CALIB_DATE'] = calib_date
+
     # Write out JSON sensor metadata instance
     write_RAMSES_JSONinstance(data, outputfile)
 
@@ -96,8 +100,9 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_vers
 if __name__ == '__main__':
 
     # Sensor data
-    # Instrument type (ACC) and calib date to be retrieved from TRIOS
-    instrument_type = "ACC"
+
+    # Instrument type, fw version, and calib date to be supplied by TRIOS internallhy
+    instrument_type = "ACC_VIS"
     fw_version = "1.0.9"
     calib_date = datetime.datetime.now().date().isoformat()
 
@@ -108,19 +113,18 @@ if __name__ == '__main__':
     config = {"output_dir" : './json_sensors', 
               "template" : "./examples/sensor-TRIOS-RAMSES_ACC-template.json"}
     
-    # Get JSON tempate 
-    # template = Path('examples/sensor-SBE-SEAFET-template.json')
+    # Path to JSON template 
     template = Path(config['template'])
 
-    # destination (output) director
+    # Path to destination (output) directory
     dest_dir = Path(config["output_dir"])
 
     # Get RAMSES SAM cal file 
-    instrument_sn = calname.split("_")[2]
     calname = Path(calname)
+    instrument_sn = calname.name.split("_")[2]
     dfcal = get_SAMcalfile(calname)
 
-    # Calib coefficients
+    # Create the sensor-TRIOS-xxxx-yyyy.json metadata file
     create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_version, \
                      calib_date, calname.name, dfcal ) 
     exit()

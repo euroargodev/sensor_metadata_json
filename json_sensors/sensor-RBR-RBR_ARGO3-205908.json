@@ -18,11 +18,11 @@
       "SENSOR": "SDN:R25::CTD_PRES",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
       "sensor_vendorinfo": {
         "vendor_schema" : "RBR",
-        "version": "1.0",
+        "version": "0.1",
         "RBR_foo1" : 1,
         "RBR_foo2" : "twotwo"
       }
@@ -31,8 +31,8 @@
       "SENSOR": "SDN:R25::CTD_TEMP",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
       "sensor_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -42,8 +42,8 @@
       "SENSOR": "SDN:R25::CTD_CNDC",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
       "sensor_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -53,8 +53,8 @@
       "SENSOR": "SDN:R25::CTD_TEMP_CNDC",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
       "sensor_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"

@@ -18,8 +18,8 @@
         "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
         "SENSOR_SERIAL_NO": "42139",
-        "SENSOR_FIRMWARE_VERSION": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
@@ -32,8 +32,8 @@
         "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
         "SENSOR_SERIAL_NO": "42139",
-        "SENSOR_FIRMWARE_VERSION": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
@@ -46,8 +46,8 @@
         "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
         "SENSOR_SERIAL_NO": "42139",
-        "SENSOR_FIRMWARE_VERSION": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
@@ -60,8 +60,8 @@
         "SENSOR": "SDN:R25::RADIOMETER_PAR",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
         "SENSOR_SERIAL_NO": "42139",
-        "SENSOR_FIRMWARE_VERSION": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",

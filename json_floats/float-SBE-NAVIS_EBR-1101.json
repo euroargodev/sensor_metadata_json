@@ -93,10 +93,10 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "RBR",
-        "version": "1.0",
+        "version": "0.1",
         "RBR_foo1": 1,
         "RBR_foo2": "twotwo"
       }
@@ -106,7 +106,7 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -117,7 +117,7 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -128,7 +128,7 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -139,7 +139,7 @@
       "SENSOR_MAKER": "SDN:R26::DRUCK",
       "SENSOR_MODEL": "SDN:R27::DRUCK_2900PSIA",
       "SENSOR_SERIAL_NO": "11076214",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -151,7 +151,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
       "SENSOR_SERIAL_NO": "11643",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -163,7 +163,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
       "SENSOR_SERIAL_NO": "11643",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -175,7 +175,7 @@
       "SENSOR_MAKER": "SDN:R26::AANDERAA",
       "SENSOR_MODEL": "SDN:R27::AANDERAA_OPTODE_4330",
       "SENSOR_SERIAL_NO": "3901",
-      "SENSOR_FIRMWARE_VERSION": " "
+      "SENSOR_MODEL_FIRMWARE": " "
     }
   ],
   "PARAMETERS": [

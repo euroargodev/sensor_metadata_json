@@ -143,6 +143,7 @@
     }
   ],
   "PLATFORM": {
+    "PTT": " ",
     "DATA_TYPE": "SDN:R01::META",
     "POSITIONING_SYSTEM": [
       "SDN:R09::GPS"
@@ -171,17 +172,17 @@
       "SENSOR_MAKER": "SDN:R26::AANDERAA",
       "SENSOR_MODEL": "SDN:R27::AANDERAA_OPTODE_4330",
       "SENSOR_SERIAL_NO": "3901",
-      "SENSOR_FIRMWARE_VERSION": " "
+      "SENSOR_MODEL_FIRMWARE": " "
     },
     {
       "SENSOR": "SDN:R25::CTD_PRES",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "RBR",
-        "version": "1.0",
+        "version": "0.1",
         "RBR_foo1": 1,
         "RBR_foo2": "twotwo"
       }
@@ -191,7 +192,7 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -202,7 +203,7 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -213,7 +214,7 @@
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
       "SENSOR_SERIAL_NO": "205908",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -224,7 +225,7 @@
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
       "SENSOR_SERIAL_NO": "42139",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -238,7 +239,7 @@
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
       "SENSOR_SERIAL_NO": "42139",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -252,7 +253,7 @@
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
       "SENSOR_SERIAL_NO": "42139",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -266,7 +267,7 @@
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
       "SENSOR_SERIAL_NO": "42139",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -278,7 +279,7 @@
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SUNA_V2",
       "SENSOR_SERIAL_NO": "1527",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -292,7 +293,7 @@
       "SENSOR_MAKER": "SDN:R26::DRUCK",
       "SENSOR_MODEL": "SDN:R27::DRUCK_2900PSIA",
       "SENSOR_SERIAL_NO": "11076214",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -304,7 +305,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
       "SENSOR_SERIAL_NO": "11643",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -316,7 +317,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
       "SENSOR_SERIAL_NO": "11643",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -328,7 +329,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE63_OPTODE",
       "SENSOR_SERIAL_NO": "2739",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -340,7 +341,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
       "SENSOR_SERIAL_NO": "11341",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -352,7 +353,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
       "SENSOR_SERIAL_NO": "17682",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -367,7 +368,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
       "SENSOR_SERIAL_NO": "17683",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -382,7 +383,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
       "SENSOR_SERIAL_NO": "18950",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -397,7 +398,7 @@
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
       "SENSOR_SERIAL_NO": "3666",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -413,7 +414,7 @@
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
       "SENSOR_SERIAL_NO": "0157",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -428,7 +429,7 @@
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
       "SENSOR_SERIAL_NO": "0157",
-      "SENSOR_FIRMWARE_VERSION": " ",
+      "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -444,7 +445,7 @@
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
       "SENSOR_SERIAL_NO": "0157",
-      "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
+      "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -460,7 +461,7 @@
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
       "SENSOR_SERIAL_NO": "0157",
-      "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
+      "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",
@@ -475,7 +476,7 @@
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
       "SENSOR_SERIAL_NO": "0157",
-      "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
+      "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.1",

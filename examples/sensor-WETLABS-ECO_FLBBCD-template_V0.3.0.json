@@ -123,8 +123,8 @@
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": "BBP700=2*pi*khi*((BETA_BACKSCATTERING700-DARK_BACKSCATTERING700)*SCALE_BACKSCATTERING700-BETASW700)",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-            "DARK_BACKSCATTERING700" : "47",
             "SCALE_BACKSCATTERING700": "1.799e-06",
+            "DARK_BACKSCATTERING700" : "47",
             "khi" : "1.076",
             "BETASW700" : "(contribution of pure sea water) is calculated at 124 angularDeg"
         },
