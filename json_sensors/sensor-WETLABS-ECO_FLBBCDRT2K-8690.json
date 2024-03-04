@@ -3,7 +3,7 @@
     "created_by": "FLBBCDRT2K-8690_JSON1.xlsm SBS-WriteArgoSensor() V0.1 (JCR)",
     "date_creation": "2024-02-08T17:08:40.000Z",
     "link": "./argo.sensor.schema.json",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "contents": "JSON description of Sea-Bird Scientific ECO sensor FLBBCDRT2K-8690",
     "sensor_described": "FLBBCDRT2K-8690"
   },

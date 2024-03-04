@@ -2,7 +2,7 @@
   "float_info": {
     "created_by": "BAK test",
     "date_creation": "2023-10-06T10:26:45Z",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "link": "./argo.float.schema.json",
     "contents": "json file to describe a platform with sensors for Argo",
     "float_described": "TWR-APEX-7660"
@@ -40,7 +40,7 @@
     "created_by": "ECR",
     "date_creation": "2023-02-03T07:41:54-07:00",
     "link": "./argo.platform.schema.json",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "contents": "json file to describe an APEX platform for Argo from WMOID 5904779",
     "platform_described": "TWR-APEX-7660"
   },
@@ -49,7 +49,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe a sensor for Argo. v0.1 draft",
       "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
     },
@@ -57,7 +57,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
       "sensor_described": "RBR-RBR_ARGO3-205908"
     },
@@ -65,7 +65,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an OCR-504 sensor for sensor schema v0.2.0 draft",
       "sensor_described": "SBS-OCR-504-42139"
     },
@@ -73,7 +73,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-08-31T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
       "sensor_described": "SATLANTIC-SUNA_V2-1527 found on float WMOID 5906509"
     },
@@ -81,7 +81,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe a sensor for Argo. v0.2 draft",
       "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
     },
@@ -89,7 +89,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.2.0 draft",
       "sensor_described": "SBE-SBE63_OPTOPDE-2739"
     },
@@ -97,7 +97,7 @@
       "created_by": "SBScientific-MetaWidget-V1.0",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an SBS-SEAFET on float 5906970 for sensor schema v0.2.0 draft",
       "sensor_described": "SBE-SEAFET-11341 on float 5906970"
     },
@@ -105,7 +105,7 @@
       "created_by": "SBE ph_calsheet_creator.py",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
       "sensor_described": "SBS-SEAFET-17682"
     },
@@ -113,7 +113,7 @@
       "created_by": "SBE SBE-pHcalToJSON.py",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
       "sensor_described": "SBS-SEAFET-17683"
     },
@@ -121,7 +121,7 @@
       "created_by": "SBE ph_calsheet_creator.py",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
       "sensor_described": "SBS-SEAFET-18950"
     },
@@ -129,7 +129,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an ECO sensor FLBBCDREM-3666 for sensor schema v0.2.0 draft",
       "sensor_described": "WETLABS-ECO_FLBBCD-3666"
     },
@@ -137,7 +137,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
       "sensor_described": "WETLABS-MCOMS_FLBBCD-0157"
     }

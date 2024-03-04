@@ -3,7 +3,7 @@
     "created_by": "BAK test",
     "date_creation": "2023-02-03T07:38:07Z",
     "link" : "./argo.sensor.schema.json",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "contents": "json file to describe a sensor for Argo. v0.1 draft",
     "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
   },

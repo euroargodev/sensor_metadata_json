@@ -2,7 +2,7 @@
   "float_info": {
     "created_by": "BAK test",
     "date_creation": "2023-10-05T12:48:27Z",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "link": "./argo.float.schema.json",
     "contents": "json file to describe a platform with sensors for Argo",
     "float_described": "SBE-NAVIS_EBR-1101"
@@ -31,7 +31,7 @@
     "created_by": "ECR",
     "date_creation": "2023-02-03T07:41:54-07:00",
     "link": "./argo.platform.schema.json",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "contents": "json file to describe a platform for Argo",
     "platform_described": "SBE-NAVIS_EBR-1101"
   },
@@ -40,7 +40,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
       "sensor_described": "RBR-RBR_ARGO3-205908"
     },
@@ -48,7 +48,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe a sensor for Argo. v0.2 draft",
       "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
     },
@@ -56,7 +56,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe a sensor for Argo. v0.1 draft",
       "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
     }

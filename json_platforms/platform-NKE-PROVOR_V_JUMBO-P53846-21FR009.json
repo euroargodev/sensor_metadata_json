@@ -3,7 +3,7 @@
     "created_by": "ECR",
     "date_creation": "2023-08-03T19:17:34+01:00",
     "link" : "./argo.platform.schema.json",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "contents": "json file to describe an NKE platform for Argo from WMOID 1902593", 
     "platform_described": "NKE-PROVOR_V_JUMBO-P53846-21FR009"
   },

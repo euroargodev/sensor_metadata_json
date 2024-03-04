@@ -3,7 +3,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-08-31T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
       "sensor_described": "SATLANTIC-SUNA_V2-1527 found on float WMOID 5906509"
     },

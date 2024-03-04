@@ -4,8 +4,8 @@
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
       "format_version": "0.3.0",
-      "contents": "json file to describe an ECO sensor FLBBCDREM-3666 on float WMOID 5906971 for sensor schema v0.2.0 draft",
-      "sensor_described": "WETLABS-ECO_FLBBCD-3666"
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "sensor_described": "WETLABS-MCOMS_FLBBCD-0157"
     },
     "@context": {
       "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
@@ -13,53 +13,48 @@
       "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
       "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
     },
-    "instrument_vendorinfo" : {
-      "vendor_schema": "SBE",
-      "version": "0.1",
-      "SBE_part_number" : "FAA-538092"
-    },
     "SENSORS": [
       {
         "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
-        "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-        "SENSOR_MODEL_FIRMWARE": " ",
-        "SENSOR_SERIAL_NO": "3666",
+        "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+        "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
-          "SBE_manufacturing_date": "2014-07-17",
+          "SBE_manufacturing_date": "2020-01-01",
           "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": 470,
           "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": 23,
           "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": 695,
           "CONFIG_EcoChlaFluorescenceEmissionBandwidth_nm": 70
-        }
+        } 
       },
       {
         "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
-        "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-        "SENSOR_MODEL_FIRMWARE": " ",
-        "SENSOR_SERIAL_NO": "3666",
+        "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+        "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
-          "SBE_manufacturing_date": "2014-07-17",
+          "SBE_manufacturing_date": "2020-01-01",
           "CONFIG_EcoBetaWavelength_nm": 700,
           "CONFIG_EcoBetaBandwidth_nm": 25,
-          "CONFIG_EcoBetaAngle_angularDeg": 124
+          "CONFIG_EcoBetaAngle_angularDeg": 150
         }
       },
       {
         "SENSOR": "SDN:R25::FLUOROMETER_CDOM",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
-        "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-        "SENSOR_MODEL_FIRMWARE": " ",
-        "SENSOR_SERIAL_NO": "3666",
+        "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
+        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+        "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
           "version": "0.1",
-          "SBE_manufacturing_date": "2014-07-17",
+          "SBE_manufacturing_date": "2020-01-01",
           "CONFIG_EcoCdomFluorescenceExcitationWavelength_nm": 370,
           "CONFIG_EcoCdomFluorescenceExcitationBandwidth_nm": 15,
           "CONFIG_EcoCdomFluorescenceEmissionWavelength_nm": 460,
@@ -71,46 +66,46 @@
       {
         "PARAMETER": "SDN:R03::FLUORESCENCE_CHLA",
         "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA",
-        "PARAMETER_UNITS": "count",
+        "PARAMETER_UNITS": " ",
         "PARAMETER_ACCURACY": " ",
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated chlorophyll-a fluorescence measurement",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-10-06"
+        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
       },
       {
         "PARAMETER": "SDN:R03::BETA_BACKSCATTERING700",
         "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
-        "PARAMETER_UNITS": "count",
+        "PARAMETER_UNITS": " ",
         "PARAMETER_ACCURACY": " ",
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-10-06"
+        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
       },
       {
         "PARAMETER": "SDN:R03::FLUORESCENCE_CDOM",
         "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CDOM",
-        "PARAMETER_UNITS": "count",
+        "PARAMETER_UNITS": " ",
         "PARAMETER_ACCURACY": " ",
         "PARAMETER_RESOLUTION": " ",
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
-        "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated fluorescence from coloured dissolved organic matter sensor",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-10-06"
+        "PREDEPLOYMENT_CALIB_COMMENT": "fluorescence from coloured dissolved organic matter",
+        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
       },
       {
         "PARAMETER": "SDN:R03::CHLA",
         "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA",
         "PARAMETER_UNITS": "mg/m3",
         "PARAMETER_ACCURACY": "0.08 mg/m3",
-        "PARAMETER_RESOLUTION": "0.025 mg/m3",
+        "PARAMETER_RESOLUTION": "0.024 mg/m3",
         "PREDEPLOYMENT_CALIB_EQUATION": "CHLA = (FLUORESCENCE_CHLA - DARK_CHLA) * SCALE_CHLA",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-            "SCALE_CHLA": "0.0066",
-            "DARK_CHLA": "44"
+            "SCALE_CHLA":"1.891E-03",
+            "DARK_CHLA":"51"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
         "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
@@ -120,15 +115,15 @@
         "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
         "PARAMETER_UNITS": "m-1",
         "PARAMETER_ACCURACY": " ",
-        "PARAMETER_RESOLUTION": " ",
+        "PARAMETER_RESOLUTION": "4.67E-07",
         "PREDEPLOYMENT_CALIB_EQUATION": "BBP700=2*pi*khi*((BETA_BACKSCATTERING700-DARK_BACKSCATTERING700)*SCALE_BACKSCATTERING700-BETASW700)",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-            "SCALE_BACKSCATTERING700": "1.799e-06",
-            "DARK_BACKSCATTERING700" : "47",
-            "khi" : "1.076",
-            "BETASW700" : "(contribution of pure sea water) is calculated at 124 angularDeg"
+            "DARK_BACKSCATTERING700" : "49",
+            "SCALE_BACKSCATTERING700": "3.350E-07",
+            "khi" : "1.142",
+            "BETASW700" : "Contribution of pure sea water calculated at 150 angular deg"
         },
-        "PREDEPLOYMENT_CALIB_COMMENT": "Sullivan et al., 2012, Zhang et al., 2009, BETASW700 is the contribution by the pure seawater at 700nm, the calculation can be found at http://doi.org/10.17882/42916. Reprocessed from the file provided by Andrew Bernard (Seabird) following ADMT18. This file is accessible at http://doi.org/10.17882/54520",
+        "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
         "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
       },
       {
@@ -136,11 +131,11 @@
         "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CDOM",
         "PARAMETER_UNITS": "ppb",
         "PARAMETER_ACCURACY": " ",
-        "PARAMETER_RESOLUTION": " ",
+        "PARAMETER_RESOLUTION": "1.28E-02",
         "PREDEPLOYMENT_CALIB_EQUATION": "CDOM = (FLUORESCENCE_CDOM - DARK_CDOM) * SCALE_CDOM",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
-            "SCALE_CDOM":"0.0814",
-            "DARK_CDOM":"42"
+            "SCALE_CDOM":"6.336E-03",
+            "DARK_CDOM":"51"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
         "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"

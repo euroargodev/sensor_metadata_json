@@ -3,7 +3,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.2.0",
+      "format_version": "0.3.0",
       "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.2.0 draft",
       "sensor_described": "SBE-SBE63_OPTOPDE-2739"
     },

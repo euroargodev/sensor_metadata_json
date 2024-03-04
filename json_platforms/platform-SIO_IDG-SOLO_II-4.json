@@ -3,7 +3,7 @@
     "created_by": "BAK test",
     "date_creation": "2022-02-23T02:03:01Z",
     "link" : "./argo.platform.schema.json",
-    "format_version": "0.2.0",
+    "format_version": "0.3.0",
     "contents": "json file to describe a SOLO_II platform for Argo from float WMOIS 5906767", 
     "platform_described": "platform-SIO_IDG-SOLO_II-4"
   },

@@ -4,7 +4,7 @@
     "title": "JSON Schema for Argo Program Platforms",
     "description": "A JSON Schema used to describe an Argo platform. The platform includes the hull, controller, buoyancy engine, positioning and transmission systems, but not the sensors.  See Argo User's Manual. Metada format Version 3.41.1",
     "format_version": {
-        "const": "0.2.0"
+        "const": "0.3.0"
     },
     "type": "object",
     "properties": {
