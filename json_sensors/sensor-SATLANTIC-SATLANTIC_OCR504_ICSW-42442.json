@@ -1,11 +1,11 @@
 {
     "sensor_info": {
         "created_by": "SBE-OCRcalToJSON.py",
-        "date_creation": "2024-03-18T18:08:49+00:00",
+        "date_creation": "2024-03-18T18:10:48+00:00",
         "link": "./argo.sensor.schema.json",
         "format_version": "0.3.0",
         "contents": "json file to describe an OCR-504 sensor for sensor schema v0.3.0 draft",
-        "sensor_described": "SATLANTIC-SATLANTIC_OCR504_ICSW-42139"
+        "sensor_described": "SATLANTIC-SATLANTIC_OCR504_ICSW-42442"
     },
     "@context": {
         "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
@@ -19,7 +19,7 @@
             "SENSOR_MAKER": "SDN:R26::SATLANTIC",
             "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
             "SENSOR_MODEL_FIRMWARE": " ",
-            "SENSOR_SERIAL_NO": "42139",
+            "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
@@ -28,15 +28,15 @@
             }
         },
         {
-            "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+            "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR443",
             "SENSOR_MAKER": "SDN:R26::SATLANTIC",
             "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
             "SENSOR_MODEL_FIRMWARE": " ",
-            "SENSOR_SERIAL_NO": "42139",
+            "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
-                "CONFIG_OcrDownIrrWavelength2_nm": 412,
+                "CONFIG_OcrDownIrrWavelength2_nm": 443,
                 "CONFIG_OcrDownIrrBandwidth2_nm": 10
             }
         },
@@ -45,7 +45,7 @@
             "SENSOR_MAKER": "SDN:R26::SATLANTIC",
             "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
             "SENSOR_MODEL_FIRMWARE": " ",
-            "SENSOR_SERIAL_NO": "42139",
+            "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
@@ -54,14 +54,16 @@
             }
         },
         {
-            "SENSOR": "SDN:R25::RADIOMETER_PAR",
+            "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR555",
             "SENSOR_MAKER": "SDN:R26::SATLANTIC",
             "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
             "SENSOR_MODEL_FIRMWARE": " ",
-            "SENSOR_SERIAL_NO": "42139",
+            "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1"
+                "version": "0.1",
+                "CONFIG_OcrDownIrrWavelength4_nm": 555,
+                "CONFIG_OcrDownIrrBandwidth4_nm": 10
             }
         }
     ],
@@ -75,18 +77,18 @@
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
             "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 380 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
         },
         {
-            "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE412",
-            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+            "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE443",
+            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR443",
             "PARAMETER_UNITS": "count",
             "PARAMETER_ACCURACY": " ",
             "PARAMETER_RESOLUTION": " ",
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
-            "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 412 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+            "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 443 nm",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
         },
         {
             "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE490",
@@ -97,18 +99,18 @@
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
             "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 490 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
         },
         {
-            "PARAMETER": "SDN:R03::RAW_DOWNWELLING_PAR",
-            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_PAR",
+            "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE555",
+            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR555",
             "PARAMETER_UNITS": "count",
             "PARAMETER_ACCURACY": " ",
             "PARAMETER_RESOLUTION": " ",
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
-            "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling PAR measurement",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+            "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 555 nm",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
         },
         {
             "PARAMETER": "SDN:R03::DOWN_IRRADIANCE380",
@@ -118,36 +120,39 @@
             "PARAMETER_RESOLUTION": " ",
             "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE380=0.01*A1_380*(RAW_DOWNWELLING_IRRADIANCE380-A0_380)*lm_380",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-                "A0_380": "2148866299.2",
-                "A1_380": "1.65350515411e-07",
+                "A0_380": "2147610823.9",
+                "A1_380": "1.58559463009e-07",
                 "lm_380": "1.161"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 380 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
-                "SBE_calfile": "DI42139A.cal"
+                "SBE_calfile": "DI42442A.cal"
             }
         },
         {
-            "PARAMETER": "SDN:R03::DOWN_IRRADIANCE412",
-            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+            "PARAMETER": "SDN:R03::DOWN_IRRADIANCE443",
+            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR443",
             "PARAMETER_UNITS": "W/m^2/nm",
             "PARAMETER_ACCURACY": " ",
             "PARAMETER_RESOLUTION": " ",
-            "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE412=0.01*A1_412*(RAW_DOWNWELLING_IRRADIANCE412-A0_412)*lm_412",
+            "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE443=0.01*A1_443*(RAW_DOWNWELLING_IRRADIANCE443-A0_443)*lm_443",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-                "A0_412": "2147863376.5",
-                "A1_412": "2.07212473306e-07",
-                "lm_412": "1.368"
+                "A0_412": "2.14786e+09",
+                "A1_412": "2.07212e-07",
+                "lm_412": "1.368",
+                "A0_443": "2147966878.0",
+                "A1_443": "1.89599480509e-07",
+                "lm_443": "1.41"
             },
-            "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 412 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+            "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 443 nm",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
-                "SBE_calfile": "DI42139A.cal"
+                "SBE_calfile": "DI42442A.cal"
             }
         },
         {
@@ -158,36 +163,39 @@
             "PARAMETER_RESOLUTION": " ",
             "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE490=0.01*A1_490*(RAW_DOWNWELLING_IRRADIANCE490-A0_490)*lm_490",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-                "A0_490": "2147885131.7",
-                "A1_490": "2.07969573327e-07",
+                "A0_490": "2147573387.7",
+                "A1_490": "1.90586517794e-07",
                 "lm_490": "1.365"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 490 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
-                "SBE_calfile": "DI42139A.cal"
+                "SBE_calfile": "DI42442A.cal"
             }
         },
         {
-            "PARAMETER": "SDN:R03::DOWNWELLING_PAR",
-            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_PAR",
-            "PARAMETER_UNITS": "microMoleQuanta/m^2/sec",
+            "PARAMETER": "SDN:R03::DOWN_IRRADIANCE555",
+            "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR555",
+            "PARAMETER_UNITS": "W/m^2/nm",
             "PARAMETER_ACCURACY": " ",
             "PARAMETER_RESOLUTION": " ",
-            "PREDEPLOYMENT_CALIB_EQUATION": "DOWNWELLING_PAR=0.01*A1_PAR*(RAW_DOWNWELLING_PAR-A0_PAR)*lm_PAR",
+            "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE555=0.01*A1_555*(RAW_DOWNWELLING_IRRADIANCE555-A0_555)*lm_555",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-                "A0_PAR": "2148056913.0",
-                "A1_PAR": "3.68763177832e-06",
-                "lm_PAR": "1.359"
+                "A0_PAR": "2.14806e+09",
+                "A1_PAR": "3.68763e-06",
+                "lm_PAR": "1.359",
+                "A0_555": "2147700625.2",
+                "A1_555": "2.04922510685e-07",
+                "lm_555": "1.372"
             },
-            "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling PAR measurement",
-            "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+            "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 555 nm",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.1",
-                "SBE_calfile": "DI42139A.cal"
+                "SBE_calfile": "DI42442A.cal"
             }
         }
     ]

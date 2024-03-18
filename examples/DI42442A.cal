@@ -1,0 +1,48 @@
+# Satlantic model # OCR-504 ICSW s/n 2442 SATNET
+#  /  / OCR-504.222147B
+#############################################################################################################################################################
+# Calibration History
+# Date       |Operator |SW Version |Rev |Type |Light Data   |Dark Data   |Lamp         |Target       |Immersion Param  |Distance  | Comments
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 2024-03-08 |mswenson |1.9.23_30  |A   |ED   |DI42442f-2442_2024-03-07_15-12-28_raw |DI42442d-2442_2024-03-08_09-29-13_raw |F1739        |             |March 2003       |50.0      | Final Calibration
+
+
+
+INSTRUMENT SATDI4 '' 6 AS 0 NONE
+SN 2442 '' 4 AS 0 NONE
+
+# Time since commencement of normal operation
+TIMER NONE 'sec' 10 AF 0 COUNT
+
+# Sample Delay
+DELAY SAMPLE 'ms' 2 BS 0 COUNT
+
+# Wavelength Data
+
+ED 379.78 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147610823.9	1.58559463009e-007	1.161
+
+ED 443.20 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147966878.0	1.89599480509e-007	1.410
+
+ED 490.95 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147573387.7	1.90586517794e-007	1.365
+
+ED 555.82 'uW/cm^2/nm' 4 BU 1 OPTIC2
+2147700625.2	2.04922510685e-007	1.372
+
+# In-head ancillary measurements
+VS NONE 'Volts' 2 BU 1 POLYU
+0 0.03
+
+TEMP PCB 'Celsius' 2 BU 1 POLYU
+-50.0 0.5
+
+# Frame Counter (Data Integrity)
+FRAME COUNTER '' 1 BU 0 COUNT
+
+# Check Sum (Data Integrity)
+CHECK SUM '' 1 BU 0 COUNT
+
+# Frame Terminator
+CRLF TERMINATOR '' 2 BU 0 NONE

@@ -1,0 +1,193 @@
+{
+    "sensor_info": {
+      "created_by": "OCR",
+      "date_creation": "2023-04-10T07:38:07-07:00",
+      "link" : "./argo.sensor.schema.json",
+      "format_version": "0.3.0",
+      "contents": "json file to describe an OCR-504 sensor for sensor schema vxx.xx.xx draft",
+      "sensor_described": "SBS-OCR-504-42139"
+    },
+    "@context": {
+      "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+      "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+      "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+      "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+    },
+    "SENSORS": [
+      {
+        "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
+        "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+        "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_SERIAL_NO": "42139",
+        "sensor_vendorinfo": {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "CONFIG_OcrDownIrrWavelength1_nm": 380,
+          "CONFIG_OcrDownIrrBandwidth1_nm": 10
+        }
+      },
+      {
+        "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+        "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+        "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_SERIAL_NO": "42139",
+        "sensor_vendorinfo": {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "CONFIG_OcrDownIrrWavelength2_nm": 412,
+          "CONFIG_OcrDownIrrBandwidth2_nm": 10
+        }
+      },
+      {
+        "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
+        "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+        "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_SERIAL_NO": "42139",
+        "sensor_vendorinfo": {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "CONFIG_OcrDownIrrWavelength3_nm": 490,
+          "CONFIG_OcrDownIrrBandwidth3_nm": 10
+        }
+      },
+      {
+        "SENSOR": "SDN:R25::RADIOMETER_PAR",
+        "SENSOR_MAKER": "SDN:R26::SATLANTIC",
+        "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
+        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_SERIAL_NO": "42139",
+        "sensor_vendorinfo": {
+          "vendor_schema": "SBE",
+          "version": "0.1"
+        }
+      }
+    ],
+    "PARAMETERS": [
+      {
+        "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE380",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
+        "PARAMETER_UNITS": "count",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 380 nm",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+      },
+      {
+        "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE412",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+        "PARAMETER_UNITS": "count",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 412 nm",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+      },
+      {
+        "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE490",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
+        "PARAMETER_UNITS": "count",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 490 nm",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+      },
+      {
+        "PARAMETER": "SDN:R03::RAW_DOWNWELLING_PAR",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_PAR",
+        "PARAMETER_UNITS": "count",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "none",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
+        "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling PAR measurement",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+      },
+      {
+        "PARAMETER": "SDN:R03::DOWN_IRRADIANCE380",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
+        "PARAMETER_UNITS": "W/m^2/nm",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE380=0.01*A1_380*(RAW_DOWNWELLING_IRRADIANCE380-A0_380)*lm_380",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
+          "A0_380": "2.14887e+09",
+          "A1_380": "1.65351e-07",
+          "lm_380": "1.161"
+        },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "parameter_vendorinfo":  {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "SBE_calfile" : " "
+        }      },
+      {
+        "PARAMETER": "SDN:R03::DOWN_IRRADIANCE412",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
+        "PARAMETER_UNITS": "W/m^2/nm",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE412=0.01*A1_412*(RAW_DOWNWELLING_IRRADIANCE412-A0_412)*lm_412",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
+          "A0_412": "2.14786e+09", 
+          "A1_412": "2.07212e-07",
+          "lm_412": "1.368"
+        },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "parameter_vendorinfo":  {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "SBE_calfile" : " "
+        }
+      },
+      {
+        "PARAMETER": "SDN:R03::DOWN_IRRADIANCE490",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
+        "PARAMETER_UNITS": "W/m^2/nm",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE490=0.01*A1_490*(RAW_DOWNWELLING_IRRADIANCE490-A0_490)*lm_490",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
+          "A0_490": "2.14789e+09", 
+          "A1_490": "2.0797e-07", 
+          "lm_490": "1.365"
+        },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "parameter_vendorinfo":  {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "SBE_calfile" : " "
+        }
+      },
+      {
+        "PARAMETER": "SDN:R03::DOWNWELLING_PAR",
+        "PARAMETER_SENSOR": "SDN:R25::RADIOMETER_PAR",
+        "PARAMETER_UNITS": "microMoleQuanta/m^2/sec",
+        "PARAMETER_ACCURACY": " ",
+        "PARAMETER_RESOLUTION": " ",
+        "PREDEPLOYMENT_CALIB_EQUATION": "DOWNWELLING_PAR=0.01*A1_PAR*(RAW_DOWNWELLING_PAR-A0_PAR)*lm_PAR",
+        "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { 
+          "A0_PAR": "2.14806e+09", 
+          "A1_PAR": "3.68763e-06",
+          "lm_PAR": "1.359"
+        },
+        "PREDEPLOYMENT_CALIB_COMMENT": "",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "parameter_vendorinfo":  {
+          "vendor_schema": "SBE",
+          "version": "0.1",
+          "SBE_calfile" : " "
+        }
+    }
+  ]
+}

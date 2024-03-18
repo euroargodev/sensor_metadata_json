@@ -126,7 +126,7 @@
                     "enum": [124, 142, 150]
                 },
                 "CONFIG_OcrDownIrrWavelength1_nm": {
-                    "type": "number",
+                    "type": "integer",
                     "enum": [380],
                     "maximum" : 900
                 },
@@ -192,7 +192,7 @@
                     "maximum" : 2.0
                 }
             },
-        "required" : ["vendor_schema", "version", "SBE_manufacturing_date"],
+        "required" : ["vendor_schema", "version"],
             "additionalProperties" : false
         },
         "parameter_vendorinfo": {
@@ -201,6 +201,9 @@
             "properties": {
                 "vendor_schema" : true,
                 "version" : {"$ref": "#/version"},
+                "SBE_calfile": {
+                    "type": "string"
+                },
                 "SBE_optional3": {
                     "type": "number"
                 },
