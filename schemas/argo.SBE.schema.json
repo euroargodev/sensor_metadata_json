@@ -3,7 +3,7 @@
     "$id": "http://schema.nerc.ac.uk/schemas/sensor/0.1/argo.SBE.schema.json",
     "title": "JSON Schema for Argo Program Sensors",
     "description": "A JSON Schema used to populate Argo float sensor configuration and parameter metadata elements specifice to SBE.  ",
-    "version" : {"const" : "0.1"},
+    "version" : {"const" : "0.2"},
     "type": "object",
     "$defs": {
         "sensor_vendorinfo": {
@@ -13,7 +13,7 @@
                 "version" : {"$ref": "#/version"},
                 "SBE_manufacturing_date": {
                     "type": "string",
-                    "format": "date"
+                    "format": "date-time"
                 },
                 "SBE_ISFET_SERIAL_NO": {
                     "type": "string"
@@ -222,11 +222,11 @@
                 "version" : {"$ref": "#/version"},
                 "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": {
                     "type": "string",
-                    "format": "date"
+                    "format": "date-time"
                 },
                 "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": {
                     "type": "string",
-                    "format": "date"
+                    "format": "date-time"
                 }
             },
             "required" : ["vendor_schema", "version"],
@@ -253,7 +253,7 @@
                 "version" : {"$ref": "#/version"},
                 "SBE_manufacturing_date": {
                     "type": "string",
-                    "format": "date"
+                    "format": "date-time"
                 },
                 "SBE_part_number": {
                     "type": "string"

@@ -77,7 +77,7 @@ def SATgetCal(calFile):
     
         meta = dict()
         meta['serialNo'] = serialNo
-        meta['calDate'] = calDate
+        meta['calDate'] = datetime.strptime(calDate, '%Y-%m-%d').replace(tzinfo=timezone.utc).isoformat()
         meta['calOperator'] = calOperator
         
         return (dfcal, meta)

@@ -3,7 +3,7 @@
     "created_by": "BAK test",
     "date_creation": "2023-02-03T07:38:07Z",
     "link" : "./argo.sensor.schema.json",
-    "format_version": "0.3.0",
+    "format_version": "0.4.0",
     "contents": "json file to describe an Trios RAMSES Sensor on an Argo float for sensor schema vxx.xx.xx draft",
     "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
   },

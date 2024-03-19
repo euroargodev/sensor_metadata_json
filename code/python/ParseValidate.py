@@ -251,8 +251,9 @@ def main():
         # fname = 'json_sensors/sensor-SATLANTIC-SUNA_V2-1527.json'
         # fname = 'json_sensors/sensor-WETLABS-ECO_FLBBCD-3666.json'
         # fname = 'json_sensors/sensor-SBE-SEAFET-11341.json'
-        # fname = 'json_platforms/platform-SBE-NAVIS_EBR-1101.json'
-        fname = 'json_floats/float-SBE-NAVIS_EBR-1101.json'
+        fname = 'json_platforms/platform-SBE-NAVIS_EBR-1101.json'
+        # fname = 'json_floats/float-SBE-NAVIS_EBR-1101.json'
+        fname = 'json_sensors/sensor-SATLANTIC-SATLANTIC_OCR504_ICSW-42442.json'
         
     # Load JSON sensor instance data 
     data_dir = Path.cwd() 

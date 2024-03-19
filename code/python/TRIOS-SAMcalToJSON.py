@@ -54,7 +54,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_vers
 
     # sensor_info
     data['sensor_info']["created_by"] = os.path.basename(__file__)
-    data['sensor_info']["date_creation"] = datetime.datetime.now().replace(microsecond=0).isoformat()
+    data['sensor_info']["date_creation"] = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
     format_version = data['sensor_info'].get("format_version")
     contents       = data['sensor_info'].get("contents")
     data['sensor_info']["contents"] = contents.replace('xx.xx.xx', format_version)
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     # Instrument type, fw version, and calib date to be supplied by TRIOS internallhy
     instrument_type = "ACC_VIS"
     fw_version = "1.0.9"
-    calib_date = datetime.datetime.now().date().isoformat()
+    calib_date = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
 
     # Calibration data
     calname = 'examples/SAM_876C_01600040_AllCal.txt'

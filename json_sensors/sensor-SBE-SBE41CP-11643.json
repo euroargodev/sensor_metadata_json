@@ -3,8 +3,8 @@
     "created_by": "BAK test",
     "date_creation": "2023-02-03T07:38:07Z",
     "link" : "./argo.sensor.schema.json",
-    "format_version": "0.3.0",
-    "contents": "json file to describe a sensor for Argo. v0.2 draft",
+    "format_version": "0.4.0",
+    "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
     "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
   },
   "@context": {
@@ -22,8 +22,8 @@
       "SENSOR_SERIAL_NO": "11076214",
       "sensor_vendorinfo": {
         "vendor_schema" : "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2022-01-01"
+        "version": "0.2",
+        "SBE_manufacturing_date": "2022-01-01T00:00:00Z"
       }
     },
     {
@@ -34,8 +34,8 @@
       "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema" : "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2022-01-01"
+        "version": "0.2",
+        "SBE_manufacturing_date": "2022-01-01T00:00:00Z"
       }
     },
     {
@@ -46,8 +46,8 @@
       "SENSOR_SERIAL_NO": "11643",
       "sensor_vendorinfo": {
         "vendor_schema" : "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2022-01-01"
+        "version": "0.2",
+        "SBE_manufacturing_date": "2022-01-01T00:00:00Z"
       }
     }
   ],
@@ -74,10 +74,10 @@
         "PTHA2": "-4.733751e-007"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2021-03-31",
-      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema" : "SBE",
-        "version": "0.1"
+        "version": "0.2"
       },
       "predeployment_vendorinfo": {
         "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
@@ -97,7 +97,7 @@
         "a3": " 1.520066e-007"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date 2021-03-31",
-      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "None",
         "anyproperty_works_here" : "any content is valide if vendor_schema is None; if vendor_schema is specfied, content will be validated agains this subschemea",
@@ -121,15 +121,15 @@
         "WBOTC": " 3.1475e-008"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date 2021-03-31",
-      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
-        "version" : "0.1"
+        "version" : "0.2"
       }
     }
   ],
   "instrument_vendorinfo": {
     "vendor_schema" : "SBE",
-    "version" : "0.1"
+    "version" : "0.2"
   }
 }

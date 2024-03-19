@@ -3,7 +3,7 @@
     "created_by": "FLBBCDRT2K-8690_JSON1.xlsm SBS-WriteArgoSensor() V0.1 (JCR)",
     "date_creation": "2024-02-08T17:08:40.000Z",
     "link": "./argo.sensor.schema.json",
-    "format_version": "0.3.0",
+    "format_version": "0.4.0",
     "contents": "JSON description of Sea-Bird Scientific ECO sensor FLBBCDRT2K-8690",
     "sensor_described": "FLBBCDRT2K-8690"
   },
@@ -15,7 +15,7 @@
   },
   "instrument_vendorinfo": {
     "vendor_schema": "SBE",
-    "version": "0.1",
+    "version": "0.2",
     "SBE_part_number": "FAA-538092"
   },
   "SENSORS": [
@@ -27,8 +27,8 @@
       "SENSOR_SERIAL_NO": "8690",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2014-07-17",
+        "version": "0.2",
+        "SBE_manufacturing_date": "2014-07-17T00:00:00Z",
         "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": 470,
         "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": 23,
         "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": 695,
@@ -43,8 +43,8 @@
       "SENSOR_SERIAL_NO": "8690",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2014-07-17",
+        "version": "0.2",
+        "SBE_manufacturing_date": "2014-07-17T00:00:00Z",
         "CONFIG_EcoBetaWavelength_nm": 700,
         "CONFIG_EcoBetaBandwidth_nm": 25,
         "CONFIG_EcoBetaAngle_angularDeg": 124
@@ -58,8 +58,8 @@
       "SENSOR_SERIAL_NO": "8690",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2014-07-17",
+        "version": "0.2",
+        "SBE_manufacturing_date": "2014-07-17T00:00:00Z",
         "CONFIG_EcoCdomFluorescenceExcitationWavelength_nm": 370,
         "CONFIG_EcoCdomFluorescenceExcitationBandwidth_nm": 15,
         "CONFIG_EcoCdomFluorescenceEmissionWavelength_nm": 460,
@@ -78,7 +78,7 @@
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated chlorophyll-a fluorescence measurement",
-      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30"
+      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::BETA_BACKSCATTERING700",
@@ -90,7 +90,7 @@
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
-      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30"
+      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::FLUORESCENCE_CDOM",
@@ -102,7 +102,7 @@
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated fluorescence from coloured dissolved organic matter sensor",
-      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30"
+      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::CHLA",
@@ -116,7 +116,7 @@
         "DARK_CHLA": "50"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "SBS Factory Calbration, 2024-01-30",
-      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30"
+      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::BBP700",
@@ -132,7 +132,7 @@
         "BETASW700": "(contribution of pure sea water) is calculated at 124 angularDeg"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "SBS Factory Calbration, 2024-01-30",
-      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30"
+      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::CDOM",
@@ -146,7 +146,7 @@
         "DARK_CDOM": "51"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "SBS Factory Calbration, 2024-01-30",
-      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30"
+      "PREDEPLOYMENT_CALIB_DATE": "2024-01-30T00:00:00Z"
     }
   ]
 }

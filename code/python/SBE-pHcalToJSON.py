@@ -48,7 +48,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fet_sn,
 
     # HACK! Use calfiledate as manufacturing date
     # Use calfiledate as PREDEPLOYMENT_CALIB_DATE for PARAMETERS with calibration coefficients
-    calfiledate = datetime.datetime.now().date().isoformat()
+    calfiledate = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
     data['SENSORS'][0]['sensor_vendorinfo']['SBE_manufacturing_date'] = calfiledate
     data['PARAMETERS'][4]['PREDEPLOYMENT_CALIB_DATE'] = calfiledate
     data['PARAMETERS'][5]['PREDEPLOYMENT_CALIB_DATE'] = calfiledate
@@ -59,7 +59,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fet_sn,
 
     # sensor_info
     data['sensor_info']["created_by"] = "SBE " + os.path.basename(__file__)
-    data['sensor_info']["creation_date"] : datetime.datetime.now().replace(microsecond=0).isoformat()
+    data['sensor_info']["creation_date"] = datetime.datetime.now().replace(microsecond=0).isoformat()
     format_version = data['sensor_info'].get("format_version")
     contents       = data['sensor_info'].get("contents")
     data['sensor_info']["contents"] = contents.replace('xx.xx.xx', format_version)
@@ -75,14 +75,14 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fet_sn,
     # Set K0 and K2 calibration dates accordingly in SBE-specific metadate
     key = 'PREDEPLOYMENT_SEAFET_K0_CALIB_DATE'
     # K0date = caltxt['K0'].get('K0_calibration_date').strftime('%Y-%m-%d')
-    data['PARAMETERS'][4]['predeployment_vendorinfo'][key] = K0_date
-    data['PARAMETERS'][5]['predeployment_vendorinfo'][key] = K0_date
+    data['PARAMETERS'][4]['predeployment_vendorinfo'][key] = datetime.datetime.strptime(K0_date, '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc).isoformat()
+    data['PARAMETERS'][5]['predeployment_vendorinfo'][key] = datetime.datetime.strptime(K0_date, '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc).isoformat()
 
     key = 'PREDEPLOYMENT_SEAFET_K2_CALIB_DATE'
     # K2date = caltxt['K2P'].get('K2_calibration_date').strftime('%Y-%m-%d')
     K2_date = K2P.get('K2_calibration_date').strftime('%Y-%m-%d')
-    data['PARAMETERS'][4]['predeployment_vendorinfo'][key] = K2_date
-    data['PARAMETERS'][5]['predeployment_vendorinfo'][key] = K2_date
+    data['PARAMETERS'][4]['predeployment_vendorinfo'][key] = datetime.datetime.strptime(K2_date, '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc).isoformat()
+    data['PARAMETERS'][5]['predeployment_vendorinfo'][key] = datetime.datetime.strptime(K2_date, '%Y-%m-%d').replace(tzinfo=datetime.timezone.utc).isoformat()
 
     # Calibration Coefficiens
     # fP
@@ -126,8 +126,9 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fet_sn,
 if __name__ == '__main__':
 
     calname = 'examples/17683-11764 ISFET pH.cal'
+    calname = 'examples/18950-10790 ISFET pH.cal'
 
-    config = {"output_dir" : ',/examples', "template" : "./examples/sensor-SBE-SEAFET-template.json"}
+    config = {"output_dir" : './examples', "template" : "./examples/sensor-SBE-SEAFET-template.json"}
 
     # Get JSON tempate 
     # template = Path('examples/sensor-SBE-SEAFET-template.json')

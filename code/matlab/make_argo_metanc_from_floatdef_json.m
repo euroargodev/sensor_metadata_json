@@ -52,7 +52,7 @@ function m = make_argo_metanc_from_floatdef_json(float_id,dirnames)
 % An example floatdef json file could be
 % float-SBE-NAVIS_EBR-1101.json
 % in which case this is called with
-% m = make_argo_metanc_from_floatdef_json('float-SBE-NAVIS_EBR-1101.json')
+% m = make_argo_metanc_from_floatdef_json('SBE-NAVIS_EBR-1101')
 %
 % The returned argument m is a structure containing the fields needed for
 % an Argo meta.nc file, that should match the field names in the Argo users
@@ -327,7 +327,7 @@ for kp = 1:num_p
         value = js.PARAMETERS{kp}.(fieldname);
     end
     if ~strcmp(value,' ');
-        dnum = datenum(value,'yyyy-mm-dd');
+        dnum = datenum(value,'yyyy-mm-ddTHH:MM:SS');
         value14 = datestr(dnum,'yyyymmddHHMMSS');
     else
         value14 = [];

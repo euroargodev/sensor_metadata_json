@@ -3,8 +3,8 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
-      "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.2.0 draft",
+      "format_version": "0.4.0",
+      "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.4.0 draft",
       "sensor_described": "SBE-SBE63_OPTOPDE-2739"
     },
     "@context": {
@@ -22,8 +22,8 @@
         "SENSOR_SERIAL_NO": "2739",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "SBE_manufacturing_date": "2020-12-17"
+          "version": "0.2",
+          "SBE_manufacturing_date": "2020-12-17T00:00:00Z"
         }
       }
     ],
@@ -37,7 +37,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::TEMP_VOLTAGE_DOXY",
@@ -48,7 +48,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::TEMP_DOXY",
@@ -64,7 +64,7 @@
           "TA3": "1.1514e-07"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::DOXY",
@@ -92,7 +92,7 @@
           "SolC0": "-4.88682e-07"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17T00:00:00Z"
       }
 
 

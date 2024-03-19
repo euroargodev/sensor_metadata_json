@@ -3,8 +3,8 @@
     "created_by": "BAK test",
     "date_creation": "2023-02-03T07:38:07Z",
     "link" : "./argo.sensor.schema.json",
-    "format_version": "0.3.0",
-    "contents": "json file to describe a sensor for Argo. v0.1 draft",
+    "format_version": "0.4.0",
+    "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
     "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
   },
   "@context": {
@@ -61,7 +61,7 @@
         "T5": "not available"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "optode temperature, see TD269 Operating manual oxygen optode 4330, 4835, 4831",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01"
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::DOXY",
@@ -100,7 +100,7 @@
         "C3": "-1.0767272E-6"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01T00:00:00Z",
       "parameter_vendorinfo": {
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
       },
@@ -139,7 +139,7 @@
         "C3": "-1.0767272E-6"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01T00:00:00Z",
       "parameter_vendorinfo": {
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
       },

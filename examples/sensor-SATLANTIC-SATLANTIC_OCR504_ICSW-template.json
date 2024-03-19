@@ -3,7 +3,7 @@
       "created_by": "OCR",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
+      "format_version": "0.4.0",
       "contents": "json file to describe an OCR-504 sensor for sensor schema vxx.xx.xx draft",
       "sensor_described": "SBS-OCR-504-42139"
     },
@@ -22,7 +22,7 @@
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "CONFIG_OcrDownIrrWavelength1_nm": 380,
           "CONFIG_OcrDownIrrBandwidth1_nm": 10
         }
@@ -35,7 +35,7 @@
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "CONFIG_OcrDownIrrWavelength2_nm": 412,
           "CONFIG_OcrDownIrrBandwidth2_nm": 10
         }
@@ -48,7 +48,7 @@
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "CONFIG_OcrDownIrrWavelength3_nm": 490,
           "CONFIG_OcrDownIrrBandwidth3_nm": 10
         }
@@ -61,7 +61,7 @@
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1"
+          "version": "0.2"
         }
       }
     ],
@@ -75,7 +75,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": "none",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 380 nm",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE412",
@@ -86,7 +86,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": "none",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 412 nm",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE490",
@@ -97,7 +97,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": "none",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 490 nm",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::RAW_DOWNWELLING_PAR",
@@ -108,7 +108,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": "none",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling PAR measurement",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05"
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::DOWN_IRRADIANCE380",
@@ -123,10 +123,10 @@
           "lm_380": "1.161"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z",
         "parameter_vendorinfo":  {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "SBE_calfile" : " "
         }      },
       {
@@ -142,10 +142,10 @@
           "lm_412": "1.368"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z",
         "parameter_vendorinfo":  {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "SBE_calfile" : " "
         }
       },
@@ -162,10 +162,10 @@
           "lm_490": "1.365"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z",
         "parameter_vendorinfo":  {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "SBE_calfile" : " "
         }
       },
@@ -182,10 +182,10 @@
           "lm_PAR": "1.359"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z",
         "parameter_vendorinfo":  {
           "vendor_schema": "SBE",
-          "version": "0.1",
+          "version": "0.2",
           "SBE_calfile" : " "
         }
     }

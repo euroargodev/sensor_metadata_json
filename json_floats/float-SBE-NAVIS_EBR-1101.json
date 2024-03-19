@@ -40,7 +40,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
+      "format_version": "0.4.0",
       "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
       "sensor_described": "RBR-RBR_ARGO3-205908"
     },
@@ -48,7 +48,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
+      "format_version": "0.4.0",
       "contents": "json file to describe a sensor for Argo. v0.2 draft",
       "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
     },
@@ -56,7 +56,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
+      "format_version": "0.4.0",
       "contents": "json file to describe a sensor for Argo. v0.1 draft",
       "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
     }
@@ -83,8 +83,8 @@
     "CONTROLLER_BOARD_SERIAL_NO_PRIMARY": "00000",
     "platform_vendorinfo": {
       "vendor_schema": "SBE",
-      "version": "0.1",
-      "SBE_manufacturing_date": "2014-07-17"
+      "version":"0.2",
+      "SBE_manufacturing_date": "2014-07-17T00:00:00Z"
     }
   },
   "SENSORS": [
@@ -142,8 +142,8 @@
       "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2022-01-01"
+        "version": "0.2",
+        "SBE_manufacturing_date": "2022-01-01T00:00:00Z"
       }
     },
     {
@@ -154,8 +154,8 @@
       "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2022-01-01"
+        "version": "0.2",
+        "SBE_manufacturing_date": "2022-01-01T00:00:00Z"
       }
     },
     {
@@ -166,8 +166,8 @@
       "SENSOR_MODEL_FIRMWARE": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1",
-        "SBE_manufacturing_date": "2022-01-01"
+        "version": "0.2",
+        "SBE_manufacturing_date": "2022-01-01T00:00:00Z"
       }
     },
     {
@@ -199,7 +199,7 @@
         "X5": "21.942171"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2020-12-03",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
@@ -224,7 +224,7 @@
         "C3": "-60.271525E-9"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date           2020-12-02",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
@@ -254,7 +254,7 @@
         "X6": "10"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date          2020-12-09",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
@@ -278,7 +278,7 @@
         "C3": "-1.0767272E-6"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Temperature_Conductivity Calibration Date          2020-12-02",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
@@ -310,10 +310,10 @@
         "PTHA2": "-4.733751e-007"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2021-03-31",
-      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1"
+        "version": "0.2"
       },
       "predeployment_vendorinfo": {
         "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
@@ -333,7 +333,7 @@
         "a3": " 1.520066e-007"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date 2021-03-31",
-      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema": "None",
         "anyproperty_works_here": "any content is valide if vendor_schema is None; if vendor_schema is specfied, content will be validated agains this subschemea",
@@ -357,10 +357,10 @@
         "WBOTC": " 3.1475e-008"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date 2021-03-31",
-      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31",
+      "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.1"
+        "version": "0.2"
       }
     },
     {
@@ -401,7 +401,7 @@
         "T5": "not available"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "optode temperature, see TD269 Operating manual oxygen optode 4330, 4835, 4831",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01"
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01T00:00:00Z"
     },
     {
       "PARAMETER": "SDN:R03::DOXY",
@@ -440,7 +440,7 @@
         "C3": "-1.0767272E-6"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01T00:00:00Z",
       "parameter_vendorinfo": {
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
       },
@@ -479,7 +479,7 @@
         "C3": "-1.0767272E-6"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "see TD269 Operating manual oxygen optode 4330, 4835, 4831; see Processing Argo OXYGEN data at the DAC level, Version 2.2 (DOI: http://dx.doi.org/10.13155/39795)",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-01-01T00:00:00Z",
       "parameter_vendorinfo": {
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
       },

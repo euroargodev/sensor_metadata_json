@@ -1,10 +1,10 @@
 {
     "sensor_info": {
         "created_by": "SBE-OCRcalToJSON.py",
-        "date_creation": "2024-03-18T18:10:48+00:00",
+        "date_creation": "2024-03-19T13:01:52+00:00",
         "link": "./argo.sensor.schema.json",
-        "format_version": "0.3.0",
-        "contents": "json file to describe an OCR-504 sensor for sensor schema v0.3.0 draft",
+        "format_version": "0.4.0",
+        "contents": "json file to describe an OCR-504 sensor for sensor schema v0.4.0 draft",
         "sensor_described": "SATLANTIC-SATLANTIC_OCR504_ICSW-42442"
     },
     "@context": {
@@ -22,7 +22,7 @@
             "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "CONFIG_OcrDownIrrWavelength1_nm": 380,
                 "CONFIG_OcrDownIrrBandwidth1_nm": 10
             }
@@ -35,7 +35,7 @@
             "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "CONFIG_OcrDownIrrWavelength2_nm": 443,
                 "CONFIG_OcrDownIrrBandwidth2_nm": 10
             }
@@ -48,7 +48,7 @@
             "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "CONFIG_OcrDownIrrWavelength3_nm": 490,
                 "CONFIG_OcrDownIrrBandwidth3_nm": 10
             }
@@ -61,7 +61,7 @@
             "SENSOR_SERIAL_NO": "42442",
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "CONFIG_OcrDownIrrWavelength4_nm": 555,
                 "CONFIG_OcrDownIrrBandwidth4_nm": 10
             }
@@ -77,7 +77,7 @@
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
             "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 380 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00"
         },
         {
             "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE443",
@@ -88,7 +88,7 @@
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
             "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 443 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00"
         },
         {
             "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE490",
@@ -99,7 +99,7 @@
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
             "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 490 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00"
         },
         {
             "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE555",
@@ -110,7 +110,7 @@
             "PREDEPLOYMENT_CALIB_EQUATION": "none",
             "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
             "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 555 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08"
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00"
         },
         {
             "PARAMETER": "SDN:R03::DOWN_IRRADIANCE380",
@@ -125,10 +125,10 @@
                 "lm_380": "1.161"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 380 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "SBE_calfile": "DI42442A.cal"
             }
         },
@@ -148,10 +148,10 @@
                 "lm_443": "1.41"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 443 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "SBE_calfile": "DI42442A.cal"
             }
         },
@@ -168,10 +168,10 @@
                 "lm_490": "1.365"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 490 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "SBE_calfile": "DI42442A.cal"
             }
         },
@@ -191,10 +191,10 @@
                 "lm_555": "1.372"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 555 nm",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-08T00:00:00+00:00",
             "parameter_vendorinfo": {
                 "vendor_schema": "SBE",
-                "version": "0.1",
+                "version": "0.2",
                 "SBE_calfile": "DI42442A.cal"
             }
         }

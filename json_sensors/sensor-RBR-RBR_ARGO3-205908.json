@@ -3,8 +3,8 @@
     "created_by": "BAK test",
     "date_creation": "2023-02-03T07:38:07Z",
     "link" : "./argo.sensor.schema.json",
-    "format_version": "0.3.0",
-    "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
+    "format_version": "0.4.0",
+    "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
     "sensor_described": "RBR-RBR_ARGO3-205908"
   },
   "@context": {
@@ -82,7 +82,7 @@
         "X5": "21.942171"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Pressure Calibration Date              2020-12-03",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own predeployment info here; they can add any field they like as a fieldname below predeployment_vendorinfo"
@@ -107,7 +107,7 @@
         "C3": "-60.271525E-9"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Temperature Calibration Date           2020-12-02",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
@@ -137,7 +137,7 @@
         "X6": "10"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Conductivity Calibration Date          2020-12-09",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"
@@ -161,7 +161,7 @@
         "C3": "-1.0767272E-6"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "Temperature_Conductivity Calibration Date          2020-12-02",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-12-02T00:00:00Z",
       "parameter_vendorinfo": {
         "vendor_schema" : "None",
         "example": "Vendors can add their own parameter info here; they can add any field they like as a fieldname below parameter_vendorinfo"

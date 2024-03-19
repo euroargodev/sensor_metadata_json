@@ -3,8 +3,8 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
-      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "format_version": "0.4.0",
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.4.0 draft",
       "sensor_described": "WETLABS-MCOMS_FLBBCD-0157"
     },
     "@context": {
@@ -22,8 +22,8 @@
         "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "SBE_manufacturing_date": "2020-01-01",
+          "version": "0.2",
+          "SBE_manufacturing_date": "2020-01-01T00:00:00Z",
           "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": 470,
           "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": 23,
           "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": 695,
@@ -38,8 +38,8 @@
         "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "SBE_manufacturing_date": "2020-01-01",
+          "version": "0.2",
+          "SBE_manufacturing_date": "2020-01-01T00:00:00Z",
           "CONFIG_EcoBetaWavelength_nm": 700,
           "CONFIG_EcoBetaBandwidth_nm": 25,
           "CONFIG_EcoBetaAngle_angularDeg": 150
@@ -53,8 +53,8 @@
         "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "SBE_manufacturing_date": "2020-01-01",
+          "version":"0.2",
+          "SBE_manufacturing_date": "2020-01-01T00:00:00Z",
           "CONFIG_EcoCdomFluorescenceExcitationWavelength_nm": 370,
           "CONFIG_EcoCdomFluorescenceExcitationBandwidth_nm": 15,
           "CONFIG_EcoCdomFluorescenceEmissionWavelength_nm": 460,
@@ -72,7 +72,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated chlorophyll-a fluorescence measurement",
-        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
+        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::BETA_BACKSCATTERING700",
@@ -83,7 +83,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
-        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
+        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::FLUORESCENCE_CDOM",
@@ -94,7 +94,7 @@
         "PREDEPLOYMENT_CALIB_EQUATION": " ",
         "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": { },
         "PREDEPLOYMENT_CALIB_COMMENT": "fluorescence from coloured dissolved organic matter",
-        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31"
+        "PREDEPLOYMENT_CALIB_DATE": "2021-03-31T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::CHLA",
@@ -108,7 +108,7 @@
             "DARK_CHLA":"51"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
-        "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+        "PREDEPLOYMENT_CALIB_DATE": "2018-09-25T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::BBP700",
@@ -124,7 +124,7 @@
             "BETASW700" : "Contribution of pure sea water calculated at 150 angular deg"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
-        "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+        "PREDEPLOYMENT_CALIB_DATE": "2018-09-25T00:00:00Z"
       },
       {
         "PARAMETER": "SDN:R03::CDOM",
@@ -138,7 +138,7 @@
             "DARK_CDOM":"51"
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "SBS FACTORY CALIBRATION, 2018-09-25",
-        "PREDEPLOYMENT_CALIB_DATE": "2018-09-25"
+        "PREDEPLOYMENT_CALIB_DATE": "2018-09-25T00:00:00Z"
       }
     ]
 }

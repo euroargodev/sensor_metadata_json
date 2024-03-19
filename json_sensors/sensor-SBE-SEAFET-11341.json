@@ -3,8 +3,8 @@
       "created_by": "SBScientific-MetaWidget-V1.0",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.3.0",
-      "contents": "json file to describe an SBS-SEAFET on float 5906970 for sensor schema v0.2.0 draft",
+      "format_version": "0.4.0",
+      "contents": "json file to describe an SBS-SEAFET on float 5906970 for sensor schema v0.4.0 draft",
       "sensor_described": "SBE-SEAFET-11341 on float 5906970"
     },
     "@context": {
@@ -22,8 +22,8 @@
         "SENSOR_MODEL_FIRMWARE": " ",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "SBE_manufacturing_date": "2020-12-17"
+          "version": "0.2",
+          "SBE_manufacturing_date": "2020-12-17T00:00:00Z"
         } 
       }
     ],
@@ -92,12 +92,12 @@
           "f6": "-4.8087e-23"   
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17T00:00:00Z",
         "predeployment_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE" : "2020-12-17",
-          "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE" : "2020-12-17"
+          "version": "0.2",
+          "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE" : "2020-12-17T00:00:00Z",
+          "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE" : "2020-12-17T00:00:00Z"
         }
       },
       {
@@ -120,12 +120,12 @@
           "f6": "-4.8087e-23"   
         },
         "PREDEPLOYMENT_CALIB_COMMENT": "",
-        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17",
+        "PREDEPLOYMENT_CALIB_DATE": "2020-12-17T00:00:00Z",
         "predeployment_vendorinfo": {
           "vendor_schema": "SBE",
-          "version": "0.1",
-          "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE" : "2020-12-17",
-          "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE" : "2020-12-17"
+          "version": "0.2",
+          "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE" : "2020-12-17T00:00:00Z",
+          "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE" : "2020-12-17T00:00:00Z"
         }
       }
     ]
