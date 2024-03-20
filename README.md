@@ -20,5 +20,5 @@ Current effort involves @SBS-EREHM (Eric Rehm, Sea-Bird Scientific) Jean-Michel 
 ## Release notes
 | Version | Current Branch | Description|
 | --- | --- | --- |
-| 0.3.0 | release/0.3.0 | addd SENSOR_MODEL_FIRMWARE, add support for both R27 and L22 in SENSOR_MODEL, add SBE-OCRcalToJSON.py code | 
+| 0.3.0 | release/0.3.0 | add SENSOR_MODEL_FIRMWARE, add support for both R27 and L22 in SENSOR_MODEL, add SBE-OCRcalToJSON.py code | 
 | 0.4.0 | dev/0.4.0 | REMOVE PLATFORM/DATA_TYPE, PREDEPLOYMENT_CALIB_DATE and other schema "date" now "date-time"; version numbers for float, platform, and sensor schemas match | 
