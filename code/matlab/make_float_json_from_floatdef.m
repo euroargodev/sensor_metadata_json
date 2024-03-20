@@ -104,7 +104,7 @@ def_file_ot = [dirnames.json_floats '/float-' float_id '.json']; % The aggregate
 
 
 
-created_by = 'BAK test'; % presently hardwired
+created_by = mfilename + ".m";  % Created by this program
 
 
 
@@ -278,7 +278,6 @@ parameterfields = fieldnames(jsall{1}.PARAMETERS{1});
 % At this point, we expect the following fields to be present
 % platformfields =
 %     {'version'                             }
-%     {'DATA_TYPE'                           }  % BAK 13 Oct 2023 - don't expect to DATA_TYPE from now on
 %     {'POSITIONING_SYSTEM'                  }
 %     {'PLATFORM_FAMILY'                     }
 %     {'PLATFORM_TYPE'                       }
@@ -298,7 +297,7 @@ parameterfields = fieldnames(jsall{1}.PARAMETERS{1});
 %     {'SENSOR_MAKER'    }
 %     {'SENSOR_MODEL'    }
 %     {'SENSOR_SERIAL_NO'}
-%     {'SENSOR_FIRMWARE' }
+%     {'SENSOR_MODEL_FIRMWARE' }
 %     Optional {'sensor_vendorinfo'}
 % parameterfields =
 %     {'PARAMETER'                       }
@@ -470,7 +469,7 @@ clear allout info
 % Add any metadata about the float json file
 info.created_by = created_by;
 info.date_creation = string(datetime('now', 'TimeZone', 'Z', 'Format','yyyy-MM-dd''T''hh:mm:ss'))+"Z";
-info.format_version = '0.2.0'; % schema version
+info.format_version = '0.4.0'; % schema version
 info.link = './argo.float.schema.json';
 info.contents = 'json file to describe a platform with sensors for Argo';
 info.float_described = float_described;

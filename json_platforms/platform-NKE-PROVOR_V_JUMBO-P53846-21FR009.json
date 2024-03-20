@@ -3,12 +3,11 @@
     "created_by": "ECR",
     "date_creation": "2023-08-03T19:17:34+01:00",
     "link" : "./argo.platform.schema.json",
-    "format_version": "0.3.0",
+    "format_version": "0.4.0",
     "contents": "json file to describe an NKE platform for Argo from WMOID 1902593", 
     "platform_described": "NKE-PROVOR_V_JUMBO-P53846-21FR009"
   },
   "@context": {
-    "SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
     "SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
     "SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
     "SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",
@@ -18,7 +17,6 @@
     "SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
   },
   "PLATFORM": {
-    "DATA_TYPE": "SDN:R01::META",
     "PTT": "117536",
     "POSITIONING_SYSTEM": ["SDN:R09::GPS"],
     "TRANS_SYSTEM": ["SDN:R10::IRIDIUM"],

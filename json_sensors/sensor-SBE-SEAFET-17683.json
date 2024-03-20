@@ -1,12 +1,11 @@
 {
     "sensor_info": {
         "created_by": "SBE SBE-pHcalToJSON.py",
-        "date_creation": "2023-04-10T07:38:07-07:00",
+        "date_creation": "2024-03-20T20:50:21+00:00",
         "link": "./argo.sensor.schema.json",
         "format_version": "0.4.0",
         "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.4.0 draft",
-        "sensor_described": "SBS-SEAFET-17683",
-        "creation_date": "2024-03-19T04:54:41"
+        "sensor_described": "SBS-SEAFET-17683"
     },
     "@context": {
         "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
@@ -24,7 +23,7 @@
             "sensor_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.2",
-                "SBE_manufacturing_date": "2024-03-19T11:54:41+00:00",
+                "SBE_manufacturing_date": "2024-03-20T20:50:21+00:00",
                 "SBE_pHType": "Float",
                 "SBE_ISFET_SERIAL_NO": "11764",
                 "SBE_REFERENCE_SERIAL_NO": "11773"
@@ -100,7 +99,7 @@
                 "K2f3": "8.6709e-15"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-19T11:54:41+00:00",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-20T20:50:21+00:00",
             "predeployment_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.2",
@@ -132,7 +131,7 @@
                 "K2f3": "8.6709e-15"
             },
             "PREDEPLOYMENT_CALIB_COMMENT": "",
-            "PREDEPLOYMENT_CALIB_DATE": "2024-03-19T11:54:41+00:00",
+            "PREDEPLOYMENT_CALIB_DATE": "2024-03-20T20:50:21+00:00",
             "predeployment_vendorinfo": {
                 "vendor_schema": "SBE",
                 "version": "0.2",

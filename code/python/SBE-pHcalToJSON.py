@@ -59,7 +59,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fet_sn,
 
     # sensor_info
     data['sensor_info']["created_by"] = "SBE " + os.path.basename(__file__)
-    data['sensor_info']["creation_date"] = datetime.datetime.now().replace(microsecond=0).isoformat()
+    data['sensor_info']["date_creation"] = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
     format_version = data['sensor_info'].get("format_version")
     contents       = data['sensor_info'].get("contents")
     data['sensor_info']["contents"] = contents.replace('xx.xx.xx', format_version)
@@ -126,7 +126,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fet_sn,
 if __name__ == '__main__':
 
     calname = 'examples/17683-11764 ISFET pH.cal'
-    calname = 'examples/18950-10790 ISFET pH.cal'
+    # calname = 'examples/18950-10790 ISFET pH.cal'
 
     config = {"output_dir" : './examples', "template" : "./examples/sensor-SBE-SEAFET-template.json"}
 

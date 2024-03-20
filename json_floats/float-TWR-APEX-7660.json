@@ -1,8 +1,8 @@
 {
   "float_info": {
-    "created_by": "BAK test",
-    "date_creation": "2023-10-06T10:26:45Z",
-    "format_version": "0.3.0",
+    "created_by": "make_float_json_from_floatdef.m",
+    "date_creation": "2024-03-20T08:54:41Z",
+    "format_version": "0.4.0",
     "link": "./argo.float.schema.json",
     "contents": "json file to describe a platform with sensors for Argo",
     "float_described": "TWR-APEX-7660"
@@ -23,7 +23,6 @@
     "sensor-WETLABS-MCOMS_FLBBCD-0157.json"
   ],
   "@context": {
-    "SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
     "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
     "SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
     "SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
@@ -40,7 +39,7 @@
     "created_by": "ECR",
     "date_creation": "2023-02-03T07:41:54-07:00",
     "link": "./argo.platform.schema.json",
-    "format_version": "0.3.0",
+    "format_version": "0.4.0",
     "contents": "json file to describe an APEX platform for Argo from WMOID 5904779",
     "platform_described": "TWR-APEX-7660"
   },
@@ -50,7 +49,7 @@
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe a sensor for Argo. v0.1 draft",
+      "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
       "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
     },
     {
@@ -58,23 +57,23 @@
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe a sensor for Argo. v0.2.0 draft",
+      "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
       "sensor_described": "RBR-RBR_ARGO3-205908"
     },
     {
-      "created_by": "ECR test",
-      "date_creation": "2023-04-10T07:38:07-07:00",
+      "created_by": "SBE-OCRcalToJSON.py",
+      "date_creation": "2024-03-19T13:02:42+00:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an OCR-504 sensor for sensor schema v0.2.0 draft",
-      "sensor_described": "SBS-OCR-504-42139"
+      "contents": "json file to describe an OCR-504 sensor for sensor schema v0.4.0 draft",
+      "sensor_described": "SATLANTIC-SATLANTIC_OCR504_ICSW-42139"
     },
     {
       "created_by": "ECR test",
       "date_creation": "2023-08-31T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.4.0 draft",
       "sensor_described": "SATLANTIC-SUNA_V2-1527 found on float WMOID 5906509"
     },
     {
@@ -82,7 +81,7 @@
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe a sensor for Argo. v0.2 draft",
+      "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
       "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
     },
     {
@@ -90,7 +89,7 @@
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an SBE63 Optode on float 5906509 for sensor schema v0.4.0 draft",
       "sensor_described": "SBE-SBE63_OPTOPDE-2739"
     },
     {
@@ -98,31 +97,31 @@
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an SBS-SEAFET on float 5906970 for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an SBS-SEAFET on float 5906970 for sensor schema v0.4.0 draft",
       "sensor_described": "SBE-SEAFET-11341 on float 5906970"
     },
     {
       "created_by": "SBE ph_calsheet_creator.py",
-      "date_creation": "2023-04-10T07:38:07-07:00",
+      "date_creation": "2024-03-19T19:03:30+00:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.4.0 draft",
       "sensor_described": "SBS-SEAFET-17682"
     },
     {
       "created_by": "SBE SBE-pHcalToJSON.py",
-      "date_creation": "2023-04-10T07:38:07-07:00",
+      "date_creation": "2024-03-20T20:50:21+00:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.4.0 draft",
       "sensor_described": "SBS-SEAFET-17683"
     },
     {
       "created_by": "SBE ph_calsheet_creator.py",
-      "date_creation": "2023-04-10T07:38:07-07:00",
+      "date_creation": "2024-03-19T18:59:45+00:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an pH Sensor on an Argo float for sensor schema v0.4.0 draft",
       "sensor_described": "SBS-SEAFET-18950"
     },
     {
@@ -130,7 +129,7 @@
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an ECO sensor FLBBCDREM-3666 for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an ECO sensor FLBBCDREM-3666 on float WMOID 5906971 for sensor schema v0.4.0 draft",
       "sensor_described": "WETLABS-ECO_FLBBCD-3666"
     },
     {
@@ -138,16 +137,15 @@
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link": "./argo.sensor.schema.json",
       "format_version": "0.4.0",
-      "contents": "json file to describe an MCOMS sensor for sensor schema v0.2.0 draft",
+      "contents": "json file to describe an MCOMS sensor for sensor schema v0.4.0 draft",
       "sensor_described": "WETLABS-MCOMS_FLBBCD-0157"
     }
   ],
   "PLATFORM": {
-    "PTT": " ",
-    "DATA_TYPE": "SDN:R01::META",
     "POSITIONING_SYSTEM": [
       "SDN:R09::GPS"
     ],
+    "PTT": "n/a",
     "TRANS_SYSTEM": [
       "SDN:R10::IRIDIUM"
     ],
@@ -171,15 +169,15 @@
       "SENSOR": "SDN:R25::OPTODE_DOXY",
       "SENSOR_MAKER": "SDN:R26::AANDERAA",
       "SENSOR_MODEL": "SDN:R27::AANDERAA_OPTODE_4330",
-      "SENSOR_SERIAL_NO": "3901",
-      "SENSOR_MODEL_FIRMWARE": " "
+      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "3901"
     },
     {
       "SENSOR": "SDN:R25::CTD_PRES",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
-      "SENSOR_SERIAL_NO": "205908",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "RBR",
         "version": "0.1",
@@ -191,8 +189,8 @@
       "SENSOR": "SDN:R25::CTD_TEMP",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
-      "SENSOR_SERIAL_NO": "205908",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -202,8 +200,8 @@
       "SENSOR": "SDN:R25::CTD_CNDC",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
-      "SENSOR_SERIAL_NO": "205908",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -213,8 +211,8 @@
       "SENSOR": "SDN:R25::CTD_TEMP_CNDC",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
-      "SENSOR_SERIAL_NO": "205908",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
         "example": "Vendors can add their own sensor info here; they can add any field they like as a fieldname below sensor_vendorinfo"
@@ -224,12 +222,11 @@
       "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-      "SENSOR_SERIAL_NO": "42139",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "42139",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "SBE_manufacturing_date": "2020-10-20T00:00:00Z",
         "CONFIG_OcrDownIrrWavelength1_nm": 380,
         "CONFIG_OcrDownIrrBandwidth1_nm": 10
       }
@@ -238,12 +235,11 @@
       "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-      "SENSOR_SERIAL_NO": "42139",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "42139",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "SBE_manufacturing_date": "2020-10-20T00:00:00Z",
         "CONFIG_OcrDownIrrWavelength2_nm": 412,
         "CONFIG_OcrDownIrrBandwidth2_nm": 10
       }
@@ -252,12 +248,11 @@
       "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-      "SENSOR_SERIAL_NO": "42139",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "42139",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "SBE_manufacturing_date": "2020-10-20T00:00:00Z",
         "CONFIG_OcrDownIrrWavelength3_nm": 490,
         "CONFIG_OcrDownIrrBandwidth3_nm": 10
       }
@@ -266,20 +261,19 @@
       "SENSOR": "SDN:R25::RADIOMETER_PAR",
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-      "SENSOR_SERIAL_NO": "42139",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "42139",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
-        "version": "0.2",
-        "SBE_manufacturing_date": "2020-10-20T00:00:00Z"
+        "version": "0.2"
       }
     },
     {
       "SENSOR": "SDN:R25::SPECTROPHOTOMETER_NITRATE",
       "SENSOR_MAKER": "SDN:R26::SATLANTIC",
       "SENSOR_MODEL": "SDN:R27::SUNA_V2",
-      "SENSOR_SERIAL_NO": "1527",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "1527",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -292,8 +286,8 @@
       "SENSOR": "SDN:R25::CTD_PRES2",
       "SENSOR_MAKER": "SDN:R26::DRUCK",
       "SENSOR_MODEL": "SDN:R27::DRUCK_2900PSIA",
-      "SENSOR_SERIAL_NO": "11076214",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "11076214",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -316,8 +310,8 @@
       "SENSOR": "SDN:R25::CTD_CNDC2",
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
-      "SENSOR_SERIAL_NO": "11643",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "11643",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -328,8 +322,8 @@
       "SENSOR": "SDN:R25::OPTODE_DOXY2",
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE63_OPTODE",
-      "SENSOR_SERIAL_NO": "2739",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "2739",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -352,12 +346,12 @@
       "SENSOR": "SDN:R25::TRANSISTOR_PH2",
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
-      "SENSOR_SERIAL_NO": "17682",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "17682",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "SBE_manufacturing_date": "2023-09-24T00:00:00Z",
+        "SBE_manufacturing_date": "2024-03-19T19:03:30.309466+00:00",
         "SBE_pHType": "Float",
         "SBE_ISFET_SERIAL_NO": "11764",
         "SBE_REFERENCE_SERIAL_NO": "11773"
@@ -367,12 +361,12 @@
       "SENSOR": "SDN:R25::TRANSISTOR_PH3",
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
-      "SENSOR_SERIAL_NO": "17683",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "17683",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "SBE_manufacturing_date": "2023-09-27T00:00:00Z",
+        "SBE_manufacturing_date": "2024-03-20T20:50:21+00:00",
         "SBE_pHType": "Float",
         "SBE_ISFET_SERIAL_NO": "11764",
         "SBE_REFERENCE_SERIAL_NO": "11773"
@@ -382,12 +376,12 @@
       "SENSOR": "SDN:R25::TRANSISTOR_PH4",
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SEAFET",
-      "SENSOR_SERIAL_NO": "18950",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "18950",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "SBE_manufacturing_date": "2023-09-24T00:00:00Z",
+        "SBE_manufacturing_date": "2024-03-19T18:59:39.553663+00:00",
         "SBE_pHType": "Float",
         "SBE_ISFET_SERIAL_NO": "10790",
         "SBE_REFERENCE_SERIAL_NO": "MB025"
@@ -397,8 +391,8 @@
       "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-      "SENSOR_SERIAL_NO": "3666",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "3666",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -413,8 +407,8 @@
       "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-      "SENSOR_SERIAL_NO": "0157",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "3666",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -428,8 +422,8 @@
       "SENSOR": "SDN:R25::FLUOROMETER_CDOM",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBBCD",
-      "SENSOR_SERIAL_NO": "0157",
       "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "3666",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -444,8 +438,8 @@
       "SENSOR": "SDN:R25::FLUOROMETER_CHLA2",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
-      "SENSOR_SERIAL_NO": "0157",
       "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+      "SENSOR_SERIAL_NO": "0157",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -460,8 +454,8 @@
       "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP7002",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
-      "SENSOR_SERIAL_NO": "0157",
       "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+      "SENSOR_SERIAL_NO": "0157",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -475,8 +469,8 @@
       "SENSOR": "SDN:R25::FLUOROMETER_CDOM2",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
-      "SENSOR_SERIAL_NO": "0157",
       "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+      "SENSOR_SERIAL_NO": "0157",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -731,7 +725,7 @@
       "PREDEPLOYMENT_CALIB_EQUATION": "none",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 380 nm",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00"
     },
     {
       "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE412",
@@ -742,7 +736,7 @@
       "PREDEPLOYMENT_CALIB_EQUATION": "none",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 412 nm",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00"
     },
     {
       "PARAMETER": "SDN:R03::RAW_DOWNWELLING_IRRADIANCE490",
@@ -753,7 +747,7 @@
       "PREDEPLOYMENT_CALIB_EQUATION": "none",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling irradiance measurement at 490 nm",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00"
     },
     {
       "PARAMETER": "SDN:R03::RAW_DOWNWELLING_PAR",
@@ -764,7 +758,7 @@
       "PREDEPLOYMENT_CALIB_EQUATION": "none",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {},
       "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated downwelling PAR measurement",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00"
     },
     {
       "PARAMETER": "SDN:R03::DOWN_IRRADIANCE380",
@@ -774,12 +768,17 @@
       "PARAMETER_RESOLUTION": " ",
       "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE380=0.01*A1_380*(RAW_DOWNWELLING_IRRADIANCE380-A0_380)*lm_380",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-        "A0_380": "2.14887e+09",
-        "A1_380": "1.65351e-07",
+        "A0_380": "2148866299.2",
+        "A1_380": "1.65350515411e-07",
         "lm_380": "1.161"
       },
-      "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 380 nm",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00",
+      "parameter_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_calfile": "DI42139A.cal"
+      }
     },
     {
       "PARAMETER": "SDN:R03::DOWN_IRRADIANCE412",
@@ -789,12 +788,17 @@
       "PARAMETER_RESOLUTION": " ",
       "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE412=0.01*A1_412*(RAW_DOWNWELLING_IRRADIANCE412-A0_412)*lm_412",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-        "A0_412": "2.14786e+09",
-        "A1_412": "2.07212e-07",
+        "A0_412": "2147863376.5",
+        "A1_412": "2.07212473306e-07",
         "lm_412": "1.368"
       },
-      "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 412 nm",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00",
+      "parameter_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_calfile": "DI42139A.cal"
+      }
     },
     {
       "PARAMETER": "SDN:R03::DOWN_IRRADIANCE490",
@@ -804,12 +808,17 @@
       "PARAMETER_RESOLUTION": " ",
       "PREDEPLOYMENT_CALIB_EQUATION": "DOWN_IRRADIANCE490=0.01*A1_490*(RAW_DOWNWELLING_IRRADIANCE490-A0_490)*lm_490",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-        "A0_490": "2.14789e+09",
-        "A1_490": "2.0797e-07",
+        "A0_490": "2147885131.7",
+        "A1_490": "2.07969573327e-07",
         "lm_490": "1.365"
       },
-      "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling irradiance measurement at 490 nm",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00",
+      "parameter_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_calfile": "DI42139A.cal"
+      }
     },
     {
       "PARAMETER": "SDN:R03::DOWNWELLING_PAR",
@@ -819,12 +828,17 @@
       "PARAMETER_RESOLUTION": " ",
       "PREDEPLOYMENT_CALIB_EQUATION": "DOWNWELLING_PAR=0.01*A1_PAR*(RAW_DOWNWELLING_PAR-A0_PAR)*lm_PAR",
       "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
-        "A0_PAR": "2.14806e+09",
-        "A1_PAR": "3.68763e-06",
+        "A0_PAR": "2148056913.0",
+        "A1_PAR": "3.68763177832e-06",
         "lm_PAR": "1.359"
       },
-      "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00Z"
+      "PREDEPLOYMENT_CALIB_COMMENT": "Calibrated downwelling PAR measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2020-11-05T00:00:00+00:00",
+      "parameter_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_calfile": "DI42139A.cal"
+      }
     },
     {
       "PARAMETER": "SDN:R03::TEMP_NITRATE",
@@ -911,7 +925,7 @@
         "D": "0.001222",
         "OPTICAL_WAVELENGTH_OFFSET": "210",
         "OPTICAL_WAVELENGTH_UV_Ntrans_": "[217.460,218.260,219.060,219.860,220.660,221.460,222.260,223.060,223.860,224.660,225.470,226.270,227.070,227.870,228.670,229.480,230.280,231.080,231.880,232.690,233.490,234.300,235.100,235.900,236.710,237.510,238.320,239.120,239.930,240.730,241.540,242.350,243.150,243.960,244.770,245.570,246.380,247.190,247.990,248.800,249.610]",
-        "TEMP_CAL_NITRATE": 20,
+        "TEMP_CAL_NITRATE": "20",
         "E_SWA_NITRATE_Ntrans_": "[0.0061508,0.0048354,0.0038029,0.0029792,0.0023265,0.0018203,0.0014364,0.0011208,0.0008725,0.0006935,0.0005536,0.0004442,0.0003467,0.0002936,0.0002417,0.0001930,0.0001744,0.0001496,0.0001362,0.0001163,0.0000939,0.0000876,0.0000854,0.0000685,0.0000640,0.0000535,0.0000414,0.0000361,0.0000288,0.0000260,0.0000118,0.0000078,0.0000085,0.0000042,-0.0000003,-0.0000057,-0.0000073,-0.0000110,-0.0000163,-0.0000178,-0.0000110]",
         "E_NITRATE_Ntrans_": "[0.0043254,0.0040187,0.0037025,0.0033940,0.0030915,0.0028036,0.0025263,0.0022759,0.0020306,0.0018010,0.0015831,0.0013894,0.0012097,0.0010431,0.0008911,0.0007652,0.0006427,0.0005411,0.0004422,0.0003717,0.0003056,0.0002390,0.0001966,0.0001553,0.0001237,0.0000903,0.0000737,0.0000499,0.0000393,0.0000208,0.0000179,0.0000066,-0.0000042,-0.0000037,-0.0000063,-0.0000052,-0.0000105,-0.0000052,-0.0000041,-0.0000069,-0.0000065]"
       },
@@ -1227,12 +1241,12 @@
         "K2f3": "8.6709e-15"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2022-06-14T00:00:00+00:00",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00Z",
-        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-02T00:00:00Z"
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00+00:00",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-02T00:00:00+00:00"
       }
     },
     {
@@ -1259,12 +1273,12 @@
         "K2f3": "8.6709e-15"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2022-06-14T00:00:00+00:00",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00Z",
-        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-02T00:00:00Z"
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00+00:00",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-02T00:00:00+00:00"
       }
     },
     {
@@ -1335,12 +1349,12 @@
         "K2f3": "8.6709e-15"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2023-09-27T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2024-03-20T20:50:21+00:00",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00Z",
-        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15T00:00:00Z"
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00+00:00",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15T00:00:00+00:00"
       }
     },
     {
@@ -1367,12 +1381,12 @@
         "K2f3": "8.6709e-15"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2023-09-27T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2024-03-20T20:50:21+00:00",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00Z",
-        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15T00:00:00Z"
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2022-06-14T00:00:00+00:00",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2022-06-15T00:00:00+00:00"
       }
     },
     {
@@ -1443,12 +1457,12 @@
         "K2f3": "1.612362e-14"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-05T00:00:00+00:00",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2023-09-05T00:00:00Z",
-        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2023-06-30T00:00:00Z"
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2023-09-05T00:00:00+00:00",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2023-06-30T00:00:00+00:00"
       }
     },
     {
@@ -1475,12 +1489,12 @@
         "K2f3": "1.612362e-14"
       },
       "PREDEPLOYMENT_CALIB_COMMENT": "",
-      "PREDEPLOYMENT_CALIB_DATE": "2023-09-24T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-09-05T00:00:00+00:00",
       "predeployment_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
-        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2023-09-05T00:00:00Z",
-        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2023-06-30T00:00:00Z"
+        "PREDEPLOYMENT_SEAFET_K0_CALIB_DATE": "2023-09-05T00:00:00+00:00",
+        "PREDEPLOYMENT_SEAFET_K2_CALIB_DATE": "2023-06-30T00:00:00+00:00"
       }
     },
     {

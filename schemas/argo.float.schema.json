@@ -4,7 +4,7 @@
     "title": "JSON Schema for Argo Program float = platform + sensors",
     "description": "A JSON Schema used to describe an Argo float. A float consists of a single platform and any number of sensors.  See Argo User's Manual. Metada format Version 3.41.1",
     "format_version": {
-        "const": "0.3.0"
+        "const": "0.4.0"
     },
     "type": "object",
     "properties": {
@@ -49,7 +49,6 @@
         "@context": {
             "type": "object",
             "properties": {
-                "SDN:R01::": { "const": "http://vocab.nerc.ac.uk/collection/R01/current/" },
                 "SDN:R03::": { "const": "http://vocab.nerc.ac.uk/collection/R03/current/" },
                 "SDN:R08::": { "const": "http://vocab.nerc.ac.uk/collection/R08/current/" },
                 "SDN:R09::": { "const": "http://vocab.nerc.ac.uk/collection/R09/current/" },
@@ -64,7 +63,6 @@
             },
             "description": "Mapping from SDN NVS term IDs to validation URL.  Must be present in JSON float metadata resource.",
             "required": [
-                "SDN:R01::",
                 "SDN:R03::",
                 "SDN:R08::",
                 "SDN:R09::",

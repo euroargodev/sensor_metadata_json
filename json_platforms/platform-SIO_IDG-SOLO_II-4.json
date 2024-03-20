@@ -3,12 +3,11 @@
     "created_by": "BAK test",
     "date_creation": "2022-02-23T02:03:01Z",
     "link" : "./argo.platform.schema.json",
-    "format_version": "0.3.0",
+    "format_version": "0.4.0",
     "contents": "json file to describe a SOLO_II platform for Argo from float WMOIS 5906767", 
     "platform_described": "platform-SIO_IDG-SOLO_II-4"
   },
   "@context": {
-    "SDN:R01::": "http://vocab.nerc.ac.uk/collection/R01/current/",
     "SDN:R08::": "http://vocab.nerc.ac.uk/collection/R08/current/",
     "SDN:R09::": "http://vocab.nerc.ac.uk/collection/R09/current/",
     "SDN:R10::": "http://vocab.nerc.ac.uk/collection/R10/current/",
@@ -18,7 +17,6 @@
     "SDN:R28::": "http://vocab.nerc.ac.uk/collection/R28/current/"
   },
   "PLATFORM": {
-    "DATA_TYPE": "SDN:R01::META",
     "POSITIONING_SYSTEM": ["SDN:R09::GPS"],
     "PTT" : "n/a",
     "TRANS_SYSTEM": ["SDN:R10::IRIDIUM"],
