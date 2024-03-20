@@ -16,3 +16,8 @@ Follows Argo float, sensor, paramerter, and configuration schemes as well as ide
 
 Current effort involves @SBS-EREHM (Eric Rehm, Sea-Bird Scientific) Jean-Michel Leconte, RBR, and @BrianKingNOC (Brian King, NOC)
 
+
+## Release notes
+| Version | Branch | Description|
+| 0.3.0 | release/0.3.0 | SENSOR_MODEL_FIRMWARE, add support for both R27 and L22 in SENSOR_MODEL, add SBE-OCR4toJSON.py code | 
+| 0.4.0 | dev/0.4.0 | REMOVE PLATFORM/DATA_TYPE, PREDEPLOYMENT_CALIB_DATE and other schema "date" now "date-time"; version numbers for float, platform, and sensor schemas match | 
