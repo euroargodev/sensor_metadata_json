@@ -1,0 +1,153 @@
+{
+  "sensor_info": {
+    "created_by": "FLBBBBRT2K-8635.xls SBS-WriteArgoSensor() V0.1 (SC)",
+    "date_creation": "2024-02-08T21:28:03.000Z",
+    "link": "./argo.sensor.schema.json",
+    "format_version": "0.4.0",
+    "contents": "JSON description of Sea-Bird Scientific ECO sensor FLBBBBRT2K-8635",
+    "sensor_described": "FLBBBBRT2K-8635"
+  },
+  "@context": {
+    "SDN:R03::": "http://vocab.nerc.ac.uk/collection/R03/current/",
+    "SDN:R25::": "http://vocab.nerc.ac.uk/collection/R25/current/",
+    "SDN:R26::": "http://vocab.nerc.ac.uk/collection/R26/current/",
+    "SDN:R27::": "http://vocab.nerc.ac.uk/collection/R27/current/"
+  },
+  "instrument_vendorinfo": {
+    "vendor_schema": "SBE",
+    "version": "0.2",
+    "SBE_part_number": "FAA-538092"
+  },
+  "SENSORS": [
+    {
+      "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::ECO_FLBB2",
+      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "8635",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_manufacturing_date": "2014-07-17T00:00:00Z",
+        "CONFIG_EcoChlaFluorescenceExcitationWavelength_nm": 470,
+        "CONFIG_EcoChlaFluorescenceExcitationBandwidth_nm": 23,
+        "CONFIG_EcoChlaFluorescenceEmissionWavelength_nm": 695,
+        "CONFIG_EcoChlaFluorescenceEmissionBandwidth_nm": 70
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::ECO_FLBB2",
+      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "8635",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_manufacturing_date": "2014-07-17T00:00:00Z",
+        "CONFIG_EcoBetaWavelength_nm": 700,
+        "CONFIG_EcoBetaBandwidth_nm": 25,
+        "CONFIG_EcoBetaAngle_angularDeg": 124
+      }
+    },
+    {
+      "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP470",
+      "SENSOR_MAKER": "SDN:R26::WETLABS",
+      "SENSOR_MODEL": "SDN:R27::ECO_FLBB2",
+      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_SERIAL_NO": "8635",
+      "sensor_vendorinfo": {
+        "vendor_schema": "SBE",
+        "version": "0.2",
+        "SBE_manufacturing_date": "2014-07-17T00:00:00Z",
+        "CONFIG_EcoBetaWavelength_nm": 470,
+        "CONFIG_EcoBetaBandwidth_nm": 20,
+        "CONFIG_EcoBetaAngle_angularDeg": 124
+      }
+    }
+  ],
+  "PARAMETERS": [
+    {
+      "PARAMETER": "SDN:R03::FLUORESCENCE_CHLA",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated chlorophyll-a fluorescence measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-12-11T00:00:00Z"
+    },
+    {
+      "PARAMETER": "SDN:R03::BETA_BACKSCATTERING700",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-12-11T00:00:00Z"
+    },
+    {
+      "PARAMETER": "SDN:R03::BETA_BACKSCATTERING470",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP470",
+      "PARAMETER_UNITS": "count",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": " ",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "Uncalibrated backscattering measurement",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-12-11T00:00:00Z"
+    },
+    {
+      "PARAMETER": "SDN:R03::CHLA",
+      "PARAMETER_SENSOR": "SDN:R25::FLUOROMETER_CHLA",
+      "PARAMETER_UNITS": "mg/m3",
+      "PARAMETER_ACCURACY": "0.08 mg/m3",
+      "PARAMETER_RESOLUTION": "0.025 mg/m3",
+      "PREDEPLOYMENT_CALIB_EQUATION": "CHLA = (FLUORESCENCE_CHLA - DARK_CHLA) * SCALE_CHLA",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_CHLA": "",
+        "DARK_CHLA": "0"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS Factory Calbration, 2023-12-11",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-12-11T00:00:00Z"
+    },
+    {
+      "PARAMETER": "SDN:R03::BBP700",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
+      "PARAMETER_UNITS": "m-1",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "BBP700=2*pi*khi*((BETA_BACKSCATTERING700-DARK_BACKSCATTERING700)*SCALE_BACKSCATTERING700-BETASW700)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_BACKSCATTERING700": "2.956e-06",
+        "DARK_BACKSCATTERING700": "46",
+        "khi": "1.076",
+        "BETASW700": "(contribution of pure sea water) is calculated at 124 angularDeg"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS Factory Calbration, 2023-12-11T00:00:00Z",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-12-11T00:00:00Z"
+    },
+    {
+      "PARAMETER": "SDN:R03::BBP470",
+      "PARAMETER_SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP470",
+      "PARAMETER_UNITS": "m-1",
+      "PARAMETER_ACCURACY": " ",
+      "PARAMETER_RESOLUTION": " ",
+      "PREDEPLOYMENT_CALIB_EQUATION": "BBP470=2*pi*khi*((BETA_BACKSCATTERING470-DARK_BACKSCATTERING470)*SCALE_BACKSCATTERING470-BETASW470)",
+      "PREDEPLOYMENT_CALIB_COEFFICIENT_LIST": {
+        "SCALE_BACKSCATTERING470": "1.141e-05T00:00:00Z",
+        "DARK_BACKSCATTERING470": "48",
+        "khi": "1.076",
+        "BETASW470": "(contribution of pure sea water) is calculated at 124 angularDeg"
+      },
+      "PREDEPLOYMENT_CALIB_COMMENT": "SBS Factory Calbration, 2023-12-11",
+      "PREDEPLOYMENT_CALIB_DATE": "2023-12-11T00:00:00Z"
+    }
+  ]
+}
