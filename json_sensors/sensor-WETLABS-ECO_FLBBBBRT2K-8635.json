@@ -3,7 +3,7 @@
     "created_by": "FLBBBBRT2K-8635.xls SBS-WriteArgoSensor() V0.1 (SC)",
     "date_creation": "2024-02-08T21:28:03.000Z",
     "link": "./argo.sensor.schema.json",
-    "format_version": "0.4.0",
+    "format_version": "0.5.0",
     "contents": "JSON description of Sea-Bird Scientific ECO sensor FLBBBBRT2K-8635",
     "sensor_described": "FLBBBBRT2K-8635"
   },
@@ -23,7 +23,7 @@
       "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBB2",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "8635",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
@@ -39,7 +39,7 @@
       "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBB2",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "8635",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
@@ -54,7 +54,7 @@
       "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP470",
       "SENSOR_MAKER": "SDN:R26::WETLABS",
       "SENSOR_MODEL": "SDN:R27::ECO_FLBB2",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "8635",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",

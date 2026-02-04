@@ -62,7 +62,7 @@ def create_JSON_file(template, dest_dir, instrument_type, instrument_sn, fw_vers
 
     # Argo SENSORS
     data['SENSORS'][0]["SENSOR_MODEL"] = TRIOS_model_map[instrument_type]
-    data['SENSORS'][0]["SENSOR_MODEL_FIRMWARE"] = fw_version 
+    data['SENSORS'][0]["SENSOR_FIRMWARE_VERSION"] = fw_version 
     data['SENSORS'][0]["SENSOR_SERIAL_NO"] = instrument_sn
     data['SENSORS'][0]["sensor_vendorinfo"]["TRIOS_RAMSESType"] = instrument_type
 

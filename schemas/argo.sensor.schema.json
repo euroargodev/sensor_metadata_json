@@ -3,7 +3,7 @@
     "$id": "./argo.sensor.schema.json",
     "title": "JSON Schema for Argo Program Sensors",
     "description": "A JSON Schema used to populate Argo float sensor and parameter metadata elements.  See Argo User's Manual. Metada format Version 3.41.1",
-    "format_version": { "const": "0.4.0" },
+    "format_version": { "const": "0.5.0" },
     "type": "object",
     "properties": {
         "sensor_info": {
@@ -81,7 +81,7 @@
                         "description": "SENSOR_MODEL string must be valid in current Argo reference table R27 or L22",
                         "validation-uri": "https://vocab.nerc.ac.uk/collection/R27/current/"
                     },
-                    "SENSOR_MODEL_FIRMWARE": {
+                    "SENSOR_FIRMWARE_VERSION": {
                         "type": "string",
                         "description": "Firmware version of this sensor_model, defined by the sensor_maker"
                     },
@@ -98,7 +98,7 @@
                     "SENSOR_MAKER",
                     "SENSOR_MODEL",
                     "SENSOR_SERIAL_NO",
-                    "SENSOR_MODEL_FIRMWARE"
+                    "SENSOR_FIRMWARE_VERSION"
                 ],
                 "additionalProperties": false
             },

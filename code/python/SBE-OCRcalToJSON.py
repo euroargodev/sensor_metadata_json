@@ -188,7 +188,7 @@ def create_JSON_file(template, dest_dir, serialNo, calDate, calOperator, calFile
             data["PARAMETERS"][i+4]["PREDEPLOYMENT_CALIB_COEFFICIENT_LIST"][f"A1_{w:3.0f}"]= str(row.a1)
             data["PARAMETERS"][i+4]["PREDEPLOYMENT_CALIB_COEFFICIENT_LIST"][f"lm_{w:3.0f}"]= str(row.lm)
         
-        # data['SENSORS'][0]["SENSOR_MODEL_FIRMWARE"] = fw_version 
+        # data['SENSORS'][0]["SENSOR_FIRMWARE_VERSION"] = fw_version 
         data['SENSORS'][i]["SENSOR_SERIAL_NO"] = serialNo
 
         # Argo PARAMETERS

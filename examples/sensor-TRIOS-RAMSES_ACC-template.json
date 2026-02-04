@@ -3,7 +3,7 @@
     "created_by": "BAK test",
     "date_creation": "2023-02-03T07:38:07Z",
     "link" : "./argo.sensor.schema.json",
-    "format_version": "0.4.0",
+    "format_version": "0.5.0",
     "contents": "json file to describe an Trios RAMSES Sensor on an Argo float for sensor schema vxx.xx.xx draft",
     "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
   },
@@ -19,7 +19,7 @@
       "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR",
       "SENSOR_MAKER": "SDN:R26::TRIOS",
       "SENSOR_MODEL": "SDN:L22::TOOL0775",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "1600040",
       "sensor_vendorinfo": {
         "vendor_schema": "TRIOS",

@@ -3,7 +3,7 @@
       "created_by": "ECR test",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.4.0",
+      "format_version": "0.5.0",
       "contents": "json file to describe an MCOMS sensor for sensor schema v0.4.0 draft",
       "sensor_described": "WETLABS-MCOMS_FLBBCD-0157"
     },
@@ -18,7 +18,7 @@
         "SENSOR": "SDN:R25::FLUOROMETER_CHLA",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
-        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+        "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
         "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
@@ -34,7 +34,7 @@
         "SENSOR": "SDN:R25::BACKSCATTERINGMETER_BBP700",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
-        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+        "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
         "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
@@ -49,7 +49,7 @@
         "SENSOR": "SDN:R25::FLUOROMETER_CDOM",
         "SENSOR_MAKER": "SDN:R26::WETLABS",
         "SENSOR_MODEL": "SDN:R27::MCOMS_FLBBCD",
-        "SENSOR_MODEL_FIRMWARE": "MCOMS 5.45",
+        "SENSOR_FIRMWARE_VERSION": "MCOMS 5.45",
         "SENSOR_SERIAL_NO": "0157",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",

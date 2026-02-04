@@ -2,7 +2,7 @@
   "float_info": {
     "created_by": "make_float_json_from_floatdef.m",
     "date_creation": "2024-03-20T08:38:15Z",
-    "format_version": "0.4.0",
+    "format_version": "0.5.0",
     "link": "./argo.float.schema.json",
     "contents": "json file to describe a platform with sensors for Argo",
     "float_described": "SBE-NAVIS_EBR-1101"
@@ -30,7 +30,7 @@
     "created_by": "ECR",
     "date_creation": "2023-02-03T07:41:54-07:00",
     "link": "./argo.platform.schema.json",
-    "format_version": "0.4.0",
+    "format_version": "0.5.0",
     "contents": "json file to describe a NAVIS_EBR platform WMOID 6904191 platform for Argo",
     "platform_described": "SBE-NAVIS_EBR-1101"
   },
@@ -39,7 +39,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.4.0",
+      "format_version": "0.5.0",
       "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
       "sensor_described": "RBR-RBR_ARGO3-205908"
     },
@@ -47,7 +47,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.4.0",
+      "format_version": "0.5.0",
       "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
       "sensor_described": "SBE-SBE41CP-11643 on float 6904191"
     },
@@ -55,7 +55,7 @@
       "created_by": "BAK test",
       "date_creation": "2023-02-03T07:38:07Z",
       "link": "./argo.sensor.schema.json",
-      "format_version": "0.4.0",
+      "format_version": "0.5.0",
       "contents": "json file to describe a sensor for Argo. v0.4.0 draft",
       "sensor_described": "AANDERAA-AANDERAA_OPTODE_4330-3901"
     }
@@ -90,7 +90,7 @@
       "SENSOR": "SDN:R25::CTD_PRES",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_PRES_A",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "RBR",
@@ -103,7 +103,7 @@
       "SENSOR": "SDN:R25::CTD_TEMP",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
@@ -114,7 +114,7 @@
       "SENSOR": "SDN:R25::CTD_CNDC",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
@@ -125,7 +125,7 @@
       "SENSOR": "SDN:R25::CTD_TEMP_CNDC",
       "SENSOR_MAKER": "SDN:R26::RBR",
       "SENSOR_MODEL": "SDN:R27::RBR_ARGO3",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "205908",
       "sensor_vendorinfo": {
         "vendor_schema": "None",
@@ -136,7 +136,7 @@
       "SENSOR": "SDN:R25::CTD_PRES2",
       "SENSOR_MAKER": "SDN:R26::DRUCK",
       "SENSOR_MODEL": "SDN:R27::DRUCK_2900PSIA",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "11076214",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
@@ -149,7 +149,7 @@
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
       "SENSOR_SERIAL_NO": "11643",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
         "version": "0.2",
@@ -160,7 +160,7 @@
       "SENSOR": "SDN:R25::CTD_CNDC2",
       "SENSOR_MAKER": "SDN:R26::SBE",
       "SENSOR_MODEL": "SDN:R27::SBE41CP",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "11643",
       "sensor_vendorinfo": {
         "vendor_schema": "SBE",
@@ -172,7 +172,7 @@
       "SENSOR": "SDN:R25::OPTODE_DOXY",
       "SENSOR_MAKER": "SDN:R26::AANDERAA",
       "SENSOR_MODEL": "SDN:R27::AANDERAA_OPTODE_4330",
-      "SENSOR_MODEL_FIRMWARE": " ",
+      "SENSOR_FIRMWARE_VERSION": " ",
       "SENSOR_SERIAL_NO": "3901"
     }
   ],

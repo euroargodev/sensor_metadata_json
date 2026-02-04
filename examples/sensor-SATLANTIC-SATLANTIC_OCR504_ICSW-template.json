@@ -3,7 +3,7 @@
       "created_by": "OCR",
       "date_creation": "2023-04-10T07:38:07-07:00",
       "link" : "./argo.sensor.schema.json",
-      "format_version": "0.4.0",
+      "format_version": "0.5.0",
       "contents": "json file to describe an OCR-504 sensor for sensor schema vxx.xx.xx draft",
       "sensor_described": "SBS-OCR-504-42139"
     },
@@ -18,7 +18,7 @@
         "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR380",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_FIRMWARE_VERSION": " ",
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
@@ -31,7 +31,7 @@
         "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR412",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_FIRMWARE_VERSION": " ",
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
@@ -44,7 +44,7 @@
         "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR490",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_FIRMWARE_VERSION": " ",
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",
@@ -57,7 +57,7 @@
         "SENSOR": "SDN:R25::RADIOMETER_PAR",
         "SENSOR_MAKER": "SDN:R26::SATLANTIC",
         "SENSOR_MODEL": "SDN:R27::SATLANTIC_OCR504_ICSW",
-        "SENSOR_MODEL_FIRMWARE": " ",
+        "SENSOR_FIRMWARE_VERSION": " ",
         "SENSOR_SERIAL_NO": "42139",
         "sensor_vendorinfo": {
           "vendor_schema": "SBE",

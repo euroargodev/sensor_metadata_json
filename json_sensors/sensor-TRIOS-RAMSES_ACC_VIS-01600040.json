@@ -3,7 +3,7 @@
         "created_by": "TRIOS-SAMcalToJSON.py",
         "date_creation": "2024-03-19T11:59:38+00:00",
         "link": "./argo.sensor.schema.json",
-        "format_version": "0.4.0",
+        "format_version": "0.5.0",
         "contents": "json file to describe an Trios RAMSES Sensor on an Argo float for sensor schema v0.4.0 draft",
         "sensor_described": "TRIOS-RAMSES_ACC_VIS-01600040"
     },
@@ -19,7 +19,7 @@
             "SENSOR": "SDN:R25::RADIOMETER_DOWN_IRR",
             "SENSOR_MAKER": "SDN:R26::TRIOS",
             "SENSOR_MODEL": "SDN:R27::RAMSES_ACC",
-            "SENSOR_MODEL_FIRMWARE": "1.0.9",
+            "SENSOR_FIRMWARE_VERSION": "1.0.9",
             "SENSOR_SERIAL_NO": "01600040",
             "sensor_vendorinfo": {
                 "vendor_schema": "TRIOS",

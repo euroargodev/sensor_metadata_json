@@ -297,7 +297,7 @@ parameterfields = fieldnames(jsall{1}.PARAMETERS{1});
 %     {'SENSOR_MAKER'    }
 %     {'SENSOR_MODEL'    }
 %     {'SENSOR_SERIAL_NO'}
-%     {'SENSOR_MODEL_FIRMWARE' }
+%     {'SENSOR_FIRMWARE_VERSION' }
 %     Optional {'sensor_vendorinfo'}
 % parameterfields =
 %     {'PARAMETER'                       }
